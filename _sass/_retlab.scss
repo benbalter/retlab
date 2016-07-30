@@ -1,3 +1,7 @@
+$fa-font-path: $url_base"/assets/vendor/font-awesome/fonts";
+$header-path: $url_base"/assets/img/header.jpg";
+$font-size-base: 16px;
+
 @import "bootstrap-sass/assets/stylesheets/bootstrap";
 @import "font-awesome/scss/font-awesome";
 @import "highlighting";
