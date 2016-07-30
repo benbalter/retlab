@@ -64,4 +64,29 @@ contact_links:
   - name: Facebook
     url: https://facebook.com/BenBalter
     icon: facebook
+
+# Front matter defaults
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post
+      comments: true
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: page
+      comments: false
+
+# Plugins
+gems:
+  - jekyll-seo-tag
+  - jekyll-avatar
+  - jekyll-github-metadata
 ```
+
+You may also want to see [Jekyll SEO Tag's configuration](https://github.com/jekyll/jekyll-seo-tag).
