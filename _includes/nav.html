@@ -1,7 +1,7 @@
 <nav class="navbar navbar-default" role="navigation">
   <ul class="nav navbar-nav">
     <li>
-      <h1><a class="navbar-brand" href="{{ site.github.url }}/">{{ site.name }}</a></h1>
+      <h1><a class="navbar-brand" href="{{ site.github.url }}/">{{ site.title }}</a></h1>
     </li>
     {% for path in site.nav_pages %}
       {% assign nav_page=site.pages | where:"path",path | first %}
