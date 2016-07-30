@@ -1,6 +1,6 @@
 script: "./script/cibuild"
 language: ruby
-rvm: 2.3
+rvm: 2.2
 cache: bundler
 sudo: false
 env:
