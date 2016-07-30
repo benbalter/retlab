@@ -45,3 +45,6 @@ gems:
   - jekyll-avatar
   - jekyll-github-metadata
   - jekyll-feed
+
+exclude:
+  - vendor/bundle
