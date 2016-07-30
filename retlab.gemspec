@@ -14,6 +14,7 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "github-pages"
   spec.add_development_dependency "jekyll-avatar"
+  spec.add_development_dependency "html-proofer"
   spec.add_development_dependency "bundler"
   spec.add_development_dependency "rake"
 end
