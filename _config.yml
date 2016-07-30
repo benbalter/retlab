@@ -1,0 +1,47 @@
+title: Ben Balter
+description: Attorney, open source developer, product manager
+
+lang: en-US
+branch: master
+
+# Pages to include in header navigation
+nav_pages:
+  - index.html
+  - about.md
+
+# Disqus login information, for comments
+disqus:
+  shortname: DISQUS_USERNAME
+
+# Links to include on the contact page
+contact_links:
+  - name: Twitter
+    url: https://twitter.com/BenBalter
+    icon: twitter
+  - name: Facebook
+    url: https://facebook.com/BenBalter
+    icon: facebook
+
+# Front matter defaults
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post
+      comments: true
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: page
+      comments: false
+
+# Plugins
+gems:
+  - jekyll-seo-tag
+  - jekyll-avatar
+  - jekyll-github-metadata
+  - jekyll-feed

@@ -1,0 +1,19 @@
+---
+layout: default
+hero: true
+---
+
+<ul class="posts">
+{% for page in site.posts %}
+  <li class="post">
+    <div class="row">
+        <div class="col-sm-9">
+            <a href="{{ page.url | prepend: site.github.url }}">{{ page.title | smartify }}</a>
+        </div>
+        <div class="col-sm-3 date">
+            {{ page.date | date: '%B %d, %Y' }}
+        </div>
+    </div>
+  </li>
+{% endfor %}
+</ul><!-- posts -->

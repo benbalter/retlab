@@ -21,10 +21,10 @@
       ga('send', 'pageview');
     </script>
   </head>
-  <body class="{{ page.layout }} post{{ page.id | replace:"/","-" }}">
+  <body class="{{ page.layout }} post{{ page.id | slugify | prepend: "-"}}">
     <div class="container">
 
-      {% if page.hero %}
+      {% if page.hero || layout.hero %}
         <div class="hero-unit">&nbsp;</div>
       {% endif %}
 

@@ -89,6 +89,7 @@ gems:
   - jekyll-seo-tag
   - jekyll-avatar
   - jekyll-github-metadata
+  - jekyll-feed
 ```
 
 You may also want to see [Jekyll SEO Tag's configuration](https://github.com/jekyll/jekyll-seo-tag).
