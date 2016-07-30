@@ -12,9 +12,9 @@ Gem::Specification.new do |spec|
 
   spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r{^(_layouts|_includes|_sass|LICENSE|README)/i}) }
 
-  spec.add_development_dependency "github-pages"
+  spec.add_development_dependency "github-pages", ">= 89"
   spec.add_development_dependency "jekyll-avatar"
-  spec.add_development_dependency "html-proofer"
+  spec.add_development_dependency "html-proofer", "~> 3.0"
   spec.add_development_dependency "bundler"
   spec.add_development_dependency "rake"
 end
