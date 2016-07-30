@@ -1,7 +1,7 @@
 <div class="row mini-bio">
   {% assign bio = site.pages | where:"title","About" %}
   {% assign bio = bio[0].content | newline_to_br | split:"<br />" %}
-  {% assign about_url = site.url | append:"/about/" %}
+  {% assign about_url = site.github.url | append:"/about/" %}
   <div class="col-sm-2">
     <div class="alignright">{% avatar benbalter size=100 %}</div>
   </div>
