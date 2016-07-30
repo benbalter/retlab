@@ -1,11 +1,5 @@
----
----
-$icon-font-path: "{{ site.github.url }}/assets/vendor/bootstrap-sass/assets/fonts/bootstrap/";
-$fa-font-path: "{{ site.github.url }}/assets/vendor/font-awesome/fonts";
-$font-size-base: 16px;
-
 @import "bootstrap-sass/assets/stylesheets/bootstrap";
-@import "font-awesome/sccs/font-awesome";
+@import "font-awesome/scss/font-awesome";
 @import "highlighting";
 
 body { padding-top: 20px; font-weight: 200; }
@@ -68,7 +62,7 @@ body { padding-top: 20px; font-weight: 200; }
 
 /* Header */
 .hero-unit {
-    background-image: url( '{{ site.github.url }}/assets/img/header.jpg' );
+    background-image: url( $header-path );
     background-size: cover;
     background-position: top left;
     height: 400px;
