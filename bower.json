@@ -1,0 +1,14 @@
+{
+  "name": "retlab",
+  "homepage": "https://github.com/benbalter/retlab",
+  "authors": [
+    "Ben Balter <ben.balter@github.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap-sass": "^3.3.7",
+    "font-awesome": "^4.6.3"
+  }
+}

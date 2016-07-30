@@ -2,3 +2,10 @@
 .sass-cache
 _site
 Gemfile.lock
+_sass/bootstrap-sass/assets/fonts
+_sass/bootstrap-sass/assets/javascripts/
+_sass/font-awesome/less
+_sass/font-awesome/css
+_sass/font-awesome/src
+_sass/font-awesome/fonts
+_sass/jquery
