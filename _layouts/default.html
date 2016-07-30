@@ -24,7 +24,7 @@
   <body class="{{ page.layout }} post{{ page.id | slugify | prepend: "-"}}">
     <div class="container">
 
-      {% if page.hero || layout.hero %}
+      {% if layout.hero %}
         <div class="hero-unit">&nbsp;</div>
       {% endif %}
 

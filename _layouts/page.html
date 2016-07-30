@@ -2,7 +2,7 @@
 layout: default
 ---
 
- <div class="page page{{ page.id | replace:"/","-" }}">
+ <div class="page page-{{ page.id | slugify }}">
   <div class="row">
     <div class="col-sm-10 col-sm-offset-1">
 
