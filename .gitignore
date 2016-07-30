@@ -9,3 +9,4 @@ _sass/font-awesome/css
 _sass/font-awesome/src
 _sass/font-awesome/fonts
 _sass/jquery
+*.gem
