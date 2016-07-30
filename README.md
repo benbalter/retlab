@@ -17,7 +17,7 @@
     ```
 
 3. Run `bundle`
-4. Create a file `assets/style.scss` with the following content:
+4. Create a file `assets/css/style.scss` with the following content:
 
     ```scss
     ---
@@ -26,7 +26,9 @@
     $url_base: "{{ site.github.url }}";
     @import "retlab";
     ```
-5. (Optional) install Font Awesome (icons) and Anchor JS (header links) dependencies with the following commands:
+
+5. Save a header image to `/assets/img/header.png`. It should be 400px by 1140px.
+6. (Optional) install Font Awesome (icons) and Anchor JS (header links) dependencies with the following commands:
 
     ```
     npm install -g bower
