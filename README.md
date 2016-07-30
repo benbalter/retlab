@@ -1,5 +1,7 @@
 # Retlab
 
+[![Build Status](https://travis-ci.org/benbalter/retlab.svg?branch=master)](https://travis-ci.org/benbalter/retlab)
+
 *A minimalist Jekyll theme for your personal site*
 
 ## Installation
