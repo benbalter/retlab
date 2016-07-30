@@ -9,13 +9,13 @@
       var disqus_config = function () {
           this.page.url = {{ page.url | prepend: site.github.url | jsonify }};
           this.page.identifier = {{ page.id | jsonify }};
-          this.page.title = {{ page.title | slugify | jsonify }}
+          this.page.title = {{ page.title | jsonify }}
       };
-      (function() { 
+      (function() {
           var d = document, s = d.createElement('script');
           s.src = 'https://{{ site.disqus.shortname }}.disqus.com/embed.js';
           s.setAttribute('data-timestamp', +new Date());
           (d.head || d.body).appendChild(s);
       })();
   </script>
-{% endif %}
+{% endunless %}
