@@ -8,34 +8,34 @@
 
 1. Add this line to your Jekyll site's Gemfile:
 
-    ```ruby
-    gem "retlab"
-    ```
+   ```ruby
+   gem "retlab"
+   ```
 
 2. And add this line to your Jekyll site:
 
-    ```yaml
-    theme: retlab
-    ```
+   ```yaml
+   theme: retlab
+   ```
 
 3. Run `bundle`
 4. Create a file `assets/css/style.scss` with the following content:
 
-    ```scss
-    ---
-    ---
+   ```scss
+   ---
+   ---
 
-    $url_base: "{{ site.github.url }}";
-    @import "retlab";
-    ```
+   $url_base: "{{ site.github.url }}";
+   @import "retlab";
+   ```
 
 5. Save a header image to `/assets/img/header.png`. It should be 400px by 1140px.
 6. (Optional) install Font Awesome (icons) and Anchor JS (header links) dependencies with the following commands:
 
-    ```
-    npm install -g bower
-    bower install font-awesome anchor-js --config.directory=assets/vendor
-    ```
+   ```
+   npm install -g bower
+   bower install font-awesome anchor-js --config.directory=assets/vendor
+   ```
 
 ## Configuration
 
