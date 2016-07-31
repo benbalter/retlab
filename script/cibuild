@@ -8,4 +8,5 @@ bundle exec htmlproofer _site \
   --check-html \
   --report-missing-names \
   --report-script-embeds
+bundle exec rubocop -S -D -E
 gem build retlab.gemspec
