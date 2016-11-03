@@ -8,7 +8,7 @@ hero: true
   <li class="post">
     <div class="row">
         <div class="col-sm-9">
-            <a href="{{ page.url | prepend: site.github.url }}">{{ page.title | smartify }}</a>
+            <a href="{{ page.url | absolute_url }}">{{ page.title | smartify }}</a>
         </div>
         <div class="col-sm-3 date">
             {{ page.date | date: '%B %d, %Y' }}

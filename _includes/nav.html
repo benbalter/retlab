@@ -1,12 +1,12 @@
 <nav class="navbar navbar-default" role="navigation">
   <ul class="nav navbar-nav">
     <li>
-      <h1><a class="navbar-brand" href="{{ site.github.url }}/">{{ site.title }}</a></h1>
+      <h1><a class="navbar-brand" href="{{ site.url }}/">{{ site.title }}</a></h1>
     </li>
     {% for path in site.nav_pages %}
       {% assign nav_page=site.pages | where:"path",path | first %}
       <li{% if page.permalink == nav_page.permalink %} class="active"{% endif %}>
-        <a href="{{ nav_page.url | prepend:site.github.url }}">{{ nav_page.title | default:"Posts" }}</a>
+        <a href="{{ nav_page.url | absolute_url }}">{{ nav_page.title | default:"Posts" }}</a>
       </li>
     {% endfor %}
   </ul>
