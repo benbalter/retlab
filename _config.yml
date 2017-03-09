@@ -1,5 +1,5 @@
-title: Ben Balter
-description: Attorney, open source developer, product manager
+title: Lyons Zhang
+description: Wireless Communication Specialist
 
 lang: en-US
 branch: master
@@ -19,10 +19,10 @@ ga_username: UA-xxxxxxxx-x
 # Links to include on the contact page
 contact_links:
   - name: Twitter
-    url: https://twitter.com/BenBalter
+    url: https://twitter.com/lyons-zhang
     icon: twitter
   - name: Facebook
-    url: https://facebook.com/BenBalter
+    url: https://facebook.com/lyons-zhang
     icon: facebook
 
 # Front matter defaults
