@@ -31,7 +31,7 @@
    @import "retlab";
    ```
 
-5. Save a header image to `/assets/img/header.png`. It should be 400px by 1140px.
+5. Save a header image to `/assets/img/header.jpg`. It should be 400px by 1140px.
 6. (Optional) install Font Awesome (icons) and Anchor JS (header links) dependencies with the following commands:
 
    ```
