@@ -26,6 +26,7 @@ contact_links:
     icon: facebook
 
 # Front matter defaults
+permalink: "/:year/:month/:day/:title/"
 defaults:
   -
     scope:
