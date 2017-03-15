@@ -1,11 +1,11 @@
 ---
-title: Waveform
-description: A bikeshed honeypot is an obvious flaw that you place in a proposal in hopes that others will fixate on the honeypot, diverting their attention from the aspects you feel more strongly about.
+title: Waveforms
+description: .
 ---
 
 > [J]ust because you are capable of building a bikeshed does not mean you should stop others from building one... because you do not like the color they plan to paint it... you need not argue about every little feature just because you know enough to do so.
 
-![waveform to sequence](./update/201703/waveform to sequence.PNG)
+![waveform to sequence](https://github.com/lyons-zhang/lyons-zhang.github.io/update/201703/waveform to sequence.PNG)
 
 ### Bikeshed honeypots in the corporate world
 
