@@ -1,10 +1,11 @@
 ---
 title: Waveforms
-description: Fourier transforms stated here with considerably more precision and interpretation
+description: Fourier transforms stated here with considerably more precision and interpretation.
 categories: Digital Communication
 ---
 
-> [J]ust because you are capable of building a bikeshed does not mean you should stop others from building one... because you do not like the color they plan to paint it... you need not argue about every little feature just because you know enough to do so.
+> *Waveforms* denoted as arbitrarily varying real or complex valued functions of time. An individual waveform from an analog source should be viewed as a sample waveform from arandom process. Here the focus is on ways to map deterministic waveforms to sequences and vice versa. The notation {u(t) : $\mathbb{R}$ \rightarrow $\mathbb{R}$} refers to a function that maps each real number t ∈ R into another real number
+u(t) ∈ R
 
 ![waveform]({{ https://github.com/lyons-zhang/lyons-zhang.github.io }}/update/201703/waveform.PNG)
 
