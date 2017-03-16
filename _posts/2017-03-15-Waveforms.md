@@ -1,11 +1,12 @@
 ---
 title: Waveforms
-description: .
+description: Fourier transforms stated here with considerably more precision and interpretation
+categories: Digital Communication
 ---
 
 > [J]ust because you are capable of building a bikeshed does not mean you should stop others from building one... because you do not like the color they plan to paint it... you need not argue about every little feature just because you know enough to do so.
 
-![waveform](https://github.com/lyons-zhang/lyons-zhang.github.io/update/201703/waveform.PNG)
+![waveform]({{ https://github.com/lyons-zhang/lyons-zhang.github.io }}/update/201703/waveform.PNG)
 
 $$a^2 + b^2 = c^2$$
 
