@@ -16,13 +16,13 @@ The function of a channel encoder, i.e., a modulator, is to convert the incoming
 These waveforms are a priori unknown, so much mathematical precision is necessary here.
 ### Finite energy functions
 The energy in a real or complex waveform u(t) is defined to be $$\int_{-\infty}^\infty|u(t)|^2dt$$.
-
-
-
-
-
+* The energy used over any finite interval T is limited both by regulatory agencies and by physical constraints on transmitters and antennas.
+* Finite-energy waveforms have *measurability* properties, These finite-energy measurable functions are called L2 functions. When time-constrained, they always have Fourier series, and without a time constraint, they always have Fourier transforms.
+* Perhaps the most important property, however, is that L2 functions can be treated essentially as conventional vectors.
+* Unit impulses and constant functions are not physical waveforms, they are useful models of physical waveforms where energy is not important. However, that such waveforms can safely be limited to the finite-energy class.
+### 
 
 
 Reference:
-1. Robert G.Gallager. (2009). *Principles of Digital Communication* (New York: Cambridge University Press).
-2. Terence Tao. (2009). *Analysis I*. *Analysis II* (Hindustan Book Agency)
+[^1]: Robert G.Gallager. (2009). *Principles of Digital Communication* (New York: Cambridge University Press).
+[^2]: Terence Tao. (2009). *Analysis I*. *Analysis II* (Hindustan Book Agency)
