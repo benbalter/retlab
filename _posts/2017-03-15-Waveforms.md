@@ -15,7 +15,7 @@ The function of a channel encoder, i.e., a modulator, is to convert the incoming
 
 These waveforms are a priori unknown, so much mathematical precision is necessary here.
 ### Finite energy functions
-The energy in a real or complex waveform u(t) is defined to be $$\int_-\infty^\inft|u(t)|^2dt$$.
+The energy in a real or complex waveform u(t) is defined to be $$\int_-\infty^\infty|u(t)|^2dt$$.
 
 
 
