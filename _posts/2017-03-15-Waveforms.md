@@ -5,6 +5,7 @@ categories: Digital Communication
 ---
 
 > *Waveforms* denoted as arbitrarily varying real or complex valued functions of time. An individual waveform from an analog source should be viewed as a sample waveform from arandom process. Here the focus is on ways to map deterministic waveforms to sequences and vice versa. The notation $$\{u(t) : \mathbb{R} \rightarrow \mathbb{R}/\mathbb{C}\}$$ refers to a function that maps each real number $$t \in \mathbb{R}$$ into a real/complex number $$u(t) \in \mathbb{R}/\mathbb{C}$$.
+
 Coding could change the input waveforms so as to make the decoding more effective:
 ![waveform]({{ https://github.com/lyons-zhang/lyons-zhang.github.io }}/update/201703/waveform.PNG)
 
