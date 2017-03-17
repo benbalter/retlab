@@ -1,5 +1,5 @@
 ---
-title: Lebesgue ingegration and $$L_2$$ functions
+title: $$Lebesgue ingegration and L2 functions$$
 description: Euclidean spaces, Lebesgue measure, Lebesgue ingegration and $$L_2$$ functions 
 categories: Digital Communication
 ---
