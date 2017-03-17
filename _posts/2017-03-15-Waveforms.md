@@ -24,5 +24,6 @@ The energy in a real or complex waveform u(t) is defined to be $$\int_{-\infty}^
 
 
 Reference:
+
 [^1]: Robert G.Gallager. (2009). *Principles of Digital Communication* (New York: Cambridge University Press).
 [^2]: Terence Tao. (2009). *Analysis I*. *Analysis II* (Hindustan Book Agency)
