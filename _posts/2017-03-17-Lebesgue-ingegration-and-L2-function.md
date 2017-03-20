@@ -40,6 +40,7 @@ A *metric space* $$(X,d)$$ is a space $$X$$ of objects(called points), together 
 * (Positivity) For any *distinct* $$x,y\in X$$, we have $$d(x,y)\gt 0$$.
 * (Symmetry) For any $$x,y\in X$$, we have $$d(x,y)=d(y,x)$$.
 * (Triangle inequality) For any $$x,y,z\in X$$, we have $$d(x,z)\le d(x,y)+d(y,z)$$.
+
 ##### **Euclidean spaces**
 Let $$n\ge 1$$ be a natural number, and let $$R^n$$ be the space of $$n$$-tuple of real numbers:
 $$R^n=\{(x_1,x_2,\dotsm,x_n):x_1,x_2,\dotsm,x_n\in R\}.
