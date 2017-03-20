@@ -10,9 +10,9 @@ The passage from Riemann's theory of integration to that of Lebesque is a proces
 ### **Set Notations and Terminology**
 The words *collection*, *family*, and *class* will be used synonymously with set.
 ##### **Cartesian product**
-The *cartesian product* $$A_1 \times\dddot\times A_n$$ of the sets $$A_1, \dddot , A_n$$ is the set of all ordered $$n-tuples(a_1, \dddot, a_n)$$ where $$a_i \in A_i$$ for $$i=1,...,n$$.
+The *cartesian product* $$A_1 \times\dotsm\times A_n$$ of the sets $$A_1,\dotsc, A_n$$ is the set of all ordered $$n-tuples(a_1,\dotsc,a_n)$$ where $$a_i \in A_i$$ for $$i=1,\dotsc,n$$.
 
-The *real number system* is $$R^1$$, and $$R^k = R^1 \times \dddot \times R^1$$. The *extended real number system* is $$R^1$$ with $$-\infty$$ and $$\infty$$.
+The *real number system* is $$R^1$$, and $$R^k = R^1 \times \dotsm \times R^1$$. The *extended real number system* is $$R^1$$ with $$-\infty$$ and $$\infty$$.
 
 ##### **Supremum and Infimum**
 If $$E\subset[-\infty,\infty]$$ and $$E\ne\varnothing$$, the least upper bound(supremum) and greatest lower bound(infimum) of $$E$$ exist in $$[-\infty,\infty]$$ and are denoted by *sup* $$E$$ and *inf* $$E$$.
