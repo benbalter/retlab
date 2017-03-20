@@ -36,7 +36,7 @@ If $$X$$ and $$Y$$ are topological spaces and if $$f$$ is a mapping of $$X$$ int
 ### **Euclidean space**
 ##### **Metric spaces**
 A *metric space* $$(X,d)$$ is a space $$X$$ of objects(called points), together with a *distance function* of *metric* $$d:X\times X\rightarrow [0,+\infty)$$, which associates to each pair $$x,y$$ of points in $$X$$ a non-negative real number $$d(x,y)\ge 0$$. Furthermore:
-* For any $$x\inX$$, we have $$d(x,x)=0$$.
+* For any $$x\in X$$, we have $$d(x,x)=0$$.
 * (Positivity) For any *distinct* $$x,y\in X$$, we have $$d(x,y)\gt 0$$.
 * (Symmetry) For any $$x,y\in X$$, we have $$d(x,y)=d(y,x)$$.
 * (Triangle inequality) For any $$x,y,z\in X$$, we have $$d(x,z)\le d(x,y)+d(y,z)$$.
@@ -44,8 +44,10 @@ A *metric space* $$(X,d)$$ is a space $$X$$ of objects(called points), together 
 ##### **Euclidean spaces**
 Let $$n\ge 1$$ be a natural number, and let $$R^n$$ be the space of $$n$$-tuple of real numbers:
 $$R^n=\{(x_1,x_2,\dotsm,x_n):x_1,x_2,\dotsm,x_n\in R\}.
+
 We define the *Euclidean metric*(also called the $$l^2$$ metric) $$d_{l^2}:R^n\times R^n \rightarrow R$$ by
 $$\eqalign{d_{l^2}((x_1,x_2,\dotsm,x_n),(y_1,y_2,\dotsm,y_n)):=\sqrt{(x_1-y_1)^2+\dots +(x_n-y_n)^2}=(\sum_{i=1}^n} (x_i-y_i)^2))^{1/2).
+
 ### Lebesgue measure
 
 
