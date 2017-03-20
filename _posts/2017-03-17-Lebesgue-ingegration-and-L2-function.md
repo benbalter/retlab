@@ -49,12 +49,13 @@ We define the *Euclidean metric*(also called the *$$l^2$$ metric*) $$d_{l^2}:R^n
 $$\eqalign{d_{l^2}((x_1,x_2,\dotsm,x_n),(y_1,y_2,\dotsm,y_n)):=\sqrt{(x_1-y_1)^2+\dots +(x_n-y_n)^2}=(\sum_{i=1}^n (x_i-y_i)^2)^{1/2}}$$.
 
 ### **Measurable space**
-A collection $$F$$ of subsets of a set $$X$$ is said to be a **$$\sigma-field$$**(or $$\sigma-algebra$$, with the following properties:
+A collection $$F$$ of subsets of a set $$X$$ is said to be a **$$\sigma\text{-field}$$**(or $$\sigma\text{-algebra}$$, with the following properties:
 * $$\varnothing \in F$$.
 * If $$A\in F$$,then $$A^c\in F$$.
-* If $$A_i \in F$$ for every $$i\in mathbb{N}$$, then $$\bigcup_{i=1}^{\infty} A_i\in F$$.
+* If $$A_i \in F$$ for every $$i\in \mathbb{N}$$, then $$\bigcup_{i=1}^{\infty} A_i\in F$$.
 
-If $$F$$ is a $$\sigma-field$$ in $$X$$, then $$X$$ is called a **measurable space**, and the members of $$F$$ are called the *measurable sets* in $$X$$.
+If $$F$$ is a $$\
+-field$$ in $$X$$, then $$X$$ is called a **measurable space**, and the members of $$F$$ are called the *measurable sets* in $$X$$.
 
 If $$X$$ is a measurable space, $$Y$$ is a topological space, and $$f$$ is a mapping of $$X$$ into $$Y$$, the $$f$$ is said to be **measurable** provided that $$f^{-1}(V)$$ is a measurable set in $$X$$ for every open set $$V$$ in $$Y$$.
 
