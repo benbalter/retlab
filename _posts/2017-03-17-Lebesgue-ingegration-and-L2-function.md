@@ -46,7 +46,7 @@ Let $$n\ge 1$$ be a natural number, and let $$R^n$$ be the space of $$n$$-tuple 
 $$R^n=\{(x_1,x_2,\dotsm,x_n):x_1,x_2,\dotsm,x_n\in R\}$$.
 
 We define the *Euclidean metric*(also called the $$l^2$$ metric) $$d_{l^2}:R^n\times R^n \rightarrow R$$ by
-$$\eqalign{d_{l^2}((x_1,x_2,\dotsm,x_n),(y_1,y_2,\dotsm,y_n)):=\sqrt{(x_1-y_1)^2+\dots +(x_n-y_n)^2}=(\sum_{i=1}^n} (x_i-y_i)^2))^{1/2)$$.
+$$\eqalign{d_{l^2}((x_1,x_2,\dotsm,x_n),(y_1,y_2,\dotsm,y_n)):=\sqrt{(x_1-y_1)^2+\dots +(x_n-y_n)^2}=(\sum_{i=1}^n (x_i-y_i)^2)^{1/2}}$$.
 
 ### Lebesgue measure
 
