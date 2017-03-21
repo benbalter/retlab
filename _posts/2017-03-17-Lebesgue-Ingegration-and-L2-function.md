@@ -20,13 +20,7 @@ For any real $$a \le b$$, including $$a = -\infty$$, $$b = \infty$$, the interva
 The measure of a finite union, $$I_1,\dotsc,I_k$$ of disjoint intervals is the sum of the measure of those intervals, $$\sum_{j=1}^k \mu(I_j)$$.  
 The measure of a countable union $$I_1,\dotsc,I_k$$, of disjoint intervals is $$\mu(\cup I_j)=\lim_{k\rightarrow\infty} \sum_{j=1}^k \mu(I_j)$$.  
 Any *countable set* of real numbers has zero measure.   
-##### **Out measure**
-We need more than countable unions of intervals for a viable integration theory. 
-If $${\cal B}$$ is measurable, we also need its complement, $$\overline {\cal B}$$, to be measurable with $$\mu ({\cal B}) = T − \mu ({\cal B})$$.
-Define the outer measure $${\mu}^\circ ({\cal A})$$ of any set $${\cal A}$$ as  
-$${\mu}^\circ ({\cal A}) = \inf\limits_{{\cal B} : {\cal B}\, covers \,{\cal A}} \mu ({\cal B})$$.  
 
-where $${\cal B}$$ covers $${\cal A}$$ if $${\cal B}$$ is a countable union of intervals and $${\cal A}\subseteq{\cal B}$$.  
 ##### **Measurable and measure**
 A set $${\cal A}$$ (over $$[−T/2, T/2]$$) is *measurable* if $${\mu}^\circ ({\cal A})+{\mu}^\circ (\overline{\cal A}) = T$$. If $${\cal A}$$ is measurable, then its *measure*, $${\mu}({\cal A})$$, equals $${\mu}^\circ ({\cal A})$$.  
 Each measurable set has a measurable complement.  
