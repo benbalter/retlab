@@ -46,10 +46,9 @@ A complex function $${u(t) : [−T/2, T/2]\rightarrow\mathbb{C}}$$ is measurable
 A function $$\{ u(t) : [−T/2, T/2]\rightarrow\mathbb{C}\}$$ is said to be $$L^1$$, or in the class $$L^1$$, if $$u(t)$$ is measurable and the Lebesgue integral of $$|u(t)|$$ is finite.  
 $$L^1$$ functions are sometimes called integrable functions.
 ##### **$$L^2$$ functions**
-A function $${u(t) : [−T/2, T/2]\rightarrow\mathbb{R}\}$$ or $${u(t) : [−T/2, T/2]\rightarrow\mathbb{C}\}$$ is said to be an $$L^2$$ function,
-or a *finite-energy* function, if $$u(t)$$ is measurable and the Lebesgue integral of $$|u(t)|^2$$ is finite.  
+A function $$\{ u(t) : [−T/2, T/2] \rightarrow \mathbb{R} \}$$ or $$\{ u(t) : [−T/2, T/2] \rightarrow \mathbb{C} \}$$ is said to be an $$L^2$$ function, or a *finite-energy* function, if $$u(t)$$ is measurable and the Lebesgue integral of $$|u(t)|^2$$ is finite.  
 If $${u(t) : [−T/2, T/2]\rightarrow\mathbb{C}}$$ is $$L^2$$, then it is also $$L^1$$.  
-
+![L2function]({{ https://github.com/lyons-zhang/lyons-zhang.github.io }}/update/201703/L2function.png) 
 
 Reference:
 
