@@ -40,7 +40,7 @@ If $${\mu}^\circ ({\cal A}) = 0$$, then $${\cal A}$$ is measurable with measure 
 A function $$\{ u(t) : \mathbb{R}\rightarrow\mathbb{R}\}$$ is measurable if $${t : u(t) \lt b}$$ is measurable for each $$b\in \mathbb{R}$$.  
 The Lebesgue integral exists(with perhaps an infinite value) if the function is measurable and if the limit in the figure exists.  
 Sets of measure zero do not effect the integral.  
-A complex function $${u(t) : [−T/2, T/2]\rightarrow\mathbb{C}}$$ is measurable if both $$\Re [u(t)]$$ and $$\Im [u(t)] are measurable.  
+A complex function $${u(t) : [−T/2, T/2]\rightarrow\mathbb{C}}$$ is measurable if both $$\Re [u(t)]$$ and $$\Im [u(t)]$$ are measurable.
 ### **$$L^2$$ Functions over $$[−T/2, T/2]$$**
 ##### **$$L^1$$ functions**
 A function $$\{ u(t) : [−T/2, T/2]\rightarrow\mathbb{C}\}$$ is said to be $$L^1$$, or in the class $$L^1$$, if $$u(t)$$ is measurable and the Lebesgue integral of $$|u(t)|$$ is finite.  
