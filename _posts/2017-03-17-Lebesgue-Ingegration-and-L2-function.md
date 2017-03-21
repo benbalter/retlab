@@ -50,8 +50,9 @@ A function $$\{ u(t) : [−T/2, T/2] \rightarrow \mathbb{R} \}$$ or $$\{ u(t) : 
 If $${u(t) : [−T/2, T/2]\rightarrow\mathbb{C}}$$ is $$L^2$$, then it is also $$L^1$$.  
 ![L2function]({{ https://github.com/lyons-zhang/lyons-zhang.github.io }}/update/201703/L2function.png) 
 
-Reference:
 
+-----------
+Reference:
 1. Robert G.Gallager. (2009). *Principles of Digital Communication* (New York: Cambridge University Press).
 2. Terence Tao. (2009). *Analysis I*. *Analysis II* (Hindustan Book Agency)
 3. Walter Rudin. (1987). *Real and complex analysis* (McGraw-Hill Book Company)
