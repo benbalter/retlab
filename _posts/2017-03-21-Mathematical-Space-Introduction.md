@@ -59,7 +59,7 @@ A collection $$F$$ of subsets of a set $$X$$ is said to be a **$$\sigma\text{-fi
 If $$F$$ is a $$\sigma$$-field in $$X$$, then $$X$$ is called a **measurable space**, and the members of $$F$$ are called the *measurable sets* in $$X$$.  
 If $$X$$ is a measurable space, $$Y$$ is a topological space, and $$f$$ is a mapping of $$X$$ into $$Y$$, then $$f$$ is said to be **measurable** provided that $$f^{-1}(V)$$ is a measurable set in $$X$$ for every open set $$V$$ in $$Y$$.  
 ##### **Measurable functions**
-Let $$\Omega$$ be a measurable subset of $$R^n$$, and let $$f : \Omega \rightarrow \mathbb(R)^m$$ be a function. A function $$f$$ is *measurable* iff $$f^{-1}(V)$$ is measurable for every open set $$V \subseteq \mathbb(R)^m$$.
+Let $$\Omega$$ be a measurable subset of $$R^n$$, and let $$f : \Omega \rightarrow \mathbb{R}^m$$ be a function. A function $$f$$ is *measurable* iff $$f^{-1}(V)$$ is measurable for every open set $$V \subseteq \mathbb{R}^m$$.
 
 Reference:
 
