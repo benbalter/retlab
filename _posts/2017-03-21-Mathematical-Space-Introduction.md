@@ -15,7 +15,7 @@ The ***cartesian product*** $$A_1 \times\dotsm\times A_n$$ of the sets $$A_1,\do
 The *real number system* is $$R^1$$, and $$R^k = R^1 \times\dotsm\times R^1$$. The *extended real number system* is $$R^1$$ with $$-\infty$$ and $$\infty$$.
 ##### **Supremum and Infimum**
 If $$E\subset[-\infty,\infty]$$ and $$E\ne\varnothing$$, the least upper bound(supremum) and greatest lower bound(infimum) of $$E$$ exist in $$[-\infty,\infty]$$ and are denoted by $$\sup E$$ and $$\inf E$$.
-### **Topological space**
+### **Topological Space**
 In mathematics, a *structure* on a set is an additional mathematical object that, in some manner, attaches (or relates) to that set to endow it with some additional meaning or significance. In modern mathematics **spaces** are defined as sets with some added structure. For instance, the space of real numbers comes with operations such as addition and multiplication.
 ##### **Topological space**
 A *topological space* is a pair $$(X,F)$$, where $$X$$ is a set, and $$F \subset 2^X$$ is a collection of subsets of $$X$$, whose elements are referred to as *open sets*. Furthermore:
@@ -33,7 +33,7 @@ Let $$(X,F)$$ be a topological space, and let $$x\in X$$. A *neighbourhood* of $
 Let $$m$$ be an integer, $$(X,F)$$ be a topological space and let $$(x^{(n)})_{n=m}^{\infty}$$ be a sequence of points in $$X$$. Let $$x$$ be a point in $$X$$. We say that $$(x^{(n)})_{n=m}^{\infty}$$ *converges* to $$x$$ if and only if, for every neighbourhood $$V$$ of $$x$$, there exists an $$N\ge m$$ such that $$x^{(n)} \in V$$ for all $$n\ge N$$.
 ##### **Continuous functions**
 If $$X$$ and $$Y$$ are topological spaces and if $$f$$ is a mapping of $$X$$ into $$Y$$, then $$f$$ is said to be *continuous* provided that $$f^{-1}(V)$$ is an open set in $$X$$ for every open set $$V$$ in $$Y$$.
-### **Euclidean space**
+### **Euclidean Space**
 ##### **Metric spaces**
 A *metric space* $$(X,d)$$ is a space $$X$$ of objects(called points), together with a *distance function* of *metric* $$d:X\times X\rightarrow [0,+\infty)$$, which associates to each pair $$x,y$$ of points in $$X$$ a non-negative real number $$d(x,y)\ge 0$$. Furthermore:
 * For any $$x\in X$$, we have $$d(x,x)=0$$.
@@ -48,7 +48,7 @@ $$R^n=\{(x_1,x_2,\dotsm,x_n):x_1,x_2,\dotsm,x_n\in R\}$$.
 We define the *Euclidean metric*(also called the *$$l^2$$ metric*) $$d_{l^2}:R^n\times R^n \rightarrow R$$ by
 $$\eqalign{d_{l^2}((x_1,x_2,\dotsm,x_n),(y_1,y_2,\dotsm,y_n)):=\sqrt{(x_1-y_1)^2+\dots +(x_n-y_n)^2}=(\sum_{i=1}^n (x_i-y_i)^2)^{1/2}}$$.
 
-### **Measurable space**
+### **Measurable Space**
 A collection $$F$$ of subsets of a set $$X$$ is said to be a **$$\sigma\text{-field}$$**(or $$\sigma\text{-algebra}$$), with the following properties:
 * $$\varnothing \in F$$.
 * If $$A\in F$$,then $$A^c\in F$$.
