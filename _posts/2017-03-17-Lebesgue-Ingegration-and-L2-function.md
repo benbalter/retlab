@@ -7,7 +7,7 @@ categories: Digital Communication
 
 The passage from Riemann's theory of integration to that of Lebesque is a process of completion. It is of the same fundamental importance in analysis as is the construction of the real number system from the rationals.
 ### **Lebesgue Measure**
-I have to pay a certain sum, which I have collected in my pocket. I take the bills and coins out of my pocket and give them to the creditor in the order I find them until I have reached the total sum. This is the Riemann integral. But I can proceed differently. After I have taken all the money out of my pocket I order the bills and coins according to identical values and then I pay the several heaps one after the other to the creditor. This is my integral.  
+    I have to pay a certain sum, which I have collected in my pocket. I take the bills and coins out of my pocket and give them to the creditor in the order I find them until I have reached the total sum. This is the Riemann integral. But I can proceed differently. After I have taken all the money out of my pocket I order the bills and coins according to identical values and then I pay the several heaps one after the other to the creditor. This is my integral.  
 ![Lebesgue]({{ https://github.com/lyons-zhang/lyons-zhang.github.io }}/update/201703/Lebesgue.png)  
 Whenever the Riemann integral exists (i.e.,the limit exists), the Lebesgue integral also exists and has the same value.  
 The familiar rules for calculating Riemann integrals also apply for Lebesgue integrals.  
