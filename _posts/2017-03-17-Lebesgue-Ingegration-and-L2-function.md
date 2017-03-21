@@ -42,11 +42,11 @@ A function $$\{ u(t) : \mathbb{R}\rightarrow\mathbb{R}\}$$ is measurable if $${t
 The Lebesgue integral exists(with perhaps an infinite value) if the function is measurable and if the limit in the figure exists.  
 Sets of measure zero do not effect the integral.  
 A complex function $${u(t) : [−T/2, T/2]\rightarrow\mathbb{C}}$$ is measurable if both $$\Re [u(t)]$$ and $$\Im [u(t)] are measurable.  
-### **L^2 Functions over [−T/2, T/2]**
-##### **$$L^1$$ functions**
+### **L2 Functions over [−T/2, T/2]**
+##### **L1 functions**
 A function $$\{ u(t) : [−T/2, T/2]\rightarrow\mathbb{C}\}$$ is said to be $$L^1$$, or in the class $$L^1$$, if $$u(t)$$ is measurable and the Lebesgue integral of $$|u(t)|$$ is finite.  
 $$L^1$$ functions are sometimes called integrable functions.
-##### **$$L^2$$ functions**
+##### **L^2 functions**
 A function $${u(t) : [−T/2, T/2]\rightarrow\mathbb{R}\}$$ or $${u(t) : [−T/2, T/2]\rightarrow\mathbb{C}\}$$ is said to be an $$L^2$$ function,
 or a *finite-energy* function, if $$u(t)$$ is measurable and the Lebesgue integral of $$|u(t)|^2$$ is finite.  
 If $${u(t) : [−T/2, T/2]\rightarrow\mathbb{C}}$$ is $$L^2$$, then it is also $$L^1$$.  
