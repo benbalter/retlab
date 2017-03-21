@@ -13,7 +13,7 @@ The familiar rules for calculating Riemann integrals also apply for Lebesgue int
 For some very weird functions, the Lebesgue integral exists, but the Riemann integral does not.  
 There are also exceptionally weird functions for which not even the Lebesgue integral exists.  
 ##### **Lebesgue measure**
-In Lebesgue integration, the measure $$\{\mu}_m = \{t : m\delta \le u(t) \lt (m+1)\delta \}$$ is called Lebesgue measure.
+In Lebesgue integration, the measure $${\mu}_m = \{ t : m\delta \le u(t) \lt (m+1)\delta \}$$ is called Lebesgue measure.
 For any real $$a \le b$$, including $$a = -\infty$$, $$b = \infty$$, the interval $$I = (a, b)$$ has measure $$\mu(I) = b − a$$. Same if either or both end points included.  
 The measure of a finite union, $$I_1,\dotsc,I_k$$ of disjoint intervals is the sum of the measure of those intervals, $$\sum_{j=1}^k \mu(I_j)$$.  
 The measure of a countable union $$I_1,\dotsc,I_k$$, of disjoint intervals is $$\mu(\cup I_j)=\lim_{k\rightarrow\infty} \sum_{j=1}^k \mu(I_j)$$.  
@@ -24,10 +24,10 @@ If $${\cal B}$$ is measurable, we also need its complement, $$\overline{\cal B}$
 Define the outer measure $${\mu}^\circ ({\cal A})$$ of any set $${\cal A}$$ as  
 $$ {\mu}^\circ ({\cal A}) = inf_{\rm {\cal B}:{\cal B} covers {\cal A}}inf \mu({\cal B})$$.  
 where $${\cal B}$$ covers $${\cal A}$$ if $${\cal B}$$ is a countable union of intervals and $${\cal A}\subseteq{\cal B}$$.  
-##### **Measurable and Measure**
+##### **Measurable and measure**
 A set $${\cal A}$$ (over [−T/2, T/2]) is *measurable* if $${\mu}^\circ ({\cal A})+{\mu}^\circ (\overline{\cal A}) = T$$. If $${\cal A}$$ is measurable, then its *measure*, $${\mu}({\cal A})$$, equals $${\mu}^\circ ({\cal A})$$.  
 Each measurable set has a measurable complement.  
-If $$\cal B \inset \cal B$$ are both measurable, then $$\mu({\cal A}) \le \mu({\cal B})$$.  
+If $$\cal B \subset \cal B$$ are both measurable, then $$\mu({\cal A}) \le \mu({\cal B})$$.  
 Any measurable set can be approximated arbitrarily closely by a cover.  
 ##### **Lebesgue measure for a union of intervals**
 Let $${\cal A}_1, {\cal A}_2,\dotsc$$ be any sequence of measurable sets. Then     
@@ -36,7 +36,7 @@ If $${\cal A}_1, {\cal A}_2,\dotsc$$ are also disjoint, then $$\mu(\cal S) = \su
 If $${\mu}^\circ ({\cal A}) = 0$$, then A is measurable with measure 0.
 ### **Lebesgue Ingegration**
 ##### **Measurable functions**
-A function $$\{u(t):\mathbb{R}\rightarow\mathbb{R}}$$ is measurable if $${t : u(t) \lt b}$$ is measurable for each $$b\in \mathbb{R}$$.
+A function $$\{ u(t) : \mathbb{R}\rightarow\mathbb{R}\}$$ is measurable if $${t : u(t) \lt b}$$ is measurable for each $$b\in \mathbb{R}$$.
 
 Reference:
 
