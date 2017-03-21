@@ -4,8 +4,9 @@ description: Euclidean spaces, Topological space, Open sets, Metric spaces, Meas
 categories: Digital Communication
 ---
 
-> 
+> The analysis will let you know when the common mathematical rules(e.g. Interchanging sums/integrals/limits/derivatives) are justified, and when they are illegal. 
 
+We start here by introduce the mathematical space, these concept will provide deeper insight for $$L^2$$ functions.
 ### **Set Notations and Terminology**
 The words *collection*, *family*, and *class* will be used synonymously with set.
 ##### **Cartesian product**
