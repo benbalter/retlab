@@ -4,6 +4,7 @@ description: Lebesgue measure, Lebesgue ingegration, L2 functions
 categories: Digital Communication
 ---  
 > Every piecewise continuous function is *Riemann integrable*. Lebesgue integral can handle a very large class of functions, including all the Riemann integrable functions, but also even very discontinuous functions. In fact, it's safe to say that it can integrate any function that one actually needs in mathematics in real-life applications.  
+
 The passage from Riemann's theory of integration to that of Lebesque is a process of completion. It is of the same fundamental importance in analysis as is the construction of the real number system from the rationals.
 ### **Lebesgue Measure**
 I have to pay a certain sum, which I have collected in my pocket. I take the bills and coins out of my pocket and give them to the creditor in the order I find them until I have reached the total sum. This is the Riemann integral. But I can proceed differently. After I have taken all the money out of my pocket I order the bills and coins according to identical values and then I pay the several heaps one after the other to the creditor. This is my integral.  
