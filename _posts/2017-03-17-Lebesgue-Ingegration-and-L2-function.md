@@ -20,7 +20,7 @@ For some very weird functions, the Lebesgue integral exists, but the Riemann int
 There are also exceptionally weird functions for which not even the Lebesgue integral exists.  
 ##### **Lebesgue measure**
 
-In Lebesgue integration, the measure $$\{\mu}_m = \{t : m\delta \le u(t) \lt (m+1)\delta \}$$ is called Lebesgue measure.
+In Lebesgue integration, the measure $$\{ \mu_m = \{ t : m\delta \le u(t) \lt (m+1)\delta \}$$ is called Lebesgue measure.
 
 For any real $$a \le b$$, including $$a = -\infty$$, $$b = \infty$$, the interval $$I = (a, b)$$ has measure $$\mu(I) = b − a$$. Same if either or both end points included.  
 The measure of a finite union, $$I_1,\dotsc,I_k$$ of disjoint intervals is the sum of the measure of those intervals, $$\sum_{j=1}^k \mu(I_j)$$.  
@@ -52,7 +52,7 @@ A function $$\{ u(t) : [−T/2, T/2]\rightarrow\mathbb{C}\}$$ is said to be $$L^
 $$L^1$$ functions are sometimes called integrable functions.
 ##### **$$L^2$$ functions**
 A function $$\{ u(t) : [−T/2, T/2] \rightarrow \mathbb{R} \}$$ or $$\{ u(t) : [−T/2, T/2] \rightarrow \mathbb{C} \}$$ is said to be an $$L^2$$ function, or a *finite-energy* function, if $$u(t)$$ is measurable and the Lebesgue integral of $$|u(t)|^2$$ is finite.  
-If $${u(t) : [−T/2, T/2]\rightarrow\mathbb{C}}$$ is $$L^2$$, then it is also $$L^1$$.  
+If $$\{ u(t) : [−T/2, T/2]\rightarrow\mathbb{C} \}$$ is $$L^2$$, then it is also $$L^1$$.  
 ![L2function]({{ https://github.com/lyons-zhang/lyons-zhang.github.io }}/update/201703/L2function.png) 
 
 
