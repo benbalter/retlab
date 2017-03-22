@@ -1,5 +1,6 @@
 ---
 title: Lebesgue Ingegration and L2 functions
+
 description: Lebesgue measure, Lebesgue ingegration, L1 functions, L2 functions 
 categories: Digital Communication
 ---  
@@ -7,6 +8,7 @@ categories: Digital Communication
 
 The passage from Riemann's theory of integration to that of Lebesque is a process of completion. It is of the same fundamental importance in analysis as is the construction of the real number system from the rationals.
 ### **Lebesgue Measure**
+
     I have to pay a certain sum, which I have collected in my pocket. I take the bills and coins out of my pocket and give them to the creditor in the order I find them until I have reached the total sum. This is the Riemann integral. But I can proceed differently. After I have taken all the money out of my pocket I order the bills and coins according to identical values and then I pay the several heaps one after the other to the creditor. This is my integral.  
         
         ————Lebesgue summarized his approach to integration in a letter to Paul Montel
@@ -17,13 +19,16 @@ The familiar rules for calculating Riemann integrals also apply for Lebesgue int
 For some very weird functions, the Lebesgue integral exists, but the Riemann integral does not.  
 There are also exceptionally weird functions for which not even the Lebesgue integral exists.  
 ##### **Lebesgue measure**
-In Lebesgue integration, the measure $${\mu}_m = \{ t : m\delta \le u(t) \lt (m+1)\delta \}$$ is called Lebesgue measure.
+
+In Lebesgue integration, the measure $$\{\mu}_m = \{t : m\delta \le u(t) \lt (m+1)\delta \}$$ is called Lebesgue measure.
+
 For any real $$a \le b$$, including $$a = -\infty$$, $$b = \infty$$, the interval $$I = (a, b)$$ has measure $$\mu(I) = b − a$$. Same if either or both end points included.  
 The measure of a finite union, $$I_1,\dotsc,I_k$$ of disjoint intervals is the sum of the measure of those intervals, $$\sum_{j=1}^k \mu(I_j)$$.  
 The measure of a countable union $$I_1,\dotsc,I_k$$, of disjoint intervals is $$\mu(\cup I_j)=\lim_{k\rightarrow\infty} \sum_{j=1}^k \mu(I_j)$$.  
 Any *countable set* of real numbers has zero measure.   
 ##### **Out measure**
 We need more than countable unions of intervals for a viable integration theory. 
+easurable if $${t : u(t) \lt b}$$ is measurable for each $$b\in \mathbb{R}$$.
 If $${\cal B}$$ is measurable, we also need its complement, $$\overline {\cal B}$$, to be measurable with $$\mu ({\cal B}) = T − \mu (\overline{\cal B})$$.
 Define the outer measure $${\mu}^{\circ} ({\cal A})$$ of any set $${\cal A}$$ as <center>$${\mu}^{\circ} ({\cal A}) = \inf\limits_{ {\cal B} : {\cal B} \, covers \, {\cal A} } \mu ({\cal B}).$$</center>where $${\cal B}$$ covers $${\cal A}$$ if $${\cal B}$$ is a countable union of intervals and $${\cal A} \subseteq {\cal B}$$.  
 ##### **Measurable and measure**

@@ -53,11 +53,13 @@ $$\eqalign{d_{l^2}((x_1,x_2,\dotsm,x_n),(y_1,y_2,\dotsm,y_n)):=\sqrt{(x_1-y_1)^2
 A collection $$F$$ of subsets of a set $$X$$ is said to be a **$$\sigma\text{-field}$$**(or $$\sigma\text{-algebra}$$), with the following properties:
 * $$\varnothing \in F$$.
 * If $$A\in F$$,then $$A^c\in F$$.
+
 * If $$A_i \in F$$ for every $$i\in \mathbb{N}$$, then $$\bigcup_{i=1}^{\infty} A_i\in F$$.   
 
 If $$F$$ is a $$\sigma$$-field in $$X$$, then $$X$$ is called a **measurable space**, and the members of $$F$$ are called the *measurable sets* in $$X$$.  
 ##### **Measurable functions**
 If $$X$$ is a measurable space, $$Y$$ is a topological space, and $$f$$ is a mapping of $$X$$ into $$Y$$, then $$f$$ is said to be **measurable** provided that $$f^{-1}(V)$$ is a measurable set in $$X$$ for every open set $$V$$ in $$Y$$.
+
 
 Reference:
 
