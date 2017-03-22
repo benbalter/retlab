@@ -20,7 +20,7 @@ For some very weird functions, the Lebesgue integral exists, but the Riemann int
 There are also exceptionally weird functions for which not even the Lebesgue integral exists.  
 ##### **Lebesgue measure**
 
-In Lebesgue integration, the measure $$\{ \mu_m = \{ t : m\delta \le u(t) \lt (m+1)\delta \}$$ is called Lebesgue measure.
+In Lebesgue integration, the measure $$\mu_m = \{ t : m\delta \le u(t) \lt (m+1)\delta \}$$ is called Lebesgue measure.
 
 For any real $$a \le b$$, including $$a = -\infty$$, $$b = \infty$$, the interval $$I = (a, b)$$ has measure $$\mu(I) = b − a$$. Same if either or both end points included.  
 The measure of a finite union, $$I_1,\dotsc,I_k$$ of disjoint intervals is the sum of the measure of those intervals, $$\sum_{j=1}^k \mu(I_j)$$.  
