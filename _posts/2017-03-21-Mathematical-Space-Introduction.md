@@ -22,7 +22,7 @@ In mathematics, a *structure* on a set is an additional mathematical object that
 ##### **Topological space**
 A *topological space* is a pair $$(X,F)$$, where $$X$$ is a set, and $$F \subset 2^X$$ is a collection of subsets of $$X$$, whose elements are referred to as *open sets*. Furthermore:
 * The empty set $$\varnothing$$ and the whole set $$X$$ are open; in other words, $$\varnothing \in F$$ and $$X \in F$$.
-* (Any finite intersection of open sets is open;in other words, if $$V_i\in F$$ for $$i=1,\dotsc,n$$, then $$V_1 \cap V_2\cap\dotsm\cap V_n\in F$$.
+* Any finite intersection of open sets is open;in other words, if $$V_i\in F$$ for $$i=1,\dotsc,n$$, then $$V_1 \cap V_2\cap\dotsm\cap V_n\in F$$.
 * Any arbitrary union of open sets is open(including infinite unions); in other words, if $$(V_\alpha)_{\alpha\in I}$$ is a family of sets in $$F$$(finite, countable, ro uncountable), then $$\bigcup_{\alpha\in I} V_{\alpha}$$.
 
 $$X$$ is called a topological space when the collection $$F$$ of open sets can be deduced from context. 
@@ -49,16 +49,17 @@ $$R^n=\{(x_1,x_2,\dotsm,x_n):x_1,x_2,\dotsm,x_n\in R\}$$.
 
 We define the *Euclidean metric*(also called the *$$l^2$$ metric*) $$d_{l^2}:R^n\times R^n \rightarrow R$$ by
 $$\eqalign{d_{l^2}((x_1,x_2,\dotsm,x_n),(y_1,y_2,\dotsm,y_n)):=\sqrt{(x_1-y_1)^2+\dots +(x_n-y_n)^2}=(\sum_{i=1}^n (x_i-y_i)^2)^{1/2}}$$.
-
 ### **Measurable Space**
 A collection $$F$$ of subsets of a set $$X$$ is said to be a **$$\sigma\text{-field}$$**(or $$\sigma\text{-algebra}$$), with the following properties:
 * $$\varnothing \in F$$.
 * If $$A\in F$$,then $$A^c\in F$$.
-* If $$A_i \in F$$ for every $$i\in \mathbb{N}$$, then $$\bigcup_{i=1}^{\infty} A_i\in F$$.  
-If $$F$$ is a $$\sigma$$-field$ in $$X$$, then $$X$$ is called a **measurable space**, and the members of $$F$$ are called the *measurable sets* in $$X$$.  
-If $$X$$ is a measurable space, $$Y$$ is a topological space, and $$f$$ is a mapping of $$X$$ into $$Y$$, then $$f$$ is said to be **measurable** provided that $$f^{-1}(V)$$ is a measurable set in $$X$$ for every open set $$V$$ in $$Y$$.  
+
+* If $$A_i \in F$$ for every $$i\in \mathbb{N}$$, then $$\bigcup_{i=1}^{\infty} A_i\in F$$.   
+
+If $$F$$ is a $$\sigma$$-field in $$X$$, then $$X$$ is called a **measurable space**, and the members of $$F$$ are called the *measurable sets* in $$X$$.  
 ##### **Measurable functions**
-Let $$\Omega$$ be a measurable subset of $$R^n$$, and let $$f : \Omega \rightarrow \mathbb(R)^m$$ be a function. A function $$f$$ is *measurable* iff $$f^{-1}(V)$$ is measurable for every open set $$V \subseteq \mathbb(R)^m$$.
+If $$X$$ is a measurable space, $$Y$$ is a topological space, and $$f$$ is a mapping of $$X$$ into $$Y$$, then $$f$$ is said to be **measurable** provided that $$f^{-1}(V)$$ is a measurable set in $$X$$ for every open set $$V$$ in $$Y$$.
+
 
 Reference:
 
