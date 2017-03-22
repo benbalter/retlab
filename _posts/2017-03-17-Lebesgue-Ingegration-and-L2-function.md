@@ -32,7 +32,8 @@ easurable if $${t : u(t) \lt b}$$ is measurable for each $$b\in \mathbb{R}$$.
 If $${\cal B}$$ is measurable, we also need its complement, $$\overline {\cal B}$$, to be measurable with $$\mu ({\cal B}) = T − \mu (\overline{\cal B})$$.
 Define the outer measure $${\mu}^{\circ} ({\cal A})$$ of any set $${\cal A}$$ as <center>$${\mu}^{\circ} ({\cal A}) = \inf\limits_{ {\cal B} : {\cal B} \, covers \, {\cal A} } \mu ({\cal B}).$$</center>where $${\cal B}$$ covers $${\cal A}$$ if $${\cal B}$$ is a countable union of intervals and $${\cal A} \subseteq {\cal B}$$.  
 ##### **Measurable and measure**
-A set $${\cal A}$$ (over $$[−T/2, T/2]$$) is *measurable* if $${\mu}^\circ ({\cal A})+{\mu}^\circ (\overline{\cal A}) = T$$. If $${\cal A}$$ is measurable, then its *measure*, $${\mu}({\cal A})$$, equals $${\mu}^\circ ({\cal A})$$.  
+A set $${\cal A}$$ (over $$[−T/2, T/2]$$) is *measurable* if $${\mu}^\circ ({\cal A})+{\mu}^\circ (\overline{\cal A}) = T$$.  
+If $${\cal A}$$ is measurable, then its *measure*, $${\mu}({\cal A})$$, equals $${\mu}^\circ ({\cal A})$$.  
 Each measurable set has a measurable complement.  
 If $${\cal A} \subset {\cal B}$$ are both measurable, then $$\mu ({\cal A}) \le \mu ({\cal B})$$.  
 Any measurable set can be approximated arbitrarily closely by a cover.  
