@@ -35,14 +35,21 @@ Let $$(X,F)$$ be a topological space, and let $$x\in X$$. A *neighbourhood* of $
 Let $$m$$ be an integer, $$(X,F)$$ be a topological space and let $$(x^{(n)})_{n=m}^{\infty}$$ be a sequence of points in $$X$$. Let $$x$$ be a point in $$X$$. We say that $$(x^{(n)})_{n=m}^{\infty}$$ *converges* to $$x$$ if and only if, for every neighbourhood $$V$$ of $$x$$, there exists an $$N\ge m$$ such that $$x^{(n)} \in V$$ for all $$n\ge N$$.
 ##### **Continuous functions**
 If $$X$$ and $$Y$$ are topological spaces and if $$f$$ is a mapping of $$X$$ into $$Y$$, then $$f$$ is said to be *continuous* provided that $$f^{-1}(V)$$ is an open set in $$X$$ for every open set $$V$$ in $$Y$$.
-### **Euclidean Space**
+### **Metric spaces**
 ##### **Metric spaces**
 A *metric space* $$(X,d)$$ is a space $$X$$ of objects(called points), together with a *distance function* of *metric* $$d:X\times X\rightarrow [0,+\infty)$$, which associates to each pair $$x,y$$ of points in $$X$$ a non-negative real number $$d(x,y)\ge 0$$. Furthermore:
 * For any $$x\in X$$, we have $$d(x,x)=0$$.
 * (Positivity) For any *distinct* $$x,y\in X$$, we have $$d(x,y)\gt 0$$.
 * (Symmetry) For any $$x,y\in X$$, we have $$d(x,y)=d(y,x)$$.
-* (Triangle inequality) For any $$x,y,z\in X$$, we have $$d(x,z)\le d(x,y)+d(y,z)$$.
-
+* (Triangle inequality) For any $$x,y,z\in X$$, we have $$d(x,z)\le d(x,y)+d(y,z)$$.   
+##### **Complete metric spaces**
+A metric space $$(X,d)$$ is said to be *complete* iff every Cauchy sequence in $$(X,d)$$ is in fact convergent in $$(X,d)$$.  
+##### **Compact metric spaces**
+A metric space $$(X,d)$$ is said to be *compact* iff every sequence in $$(X,d)$$ has at least one convergent subsequence. A subset $$Y$$ of a metric space $$X$$ is said to be *compact* if the subspace $$(Y,d|_{Y\times Y}) is compact.  
+##### **Continuous functions**
+Let $$(X,d_x)$$ be a metric space, and let $$(Y,d_Y)$$ be another metric space, and let $$f : X \rightarrow Y$$ be a function. If $$x_0 \in X$$, we say that $$f$$ is *continuous* at $$x_0$$ iff for every $$\varepsilon \gt 0$$, there exists a $$\delta \gt 0$$ such that $$d_Y(f(x),f(x_0)) \lt \varepsilon $$ whenever $$d_x(x,x_0) \gt \delta$$. We say that $$f$$ is *continuous* iff it is continuous at every point $$x \in X$$.  
+##### **Uniform Continuity**
+Let $$f : X \rightarrow Y$$ be a map from one metric space $$(X,d_X)$$ to another $$(Y,d_Y)$$. We say that $$f$$ is *uniformly continuous* if, for every $$\varepsilon \gt 0$$, there exists a $$\delta \gt 0$$ such that $$d_Y(f(x),f(x')) \lt \varepsilon$$ whenever $$x,x' \in X$$ are such that $$d_X(x,x') \lt \delta$$.
 ##### **Euclidean spaces**
 Let $$n\ge 1$$ be a natural number, and let $$R^n$$ be the space of $$n$$-tuple of real numbers:
 $$R^n=\{(x_1,x_2,\dotsm,x_n):x_1,x_2,\dotsm,x_n\in R\}$$.
