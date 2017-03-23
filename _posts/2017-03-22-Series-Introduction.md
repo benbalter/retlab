@@ -26,8 +26,8 @@ The difference between "sum" and "series" is a subtle linguistic one. Strictly s
 ##### **absolutely convergent**
 We say that this series is *absolutely convergent* iff the series $$\sum_{(n=m)}^\infty |a_n|$$ is convergent.
 ##### **Fubini's theorem for infinite sums**
-Let $$f : \mathbb(N)\times\mathbb(N)\rightarrow\mathbb(R)$$ be a function such that $$\sum_{(n,m)\in \mathbb(N)\times\mathbb(N)} f(n,m)$$ is *absolutely convergent*. Then we have   
-<center>$$\eqalign{\sum\limits_{n=0}^\infty (\sum\limits_{m=0}^\infty ) f(n,m)) =  \sum\limits_{(n,m)\in \mathbb(N)\times\mathbb(N)} f(n,m) =  \sum\limits_{(m,n)\in \mathbb(N)\times\mathbb(N)} f(n,m) = \eqalign{\sum\limits_{m=0}^\infty (\sum\limits_{n=0}^\infty ) f(n,m)) } $$</center>
+Let $$f : \mathbb{N}\times\mathbb{N}\rightarrow\mathbb{R}$$ be a function such that $$\sum_{(n,m)\in \mathbb{N}\times\mathbb{N}} f(n,m)$$ is *absolutely convergent*. Then we have   
+<center>$$\eqalign{\sum\limits_{n=0}^\infty (\sum\limits_{m=0}^\infty ) f(n,m)) = \sum\limits_{(n,m)\in \mathbb{N}\times\mathbb{N}} f(n,m) = \sum\limits_{(m,n)\in \mathbb{N}\times\mathbb{N}} f(n,m) = \sum\limits_{m=0}^\infty (\sum\limits_{n=0}^\infty ) f(n,m)) } $$</center>
 In other words, we can switch the order of infinite sums provided that the entire sum is absolutely convergent.   
 
 Reference:
