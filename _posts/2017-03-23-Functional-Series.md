@@ -36,7 +36,7 @@ If
    $$(ii)$$ $$u_k(x)$$ is a continuous function on $$I$$ for each $$k = 0,1,2,\dotsc$$.   
 then  
    $$S(x)$$ is continuous on $$I$$;   
-   $$\int_a^x (\sum\limits_{k=0}^\infty u_k(t))\,d(t) = \sum\limits_{k=0}^\infty (\int_a^x u_k(t)\,dt)$$;
+   $$\int_a^x (\sum\limits_{k=0}^\infty u_k(t))\,dt = \sum\limits_{k=0}^\infty (\int_a^x u_k(t)\,dt)$$;
 ### **Power series**   
 A formal power series centered at $$a$$ is any series of the form <center>$$\sum\limits_{n=0}^\infty c_n(x-a)^n$$</center> where the coefficients $$c_0, c_1, c_2, \dotsc$$ are real or complex numbers.  
 ##### **Radius of convergence**
