@@ -30,7 +30,7 @@ Let $$\{ f : \mathbb{N}\times\mathbb{N}\rightarrow\mathbb{R} \}$$ be a function 
 <center>$$\sum\limits_{n=0}^\infty \big( \sum\limits_{m=0}^\infty f(n,m) \big) = \sum\limits_{(n,m)\in \mathbb{N}\times\mathbb{N}} f(n,m) = \sum\limits_{(m,n)\in \mathbb{N}\times\mathbb{N}} f(n,m) = \sum\limits_{m=0}^\infty \big( \sum\limits_{n=0}^\infty f(n,m) \big)$$</center>
 In other words, we can switch the order of infinite sums provided that the entire sum is absolutely convergent.   
 ### **Example: Poles of System**
-If the *unit-impulse response* or *unit-sample response* decays toward zero, then we say that it converges.
+If the *unit-impulse response* or *unit-sample response* decays toward zero, then we say that it converges.  
 ![systemPole]({{ https://github.com/lyons-zhang/lyons-zhang.github.io }}/update/201703/systemPole.PNG)  
 
 Reference:
