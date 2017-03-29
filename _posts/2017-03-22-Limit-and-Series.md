@@ -31,9 +31,9 @@ Let $$\{ f : \mathbb{N}\times\mathbb{N}\rightarrow\mathbb{R} \}$$ be a function 
 In other words, we can switch the order of infinite sums provided that the entire sum is absolutely convergent.   
 ### **Example: Poles of System**
 If the *unit-impulse response* or *unit-sample response* decays toward zero, then we say that it converges.
-![systemPole]({{ https://github.com/lyons-zhang/lyons-zhang.github.io }}/update/201703/systemPole.PNG)
-Reference:
+![systemPole]({{ https://github.com/lyons-zhang/lyons-zhang.github.io }}/update/201703/systemPole.PNG)  
 
+Reference:
 1. Robert G.Gallager. (2009). *Principles of Digital Communication* (New York: Cambridge University Press).
 2. Terence Tao. (2009). *Analysis I*. *Analysis II* (Hindustan Book Agency)
 3. Prof. Dennis Freeman. MIT Opencourse 6.003. (2009). *Signals and Systems*
