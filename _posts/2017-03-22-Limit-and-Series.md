@@ -29,8 +29,11 @@ We say that this series is *absolutely convergent* iff the series $$\sum_{(n=m)}
 Let $$\{ f : \mathbb{N}\times\mathbb{N}\rightarrow\mathbb{R} \}$$ be a function such that $$\sum_{(n,m)\in \mathbb{N}\times\mathbb{N}} f(n,m)$$ is *absolutely convergent*. Then we have   
 <center>$$\sum\limits_{n=0}^\infty \big( \sum\limits_{m=0}^\infty f(n,m) \big) = \sum\limits_{(n,m)\in \mathbb{N}\times\mathbb{N}} f(n,m) = \sum\limits_{(m,n)\in \mathbb{N}\times\mathbb{N}} f(n,m) = \sum\limits_{m=0}^\infty \big( \sum\limits_{n=0}^\infty f(n,m) \big)$$</center>
 In other words, we can switch the order of infinite sums provided that the entire sum is absolutely convergent.   
-
+### **Example: Poles of System**
+If the *unit-impulse response* or *unit-sample response* decays toward zero, then we say that it converges.
+![systemPole]({{ https://github.com/lyons-zhang/lyons-zhang.github.io }}/update/201703/systemPole.PNG)
 Reference:
 
 1. Robert G.Gallager. (2009). *Principles of Digital Communication* (New York: Cambridge University Press).
 2. Terence Tao. (2009). *Analysis I*. *Analysis II* (Hindustan Book Agency)
+3. Prof. Dennis Freeman. MIT Opencourse 6.003. (2009). *Signals and Systems*
