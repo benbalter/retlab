@@ -8,8 +8,10 @@ categories: Digital Communication
 
 ### **Linear Time-Invariant System**
 If $$O\{ x(t) \} = y(t)$$,  
-Linearity(Additivity and Homogeneity) : $$O\{ a_1x_1(t) + a_2x_2(t)\} = a_1O\{ x_1(t)\} + a_2O\{ x_2(t)\} = a_1y_1(t) + a_2y_2(t)$$   
-Time-invariance : $$O\{ x(t-\tau ) \} = O\{ x(y-\tau ) \}$$   
+Linearity(Additivity and Homogeneity) :  
+<center> $$O\{ a_1x_1(t) + a_2x_2(t)\} = a_1O\{ x_1(t)\} + a_2O\{ x_2(t)\} = a_1y_1(t) + a_2y_2(t)$$ </center>  
+Time-invariance :  
+<center> $$O\{ x(t-\tau ) \} = O\{ x(y-\tau ) \}$$ </center>   
 ##### **Why play a fundamental role**
 * Many communication channels possess LTI property.  
 * We hope the channels can be approximated as LTI in a range of applications.  
@@ -24,12 +26,12 @@ More explanation about the sencond item:
 
 ### **Fourier Series**  
 The *Fourier series* for function $$\{ u(t) : [-T/2, T/2] \to \Bbb{C} \}$$ is given by  
-$$u(t) = \begin{cases} \sum\limits_{-\infty}^{\infty} \hat{u_k} e^{2\pi ikt} dt & T/2\le t\le T/2 \\ 0 & elsewhere \end{cases}$$   
+<center> $$u(t) = \begin{cases} \sum\limits_{-\infty}^{\infty} \hat{u_k} e^{2\pi ikt} dt & T/2\le t\le T/2 \\ 0 & elsewhere \end{cases}$$ </center>  
 Electrical engineers formerly reserved the symbol $$i$$ for electrical current and thus often use $$j$$ to denote $$\sqrt{-1}$$.  
 The Fourier series of a time-limited function maps function to a sequence of complex coefficients $$\hat u_k$$ satisfy  
-$$\hat u_k = \frac 1 T \int_{-T/2}^{T/2} u(t)e^{-2\pi ikt/T} dt, -\infty < k < \infty$$  
+<center>$$\hat u_k = \frac 1 T \int_{-T/2}^{T/2} u(t)e^{-2\pi ikt/T} dt, -\infty < k < \infty$$ </center>  
 For any integer $$n$$, the functions $$cos(2\pi nx), cos(2\pi nx), e^{2\pi inx}$$ are all *$$\Bbb Z$$-periodic*(1-periodic). So in some math book the $$\hat u_k$$ often denoted as:  
-$$\hat u_k = \int_0^1 u(t)e^{-2\pi ikt} dt, -\infty < k < \infty$$ 
+<center> $$\hat u_k = \int_0^1 u(t)e^{-2\pi ikt} dt, -\infty < k < \infty$$ </center>  
 ### **Fourier Theorem**
 
 
