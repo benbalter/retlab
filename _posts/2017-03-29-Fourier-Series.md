@@ -21,9 +21,10 @@ More explanation about the sencond item:
 * For many physical channels, they introduce distortions in their passbands, such a channel can be modeled by an LTI filter followed by AWGN noise, the approach to remove ISI(inter-symbol interference) is usually known as equalization.  
 * Linear operations preserve Gaussianity.  
 * A large class of interesting functions($$L^2$$) could be represented by linear combinations of complex exponentials(Fourier Theorem).  
+
 ### **Fourier Series**  
 The *Fourier series* for function $$\{ u(t) : [-T/2, T/2] \to \Bbb{C} \}$$ is given by  
-$$u(t) = \cases{\sum\limits_{-\infty}^{\infty} \hat u_k e^{2\pi ikt} dt & {T/2\leq t\leq T/2} \\ 0 & \text{elsewhere} }$$   
+$$u(t) = \cases{\sum\limits_{-\infty}^{\infty} \hat u_k e^{2\pi ikt} dt & T/2\le t\le T/2 \\ 0 & elsewhere }$$   
 Electrical engineers formerly reserved the symbol $$i$$ for electrical current and thus often use $$j$$ to denote $$\sqrt{-1}$$.  
 The Fourier series of a time-limited function maps function to a sequence of complex coefficients $$\hat u_k$$ satisfy  
 $$\hat u_k = \frac 1 T \int_{-T/2}^{T/2} u(t)e^{-2\pi ikt/T} dt, -\infty < k < \infty$$  
