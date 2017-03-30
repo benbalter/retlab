@@ -8,7 +8,7 @@ categories: Digital Communication
 
 #### **Linear Time-Invariant**
 If $$O\{ x(t) \} = y(t)$$,  
-Linearity(Additivity and Homogeneity) : $$O\{ a_1x_1(t) + a_2x_2(t)\} = a_1O\{ x_1(t)\} + a_2O\{ x_2(t)\} = a_1y_1(t) + a_2y_2(t)$$ 
+Linearity(Additivity and Homogeneity) : $$O\{ a_1x_1(t) + a_2x_2(t)\} = a_1O\{ x_1(t)\} + a_2O\{ x_2(t)\} = a_1y_1(t) + a_2y_2(t)$$   
 Time-invariance : $$O\{ x(t-\tau ) \} = O\{ x(y-\tau ) \}$$   
 #### **Why play a fundamental role**
 * Many communication channels possess LTI property.  
