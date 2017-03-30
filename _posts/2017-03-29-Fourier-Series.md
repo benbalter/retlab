@@ -23,10 +23,10 @@ More explanation about the sencond item:
 * A large class of interesting functions($$L^2$$) could be represented by linear combinations of complex exponentials(Fourier Theorem).  
 ### **Fourier Series**  
 The *Fourier series* for function $$\{ u(t) : [-T/2, T/2] \to \Bbb{C} \}$$ is given by  
-$$u(t) = \cases{\sum\limits_{-\infty}^{\infty} \hat u_k e^{2\pi ikt} dt & T/2 \le t \le T/2 \\ 0 & \text{elsewhere} }$$   
+$$u(t) = \cases{\sum\limits_{-\infty}^{\infty} \hat u_k e^{2\pi ikt} dt & {T/2\leq t\leq T/2} \\ 0 & \text{elsewhere} }$$   
 Electrical engineers formerly reserved the symbol $$i$$ for electrical current and thus often use $$j$$ to denote $$\sqrt{-1}$$.  
 The Fourier series of a time-limited function maps function to a sequence of complex coefficients $$\hat u_k$$ satisfy  
-$$\hat u_k = \frac 1 T \int_{-T/2}^{T/2} u(t)e^{-2\pi ikt/T} dt, -\infity < k < \infity$$  
+$$\hat u_k = \frac 1 T \int_{-T/2}^{T/2} u(t)e^{-2\pi ikt/T} dt, -\infty < k < \infty$$  
 For any integer $$n$$, the functions $$cos(2\pi nx), cos(2\pi nx), e^{2\pi inx}$$ are all *$$\Bbb Z$$-periodic*(1-periodic). So in some math book the $$\hat u_k$$ often denoted as:  
 $$\hat u_k = \int_0^1 u(t)e^{-2\pi ikt} dt, -\infty < k < \infty$$ 
 ### **Fourier Theorem**
