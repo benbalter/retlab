@@ -29,14 +29,25 @@ The *Fourier series* for function $$\{ u(t) : [-T/2, T/2] \to \Bbb{C} \}$$ is gi
 <center> $$u(t) = \begin{cases} \sum\limits_{-\infty}^{\infty} \hat u_k e^{2\pi ikt} dt & T/2\le t\le T/2 \\ 0 & elsewhere \end{cases}$$ </center>  
 Electrical engineers formerly reserved the symbol $$i$$ for electrical current and thus often use $$j$$ to denote $$\sqrt{-1}$$. 
 The Fourier series of a time-limited function maps function to a sequence of complex coefficients $$\hat u_k$$ satisfy  
-<center>$$\hat u_k = \frac 1 T \int_{-T/2}^{T/2} u(t)e^{-2\pi ikt/T} dt, -\infty < k < \infty$$ </center>  
+<center>$$\hat u_k = \frac 1 T \int_{-T/2}^{T/2} u(t)e^{-2\pi ikt/T} dt, \;-\infty < k < \infty$$</center>  
 For any integer $$n$$, the functions $$cos(2\pi nx), cos(2\pi nx), e^{2\pi inx}$$ are all *$$\Bbb Z$$-periodic*(1-periodic). So in some math book the $$\hat u_k$$ often denoted as:  
 <center> $$\hat u_k = \int_0^1 u(t)e^{-2\pi ikt} dt, -\infty < k < \infty$$ </center>  
 $$u(t)$$ can be expressed as a linear combination of truncated complex sinusoids by the standard rectangular function as follows:  
 <center> $$u(t) = \sum\limits_{-\infty}^{\infty} \hat u_k e^{2\pi ikt/T} rect(t/T) = \sum\limits_{k \in \Bbb(Z)} \hat u_k {\theta}_k(t)$$ </center>  
 where  
-<center> $$rect(t) = \begin{cases} 1 & -1/2 \le t \le 1/2 \\ 0 & elsewhere \end{cases} \; \text{and} \; \theta_k(t) = e^{2\pi ikt/T}rect(t/T)$$ </center>  
+<center> $$rect(t) = \begin{cases} 1 & -1/2 \le t \le 1/2 \\ 0 & elsewhere \end{cases} \; , \; \theta_k(t) = e^{2\pi ikt/T}rect(t/T)$$ </center>  
+##### **Complex Exponentials**
+A *complex-valued function* of the real variable $$x$$ may be written as $$u(x)+iv(x)$$(u,v real valued), its derivative and integral with respect to $$x$$ are defined to be  
+<center>$$\frac d dx (u + iv) = frac du dx + i frac dv dx \;\; \int (u + iv) dx = \int u dx + i \int u dx$$</center>  
+From this it follows easily that  
+<center>$$\frac d dx (e^{(a + ib)x}) = (a + ib)e^{(a + ib)x} \; and \; \int e^{(a + ib)x} dx = \frac 1 {a+ib}e^{(a + ib)x}$$</center>  
+The truncated complex sinusoids are orthogonal  
+<center>$$\int_{-\infty}^{\infty} \theta_k(t) \theta_m^*(t) d(t) = \int_{-T/2}^{T/2} e^{2\pi i(k-m)t/T} = \frac T {2\pi i(k-m)} e^{2\pi i(k-m)t/T} |_{-T/2}^{T/2} = T \frac {sin\pi (k-m)} {\pi {k-m}}$$</center>  
 ### **Fourier Theorem**
+Let $$\{ u(t) : [−T/2, T/2] \to \Bbb C \}$$ be an $$L^2$$ function. Then for each $$k \in \Bbb Z$$, the Lebesgue integral  
+<center>$$\hat u_k = \frac 1 T \int_{-T/2}^{T/2} u(t)e^{-2\pi ikt/T} dt, \;-\infty < k < \infty$$</center>  
+exists and satisfies $$|\hat u_k| \le \frac 1 T \int |u(t)|dt < \infty$$. Furthermore,  
+<center>$$\lim\limits_{\ell \to \infty} \int_{-T/2}^{T/2} |u(t) - \sum\limits_{k=-\ell}^{\ell} \hat u_k e^{2\pi ikt/T}|^2 dt = 0$$</center>
 
 
 Reference:  
