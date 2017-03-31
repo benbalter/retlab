@@ -62,7 +62,7 @@ exists and satisfies $$|\hat u_k| \le \frac 1 T \int |u(t)|dt < \infty$$. Furthe
 where the limit is monotonic in $$\ell$$. Also, the Fourier energy equation (3) is satisfied.  
 Conversely, if $$\{ \hat u_k; k \in \Bbb Z \}$$ is a two-sided sequence of complex numbers satisfying $$\sum_{k=-\infty}^\infty |\hat u_k|^2$$, then an $$L^2$$ function $$\{ u(t) : [−T/2, T/2] \to \Bbb C \}$$ exists such that (3) and (4) are satisfied.  
 There is an important theorem due to Carleson, stating that if $$u(t)$$ is $$L^2$$, then $$\sum_k \hat u_k e^{2\pi ikt/T} rect(t/T)$$converges almost everywhere(convergence with probability 1) on $$[−T/2, T/2]$$.
-##### **L^2 converge**  
+##### **$$L^2$$ converge**  
 A series is defined to converge in $$L^2$$ if (4) holds. The notation $$l.i.m.$$ (limit in mean-square)is used to denote $$L^2$$ convergence, so (4) is often abbreviated by  
 <center>$$u(t) = l.i.m. \sum_k \hat u_k e^{2\pi ikt/T} rect(t/T)$$</center>  
 The following example illustrate there is isolated discontinuity at $$t = −1/2$$  
