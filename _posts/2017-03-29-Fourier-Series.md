@@ -47,11 +47,12 @@ The truncated complex sinusoids are orthogonal for $$k \ne m \in \Bbb Z$$
 ##### **Fourier series energy equation**  
 <center>
 $$\eqalign{
-\int_{-\infty}^{\infty} |u(t)|^2 d(t) &= \int_{-T/2}^{T/2} \sum\limits_{k=-\infty}^{\infty} \hat u_k e^{2\pi ikt/T} \sum\limits_{\ell=-\infty}^{\infty} \hat u_{\ell}^* e^{2\pi i\ell t/T} dt \\
-&= \sum\limits_{k=-\infty}^{\infty} \sum\limits_{\ell=-\infty}^{\infty} \hat u_k \hat u_{\ell}^* \int_{-T/2}^{T/2} e^{2\pi i(k-\ell)t/T} dt \\$$ }
-$$= T\sum\limits_{k=-\infty}^{\infty} \sum\limits_{\ell=-\infty}^{\infty} \hat u_k \hat u_{\ell}^* \delta[k-\ell] \\$$ 
-$$= T\sum\limits_{k=-\infty}^{\infty} |\hat u_k|^2$$
-</center>  
+\int_{-\infty}^{\infty} |u(t)|^2 d(t) 
+&= \int_{-T/2}^{T/2} \sum\limits_{k=-\infty}^{\infty} \hat u_k e^{2\pi ikt/T} \sum\limits_{\ell=-\infty}^{\infty} \hat u_{\ell}^* e^{2\pi i\ell t/T} dt \\
+&= \sum\limits_{k=-\infty}^{\infty} \sum\limits_{\ell=-\infty}^{\infty} \hat u_k \hat u_{\ell}^* \int_{-T/2}^{T/2} e^{2\pi i(k-\ell)t/T} dt \\ 
+&= T\sum\limits_{k=-\infty}^{\infty} \sum\limits_{\ell=-\infty}^{\infty} \hat u_k \hat u_{\ell}^* \delta[k-\ell] \\ 
+&= T\sum\limits_{k=-\infty}^{\infty} |\hat u_k|^2
+}$$</center>  
 ### **Fourier Theorem**
 ##### **More precision and interpretation**  
 Let $$\{ u(t) : [−T/2, T/2] \to \Bbb C \}$$ be an $$L^2$$ function. Then for each $$k \in \Bbb Z$$, the Lebesgue integral  
