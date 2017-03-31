@@ -30,11 +30,11 @@ The *Fourier series* for function $$\{ u(t) : [-T/2, T/2] \to \Bbb{C} \}$$ is gi
 <center> $$u(t) = \begin{cases} \sum\limits_{-\infty}^{\infty} \hat u_k e^{2\pi ikt} dt & T/2\le t\le T/2 \\ 0 & elsewhere \end{cases}$$ </center>  
 Electrical engineers formerly reserved the symbol $$i$$ for electrical current and thus often use $$j$$ to denote $$\sqrt{-1}$$. 
 The Fourier series of a time-limited function maps function to a sequence of complex coefficients $$\hat u_k$$ satisfy  
-<center>$$\hat u_k = \frac 1 T \int_{-T/2}^{T/2} u(t)e^{-2\pi ikt/T} dt, \;-\infty < k < \infty$$</center>  
+<center>$$\hat u_k = \frac 1 T \int_{-T/2}^{T/2} u(t)e^{-2\pi ikt/T} dt, \;-\infty < k < \infty \tag{1}$$</center>  
 For any integer $$n$$, the functions $$cos(2\pi nx), cos(2\pi nx), e^{2\pi inx}$$ are all *$$\Bbb Z$$-periodic*(1-periodic). So in some math book the $$\hat u_k$$ often denoted as:  
-<center> $$\hat u_k = \int_0^1 u(t)e^{-2\pi ikt} dt, -\infty < k < \infty$$ </center>  
+<center> $$\hat u_k = \int_0^1 u(t)e^{-2\pi ikt} dt, -\infty < k < \infty$$</center>  
 $$u(t)$$ can be expressed as a linear combination of truncated complex sinusoids by the standard rectangular function as follows:  
-<center> $$u(t) = \sum\limits_{-\infty}^{\infty} \hat u_k e^{2\pi ikt/T} rect(t/T) = \sum\limits_{k \in \Bbb(Z)} \hat u_k {\theta}_k(t)$$ </center>  
+<center> $$u(t) = \sum\limits_{-\infty}^{\infty} \hat u_k e^{2\pi ikt/T} rect(t/T) = \sum\limits_{k \in \Bbb(Z)} \hat u_k {\theta}_k(t) \tag{2}$$</center>  
 where  
 <center> $$rect(t) = \begin{cases} 1 & -1/2 \le t \le 1/2 \\ 0 & elsewhere \end{cases} \; ,\;\;\;and \; \theta_k(t) = e^{2\pi ikt/T}rect(t/T)$$</center>  
 ##### **Complex Exponentials**  
@@ -51,14 +51,16 @@ $$\eqalign{
 &= \int_{-T/2}^{T/2} \sum\limits_{k=-\infty}^{\infty} \hat u_k e^{2\pi ikt/T} \sum\limits_{\ell=-\infty}^{\infty} \hat u_{\ell}^* e^{2\pi i\ell t/T} dt \\
 &= \sum\limits_{k=-\infty}^{\infty} \sum\limits_{\ell=-\infty}^{\infty} \hat u_k \hat u_{\ell}^* \int_{-T/2}^{T/2} e^{2\pi i(k-\ell)t/T} dt \\ 
 &= T\sum\limits_{k=-\infty}^{\infty} \sum\limits_{\ell=-\infty}^{\infty} \hat u_k \hat u_{\ell}^* \delta[k-\ell] \\ 
-&= T\sum\limits_{k=-\infty}^{\infty} |\hat u_k|^2
+&= T\sum\limits_{k=-\infty}^{\infty} |\hat u_k|^2 \tag{3} 
 }$$</center>  
 ### **Fourier Theorem**
 ##### **More precision and interpretation**  
 Let $$\{ u(t) : [−T/2, T/2] \to \Bbb C \}$$ be an $$L^2$$ function. Then for each $$k \in \Bbb Z$$, the Lebesgue integral  
 <center>$$\hat u_k = \frac 1 T \int_{-T/2}^{T/2} u(t)e^{-2\pi ikt/T} dt, \;-\infty < k < \infty$$</center>  
 exists and satisfies $$|\hat u_k| \le \frac 1 T \int |u(t)|dt < \infty$$. Furthermore,  
-<center>$$\lim\limits_{\ell \to \infty} \int_{-T/2}^{T/2} \Big| u(t) - \sum\limits_{k=-\ell}^{\ell} \hat u_k e^{2\pi ikt/T} \Big|^2 dt = 0$$</center>
+<center>$$\lim\limits_{\ell \to \infty} \int_{-T/2}^{T/2} \Big| u(t) - \sum\limits_{k=-\ell}^{\ell} \hat u_k e^{2\pi ikt/T} \Big|^2 dt = 0 \tag{4}$$</center>  
+where the limit is monotonic in $$\ell$$. Also, the Fourier energy equation (3) is satisfied.  
+Conversely, if $$\{ \hat u_k; k \in \Bbb Z \}$$ is a two-sided sequence of complex numbers satisfying $$\sum_{k=-\infty}^\infty |\hat u_k|^2$$, then an $$L^2$$ function $$\{ u(t) : [−T/2, T/2] \to \Bbb C \}$$ exists such that (3) and (4) are satisfied.  
 
 
 Reference:  
