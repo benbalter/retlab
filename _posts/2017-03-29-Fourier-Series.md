@@ -38,7 +38,7 @@ where
 <center> $$rect(t) = \begin{cases} 1 & -1/2 \le t \le 1/2 \\ 0 & elsewhere \end{cases} \; ,and \; \theta_k(t) = e^{2\pi ikt/T}rect(t/T)$$ </center>  
 ##### **Complex Exponentials**
 A *complex-valued function* of the real variable $$x$$ may be written as $$u(x)+iv(x)$$(u,v real valued), its derivative and integral with respect to $$x$$ are defined to be  
-<center>$$\frac d {dx} (u + iv) = \frac {du} {dx} + i frac dv dx \; ,and \; \int (u + iv) dx = \int u dx + i \int u dx$$</center>  
+<center>$$\frac d {dx} (u + iv) = \frac {du} {dx} + i \frac {dv} {dx} \; ,and \; \int (u + iv) dx = \int u dx + i \int u dx$$</center>  
 From this it follows easily that  
 <center>$$\frac d dx (e^{(a + ib)x}) = (a + ib)e^{(a + ib)x} \; ,and \; \int e^{(a + ib)x} dx = \frac 1 {a+ib}e^{(a + ib)x}$$</center>  
 The truncated complex sinusoids are orthogonal  
