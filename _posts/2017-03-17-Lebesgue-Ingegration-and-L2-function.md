@@ -13,7 +13,7 @@ The passage from Riemann's theory of integration to that of Lebesque is a proces
         
         ————Lebesgue summarized his approach to integration in a letter to Paul Montel
 
-![Lebesgue]({{ https://github.com/lyons-zhang/lyons-zhang.github.io }}/update/201703/Lebesgue.png)  
+<center>![Lebesgue]({{ https://github.com/lyons-zhang/lyons-zhang.github.io }}/update/201703/Lebesgue.png)</center>  
 Whenever the Riemann integral exists (i.e.,the limit exists), the Lebesgue integral also exists and has the same value.  
 The familiar rules for calculating Riemann integrals also apply for Lebesgue integrals.  
 For some very weird functions, the Lebesgue integral exists, but the Riemann integral does not.  
