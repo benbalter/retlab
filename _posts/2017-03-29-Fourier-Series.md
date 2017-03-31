@@ -26,14 +26,14 @@ More explanation about the sencond item:
 
 ### **Fourier Series**  
 The *Fourier series* for function $$\{ u(t) : [-T/2, T/2] \to \Bbb{C} \}$$ is given by  
-<center> $$u(t) = \begin{cases} \sum\limits_{-\infty}^{\infty} \hat{u_k} e^{2\pi ikt} dt & T/2\le t\le T/2 \\ 0 & elsewhere \end{cases}$$ </center>  
+<center> $$u(t) = \begin{cases} \sum\limits_{-\infty}^{\infty} \hat u_k e^{2\pi ikt} dt & T/2\le t\le T/2 \\ 0 & elsewhere \end{cases}$$ </center>  
 Electrical engineers formerly reserved the symbol $$i$$ for electrical current and thus often use $$j$$ to denote $$\sqrt{-1}$$. 
 The Fourier series of a time-limited function maps function to a sequence of complex coefficients $$\hat u_k$$ satisfy  
 <center>$$\hat u_k = \frac 1 T \int_{-T/2}^{T/2} u(t)e^{-2\pi ikt/T} dt, -\infty < k < \infty$$ </center>  
 For any integer $$n$$, the functions $$cos(2\pi nx), cos(2\pi nx), e^{2\pi inx}$$ are all *$$\Bbb Z$$-periodic*(1-periodic). So in some math book the $$\hat u_k$$ often denoted as:  
 <center> $$\hat u_k = \int_0^1 u(t)e^{-2\pi ikt} dt, -\infty < k < \infty$$ </center>  
 $$u(t)$$ can be expressed as a linear combination of truncated complex sinusoids by the standard rectangular function as follows:  
-<center> $$u(t) = \sum\limits_{-\infty}^{\infty} \hat{u_k} e^{2\pi ikt/T} rect(t/T) = \sum\limits_{k \in \Bbb(Z)} \hat{u_k}{\theta}_k(t)$$ </center>  
+<center> $$u(t) = \sum\limits_{-\infty}^{\infty} \hat u_k e^{2\pi ikt/T} rect(t/T) = \sum\limits_{k \in \Bbb(Z)} \hat u_k {\theta}_k(t)$$ </center>  
 where  
 <center> $$rect(t) = \begin{cases} 1 & -1/2 \le t \le 1/2 \\ 0 & elsewhere \end{cases} \; \text{and} \; \theta_k(t) = e^{2\pi ikt/T}rect(t/T)$$ </center>  
 ### **Fourier Theorem**
