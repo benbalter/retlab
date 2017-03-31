@@ -25,6 +25,7 @@ More explanation about the sencond item:
 * A large class of interesting functions($$L^2$$) could be represented by linear combinations of complex exponentials(Fourier Theorem).  
 
 ### **Fourier Series**  
+##### **Given in most engineering texts**
 The *Fourier series* for function $$\{ u(t) : [-T/2, T/2] \to \Bbb{C} \}$$ is given by  
 <center> $$u(t) = \begin{cases} \sum\limits_{-\infty}^{\infty} \hat u_k e^{2\pi ikt} dt & T/2\le t\le T/2 \\ 0 & elsewhere \end{cases}$$ </center>  
 Electrical engineers formerly reserved the symbol $$i$$ for electrical current and thus often use $$j$$ to denote $$\sqrt{-1}$$. 
@@ -36,14 +37,17 @@ $$u(t)$$ can be expressed as a linear combination of truncated complex sinusoids
 <center> $$u(t) = \sum\limits_{-\infty}^{\infty} \hat u_k e^{2\pi ikt/T} rect(t/T) = \sum\limits_{k \in \Bbb(Z)} \hat u_k {\theta}_k(t)$$ </center>  
 where  
 <center> $$rect(t) = \begin{cases} 1 & -1/2 \le t \le 1/2 \\ 0 & elsewhere \end{cases} \; ,\;\;\;and \; \theta_k(t) = e^{2\pi ikt/T}rect(t/T)$$ </center>  
-##### **Complex Exponentials**
+##### **Complex Exponentials**  
 A *complex-valued function* of the real variable $$x$$ may be written as $$u(x)+iv(x)$$(u,v real valued), its derivative and integral with respect to $$x$$ are defined to be  
 <center>$$\frac d {dx} (u + iv) = \frac {du} {dx} + i \frac {dv} {dx} \; ,\;\;\;and \; \int (u + iv) dx = \int u dx + i \int u dx$$</center>  
 From this it follows easily that  
 <center>$$\frac d {dx} (e^{(a + ib)x}) = (a + ib)e^{(a + ib)x} \; ,\;\;\;and \; \int e^{(a + ib)x} dx = \frac 1 {a+ib}e^{(a + ib)x}$$</center>  
 The truncated complex sinusoids are orthogonal for $$k \ne m \in \Bbb Z$$  
 <center>$$\int_{-\infty}^{\infty} \theta_k(t) \theta_m^*(t) d(t) = \int_{-T/2}^{T/2} e^{2\pi i(k-m)t/T} = \frac T {2\pi i(k-m)} e^{2\pi i(k-m)t/T} \bigg|_{-T/2}^{T/2} = T \frac {sin\pi (k-m)} {\pi (k-m)}$$</center>  
+##### **Fourier series energy equation**  
+<center>$$\int_{-\infty}^{\infty} |u(t)|^2 d(t) = \int_{-T/2}^{T/2} \sum\limits_{k=-\infty}^{\infty} \hat u_k e^{2\pi ikt/T} \sum\limits_{\ell=-\infty}^{\infty} \hat u_{\ell=-\infty}^* e^{2\pi i\ell t/T} dt \\ &= \sum\limits_{k=-\infty}^{\infty} \sum\limits_{\ell=-\infty}^{\infty} \hat u_k \hat u_{\ell}^* \int_{-T/2}^{T/2} e^{2\pi i(k-\ell)t/T} dt \\ &= T\sum\limits_{k=-\infty}^{\infty} \sum\limits_{\ell=-\infty}^{\infty} hat u_k \hat u_{\ell}^* \delta[k-\ell] \\&= T\sum\limits_{k=-\infty}^{\infty} |\hat u_k|^2$$</center>  
 ### **Fourier Theorem**
+##### **More precision and interpretation**  
 Let $$\{ u(t) : [−T/2, T/2] \to \Bbb C \}$$ be an $$L^2$$ function. Then for each $$k \in \Bbb Z$$, the Lebesgue integral  
 <center>$$\hat u_k = \frac 1 T \int_{-T/2}^{T/2} u(t)e^{-2\pi ikt/T} dt, \;-\infty < k < \infty$$</center>  
 exists and satisfies $$|\hat u_k| \le \frac 1 T \int |u(t)|dt < \infty$$. Furthermore,  
