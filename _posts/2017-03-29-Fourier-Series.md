@@ -46,9 +46,10 @@ The truncated complex sinusoids are orthogonal for $$k \ne m \in \Bbb Z$$
 <center>$$\int_{-\infty}^{\infty} \theta_k(t) \theta_m^*(t) d(t) = \int_{-T/2}^{T/2} e^{2\pi i(k-m)t/T} = \frac T {2\pi i(k-m)} e^{2\pi i(k-m)t/T} \bigg|_{-T/2}^{T/2} = T \frac {sin\pi (k-m)} {\pi (k-m)}$$</center>  
 ##### **Fourier series energy equation**  
 <center>
-$$\int_{-\infty}^{\infty} |u(t)|^2 d(t) = \int_{-T/2}^{T/2} \sum\limits_{k=-\infty}^{\infty} \hat u_k e^{2\pi ikt/T} \sum\limits_{\ell=-\infty}^{\infty} \hat u_{\ell=-\infty}^* e^{2\pi i\ell t/T} dt \\$$
-$$= \sum\limits_{k=-\infty}^{\infty} \sum\limits_{\ell=-\infty}^{\infty} \hat u_k \hat u_{\ell}^* \int_{-T/2}^{T/2} e^{2\pi i(k-\ell)t/T} dt \\$$ 
-$$= T\sum\limits_{k=-\infty}^{\infty} \sum\limits_{\ell=-\infty}^{\infty} hat u_k \hat u_{\ell}^* \delta[k-\ell] \\$$ 
+$$\eqalign{
+\int_{-\infty}^{\infty} |u(t)|^2 d(t) &= \int_{-T/2}^{T/2} \sum\limits_{k=-\infty}^{\infty} \hat u_k e^{2\pi ikt/T} \sum\limits_{\ell=-\infty}^{\infty} \hat u_{\ell}^* e^{2\pi i\ell t/T} dt \\
+&= \sum\limits_{k=-\infty}^{\infty} \sum\limits_{\ell=-\infty}^{\infty} \hat u_k \hat u_{\ell}^* \int_{-T/2}^{T/2} e^{2\pi i(k-\ell)t/T} dt \\$$ 
+$$= T\sum\limits_{k=-\infty}^{\infty} \sum\limits_{\ell=-\infty}^{\infty} \hat u_k \hat u_{\ell}^* \delta[k-\ell] \\$$ 
 $$= T\sum\limits_{k=-\infty}^{\infty} |\hat u_k|^2$$
 </center>  
 ### **Fourier Theorem**
