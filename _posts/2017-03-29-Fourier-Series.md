@@ -35,7 +35,7 @@ For any integer $$n$$, the functions $$cos(2\pi nx), cos(2\pi nx), e^{2\pi inx}$
 $$u(t)$$ can be expressed as a linear combination of truncated complex sinusoids by the standard rectangular function as follows:  
 <center> $$u(t) = \sum\limits_{-\infty}^{\infty} \hat{u_k} e^{2\pi ikt/T} rect(t/T) = \sum\limits_{k \in \Bbb(Z)} \hat{u_k}{\theta}_k(t)$$ </center>  
 where  
-<center> $$rect(t) = \begin{cases} 1 & -1/2 \le t \le 1/2 \\ 0 & elsewhere \end{cases}  \text{and}  {\theta}_k(t) = e^{2\pi ikt/T}rect(t/T)$$ </center>  
+<center> $$rect(t) = \begin{cases} 1 & -1/2 \le t \le 1/2 \\ 0 & elsewhere \end{cases}  \text{and}   \theta_k(t) = e^{2\pi ikt/T}rect(t/T)$$ </center>  
 ### **Fourier Theorem**
 
 
