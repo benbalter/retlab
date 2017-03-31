@@ -41,7 +41,7 @@ A *complex-valued function* of the real variable $$x$$ may be written as $$u(x)+
 <center>$$\frac d {dx} (u + iv) = \frac {du} {dx} + i \frac {dv} {dx} \; ,\;\;\;and \; \int (u + iv) dx = \int u dx + i \int u dx$$</center>  
 From this it follows easily that  
 <center>$$\frac d {dx} (e^{(a + ib)x}) = (a + ib)e^{(a + ib)x} \; ,\;\;\;and \; \int e^{(a + ib)x} dx = \frac 1 {a+ib}e^{(a + ib)x}$$</center>  
-The truncated complex sinusoids are orthogonal  
+The truncated complex sinusoids are orthogonal for $$k \ne m \in \Bbb Z$$  
 <center>$$\int_{-\infty}^{\infty} \theta_k(t) \theta_m^*(t) d(t) = \int_{-T/2}^{T/2} e^{2\pi i(k-m)t/T} = \frac T {2\pi i(k-m)} e^{2\pi i(k-m)t/T} \bigg|_{-T/2}^{T/2} = T \frac {sin\pi (k-m)} {\pi (k-m)}$$</center>  
 ### **Fourier Theorem**
 Let $$\{ u(t) : [−T/2, T/2] \to \Bbb C \}$$ be an $$L^2$$ function. Then for each $$k \in \Bbb Z$$, the Lebesgue integral  
