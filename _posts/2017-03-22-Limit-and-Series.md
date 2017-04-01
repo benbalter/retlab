@@ -35,7 +35,7 @@ If the *unit-impulse response* or *unit-sample response* decays toward zero, the
 Let $$x$$ be a complex number, then the geometric series $$\sum_{n=0}^{\infty} x^n$$ absolutely converges to $$\frac 1 {1-x}$$ iff $$|x|<1$$.  
   
   
-![systemPole]({{ https://github.com/lyons-zhang/lyons-zhang.github.io }}/update/201703/systemPole.png){:.aligncenter} 
+![systemPole]({{ https://github.com/lyons-zhang/lyons-zhang.github.io }}/update/201703/systemPole.png) 
 
 
 Reference:
