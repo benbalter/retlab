@@ -32,7 +32,7 @@ In other words, we can switch the order of infinite sums provided that the entir
 #### **Converges Example**  
 If the *unit-impulse response* or *unit-sample response* decays toward zero, then we say that it converges.  
 ROC of Z transform  
-$$X(z) = \sum\limits_{n=-\infity}^{\infty} x[n] z^{-n}$$}  
+$$X(z) = \sum\limits_{n=-\infty}^{\infty} x[n] z^{-n}$$}  
 is come from **Geometric series**:  
 Let $$x$$ be a complex number, then the series $$\sum_{n=0}^{\infty} x^n$$ absolutely converges to $$\frac 1 {1-x}$$ iff $$|x|<1$$.  
 ![systemPole]({{ https://github.com/lyons-zhang/lyons-zhang.github.io }}/update/201703/systemPole.png){.:aligncenter} 
