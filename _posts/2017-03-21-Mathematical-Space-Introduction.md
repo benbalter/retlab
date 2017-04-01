@@ -41,7 +41,8 @@ A *metric space* $$(X,d)$$ is a space $$X$$ of objects(called points), together 
 * For any $$x\in X$$, we have $$d(x,x)=0$$.
 * (Positivity) For any *distinct* $$x,y\in X$$, we have $$d(x,y)\gt 0$$.
 * (Symmetry) For any $$x,y\in X$$, we have $$d(x,y)=d(y,x)$$.
-* (Triangle inequality) For any $$x,y,z\in X$$, we have $$d(x,z)\le d(x,y)+d(y,z)$$.   
+* (Triangle inequality) For any $$x,y,z\in X$$, we have $$d(x,z)\le d(x,y)+d(y,z)$$.  
+
 ##### **Complete metric spaces**
 A metric space $$(X,d)$$ is said to be *complete* iff every Cauchy sequence in $$(X,d)$$ is in fact convergent in $$(X,d)$$.  
 ##### **Compact metric spaces**

@@ -36,14 +36,14 @@ If
    $$(ii)$$ $$u_k(x)$$ is a continuous function on $$I$$ for each $$k = 0,1,2,\dotsc$$.   
 then  
    $$S(x)$$ is continuous on $$I$$;   
-   $$\int_a^x (\sum\limits_{k=0}^\infty u_k(t))\,d(t) = \sum\limits_{k=0}^\infty (\int_a^x u_k(t)\,dt)$$;
+   $$\int_a^x (\sum\limits_{k=0}^\infty u_k(t))\,dt = \sum\limits_{k=0}^\infty (\int_a^x u_k(t)\,dt)$$;
 ### **Power series**   
 A formal power series centered at $$a$$ is any series of the form <center>$$\sum\limits_{n=0}^\infty c_n(x-a)^n$$</center> where the coefficients $$c_0, c_1, c_2, \dotsc$$ are real or complex numbers.  
 ##### **Radius of convergence**
 Let $$\sum\limits_{n=0}^\infty c_n(x-a)^n$$ be a formal power series. The *radius of convergence R* of this series to be the quantity <center>$$R := \dfrac{1}{\limsup_{n\rightarrow\infty} |c_n|^{1/n}}$$</center>
 ##### **Real analytic functions**
 A function $$f(x)$$ which is lucky enough to be representable as a power series has a special name, it is a real analytic function.  
-Let $$E$$ be a subset of $$\mathbb{R}$$, and let $$f : E \rightarrow\mathbb{R}$$ be a function. If a is an interior point of $$E$$, we say that $$f$$ is *real anlytic* at a if there exists an open interval $$(a-r, a+r)$$ in $$E$$ for some $$r \gt 0$$ such that there exists a power series $$\sum\limits_{n=0}^\infty c_n(x-a)^n$$ centered at $$a$$ which has a radius of convergence greater than or equal to $$r$$, and which converges to $$f$$ on $$(a-r, a+r)$$. If $$E$$ is an open set, and $$f$$ is real analytic at every point $$a$$ of $$E$$, we say that $$f$$ is real analytic on $$E$$.
+Let $$E$$ be a subset of $$\mathbb{R}$$, and let $$\{ f : E \rightarrow\mathbb{R} \}$$ be a function. If $$a$$ is an interior point of $$E$$, we say that $$f$$ is *real anlytic* at $$a$$ if there exists an open interval $$(a-r, a+r)$$ in $$E$$ for some $$r \gt 0$$ such that there exists a power series $$\sum\limits_{n=0}^\infty c_n(x-a)^n$$ centered at $$a$$ which has a radius of convergence greater than or equal to $$r$$, and which converges to $$f$$ on $$(a-r, a+r)$$. If $$E$$ is an open set, and $$f$$ is real analytic at every point $$a$$ of $$E$$, we say that $$f$$ is real analytic on $$E$$.
 
 Reference:
 
