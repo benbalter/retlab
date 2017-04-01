@@ -27,7 +27,7 @@ More explanation about the sencond item:
 ### **Fourier Series**  
 ##### **Given in most engineering texts**
 The *Fourier series* for function $$\{ u(t) : [-T/2, T/2] \to \Bbb{C} \}$$ is given by  
-<center> $$u(t) = \begin{cases} \sum\limits_{-\infty}^{\infty} \hat u_k e^{2\pi ikt} dt & T/2\le t\le T/2 \\ 0 & elsewhere \end{cases}$$ </center>  
+<center> $$u(t) = \begin{cases} \sum\limits_{-\infty}^{\infty} \hat u_k e^{2\pi ikt} & T/2\le t\le T/2 \\ 0 & elsewhere \end{cases}$$ </center>  
 Electrical engineers formerly reserved the symbol $$i$$ for electrical current and thus often use $$j$$ to denote $$\sqrt{-1}$$. 
 The Fourier series of a time-limited function maps function to a sequence of complex coefficients $$\hat u_k$$ satisfy  
 <center>$$\hat u_k = \frac 1 T \int_{-T/2}^{T/2} u(t)e^{-2\pi ikt/T} dt, \;-\infty < k < \infty \tag{1}$$</center>  
