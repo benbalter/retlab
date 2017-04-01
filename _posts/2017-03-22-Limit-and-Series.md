@@ -29,9 +29,14 @@ We say that this series is *absolutely convergent* iff the series $$\sum_{(n=m)}
 Let $$\{ f : \mathbb{N}\times\mathbb{N}\rightarrow\mathbb{R} \}$$ be a function such that $$\sum_{(n,m)\in \mathbb{N}\times\mathbb{N}} f(n,m)$$ is *absolutely convergent*. Then we have   
 <center>$$\sum\limits_{n=0}^\infty \big( \sum\limits_{m=0}^\infty f(n,m) \big) = \sum\limits_{(n,m)\in \mathbb{N}\times\mathbb{N}} f(n,m) = \sum\limits_{(m,n)\in \mathbb{N}\times\mathbb{N}} f(n,m) = \sum\limits_{m=0}^\infty \big( \sum\limits_{n=0}^\infty f(n,m) \big)$$</center>
 In other words, we can switch the order of infinite sums provided that the entire sum is absolutely convergent.   
-### **Example: Poles of System**
+#### **Converges Example**  
 If the *unit-impulse response* or *unit-sample response* decays toward zero, then we say that it converges.  
-![systemPole]({{ https://github.com/lyons-zhang/lyons-zhang.github.io }}/update/201703/systemPole.png)  
+ROC of Z transform  
+$$X(z) = \sum\limits_{n=-\infity}^{\infty} x[n] z^{-n}$$}  
+is come from **Geometric series**:  
+Let $$x$$ be a complex number, then the series $$\sum_{n=0}^{\infty} x^n$$ absolutely converges to $$\frac 1 {1-x}$$ iff $$|x|<1$$.  
+![systemPole]({{ https://github.com/lyons-zhang/lyons-zhang.github.io }}/update/201703/systemPole.png){.:aligncenter} 
+
 
 Reference:
 1. Robert G.Gallager. (2009). *Principles of Digital Communication* (New York: Cambridge University Press).
