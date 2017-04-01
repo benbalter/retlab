@@ -68,6 +68,7 @@ A series is defined to converge in $$L^2$$ if (4) holds. The notation $$l.i.m.$$
 The following example illustrate there is isolated discontinuity at $$t = −1/2$$  
 ![l2converge]({{ https://github.com/lyons-zhang/lyons-zhang.github.io }}/update/201703/l2converge.png){:.aligncenter}  
 
+
 Reference:  
 1. Alan V.Oppenheim. Alan S.Willsky. (1998). *Signals and systems 2nd ed*. (China: Prentice-Hall International,Inc)  
 2. MIT Opencourse. *6.02 Introduction to EECS II: Digital Communication Systems*.  
