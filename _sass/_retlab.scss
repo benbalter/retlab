@@ -6,7 +6,7 @@ $font-size-base: 16px;
 @import "font-awesome/scss/font-awesome";
 @import "highlighting";
 
-body { padding-top: 20px; font-weight: 200; }
+body { padding-top: 20px; font-weight: 300; }
 @media (max-width: 768px) {
     body { padding-top: 0; }
 }
