@@ -1,9 +1,5 @@
 # Retlab
 
-[![Build Status](https://travis-ci.org/benbalter/retlab.svg?branch=master)](https://travis-ci.org/benbalter/retlab)
-
-![Screenshot of Retlab](screenshot.png)
-
 *A minimalist Jekyll theme for your personal site*
 
 ## Installation
@@ -31,7 +27,7 @@
    @import "retlab";
    ```
 
-5. Save a header image to `/assets/img/header.png`. It should be 400px by 1140px.
+5. Save a header image to `/assets/img/header.jpg`. It should be 400px by 1140px.
 6. (Optional) install Font Awesome (icons) and Anchor JS (header links) dependencies with the following commands:
 
    ```
