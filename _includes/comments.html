@@ -7,7 +7,7 @@
 {% unless jekyll.environment == "development" %}
   <script>
       var disqus_config = function () {
-          this.page.url = {{ page.url | absolute_url | jsonify }};
+          this.page.url = {{ page.url | relative_url | jsonify }};
           this.page.identifier = {{ page.id | jsonify }};
           this.page.title = {{ page.title | jsonify }}
       };
