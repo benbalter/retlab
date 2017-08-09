@@ -6,9 +6,10 @@
 
 *A minimalist Jekyll theme for your personal site*
 
+
 ## Installation
 
-1. Add this line to your Jekyll site's Gemfile:
+1. Add this line to your Jekyll site’s Gemfile:
 
    ```ruby
    gem "retlab"
@@ -34,14 +35,13 @@
 5. Save a header image to `/assets/img/header.png`. It should be 400px by 1140px.
 6. (Optional) install Font Awesome (icons) and Anchor JS (header links) dependencies with the following commands:
 
-   ```
    npm install -g bower
-   bower install font-awesome anchor-js --config.directory=assets/vendor
-   ```
+   bower install font-awesome anchor-js —config.directory=assets/vendor
+
 
 ## Configuration
 
-You'll want to customize and add the following configurations to your site's `_config.yml` file:
+You’ll want to customize and add the following configurations to your site’s `_config.yml` file:
 
 ```yml
 title: Ben Balter
@@ -96,4 +96,4 @@ gems:
   - jekyll-feed
 ```
 
-You may also want to see [Jekyll SEO Tag's configuration](https://github.com/jekyll/jekyll-seo-tag).
+You may also want to see [Jekyll SEO Tag’s configuration](https://github.com/jekyll/jekyll-seo-tag).
