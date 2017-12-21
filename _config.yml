@@ -42,8 +42,7 @@ defaults:
       layout: page
       comments: false
 
-# Plugins
-gems:
+plugins:
   - jekyll-seo-tag
   - jekyll-avatar
   - jekyll-github-metadata

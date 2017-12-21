@@ -1,0 +1,31 @@
+{
+  "name": "retlab",
+  "version": "1.0.0",
+  "description": "[![Build Status](https://travis-ci.org/benbalter/retlab.svg?branch=master)](https://travis-ci.org/benbalter/retlab)",
+  "main": "script/server",
+  "scripts": {
+    "test": "script/cibuild"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benbalter/retlab.git"
+  },
+  "author": "Ben Balter",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/benbalter/retlab/issues"
+  },
+  "homepage": "https://github.com/benbalter/retlab#readme",
+  "dependencies": {
+    "anchor-js": "^4.1.0",
+    "bootstrap-sass": "^3.3.7",
+    "font-awesome": "^4.7.0",
+    "turbolinks": "^5.0.3"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "webpack": "^3.10.0"
+  }
+}

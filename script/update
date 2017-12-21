@@ -1,0 +1,20 @@
+#!/bin/bash
+
+set -e
+
+sass_assets=( "bootstrap-sass" "font-awesome" )
+vendor_assets=( "font-awesome" )
+
+npm update
+
+for asset in ${sass_assets[@]}
+do
+  rm -Rf "_sass/$asset"
+  cp -r "node_modules/$asset" "_sass/$asset"
+done
+
+for asset in ${vendor_assets[@]}
+do
+  rm -Rf "assets/vendor/$asset"
+  cp -r "node_modules/$asset" "assets/vendor/$asset"
+done
