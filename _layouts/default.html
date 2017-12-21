@@ -45,7 +45,7 @@
               {% for path in site.footer_pages %}
                 {% assign footer_page=site.pages | where:"path",path | first %}
                 <li>
-                  <a href="{{ page.url | relative_url }}">{{ page.title }}</a>
+                  <a href="{{ footer_page.url | relative_url }}">{{ page.title }}</a>
                 </li>
               {% endfor %}
               <li>
