@@ -9,35 +9,13 @@
 
 ## Installation
 
-1. Add this line to your Jekyll site’s Gemfile:
-
-   ```ruby
-   gem "retlab"
-   ```
-
-2. And add this line to your Jekyll site:
+1. Add this line to your site's configuration:
 
    ```yaml
-   theme: retlab
+   remote_theme: benbalter/retlab
    ```
 
-3. Run `bundle`
-4. Create a file `assets/css/style.scss` with the following content:
-
-   ```scss
-   ---
-   ---
-
-   $url_base: "{{ site.github.url }}";
-   @import "retlab";
-   ```
-
-5. Save a header image to `/assets/img/header.png`. It should be 400px by 1140px.
-6. (Optional) install Font Awesome (icons) and Anchor JS (header links) dependencies with the following commands:
-
-   npm install -g bower
-   bower install font-awesome anchor-js —config.directory=assets/vendor
-
+2. Save a header image to `/assets/img/header.png`. It should be 400px by 1140px.
 
 ## Configuration
 
@@ -48,7 +26,6 @@ title: Ben Balter
 description: Attorney, open source developer, product manager
 
 lang: en-US
-branch: master
 
 # Pages to include in header navigation
 nav_pages:
@@ -57,6 +34,11 @@ nav_pages:
   - press.md
   - about.md
   - contact.md
+
+# Pages to include in footer navigation
+footer_page:
+  - books.md
+  - fine-print.md
 
 # Disqus login information, for comments
 disqus:
@@ -89,7 +71,7 @@ defaults:
       comments: false
 
 # Plugins
-gems:
+plugins:
   - jekyll-seo-tag
   - jekyll-avatar
   - jekyll-github-metadata
