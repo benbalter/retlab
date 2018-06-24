@@ -60,9 +60,10 @@
     </div><!--/.container-->
 
     <script src="{{ "/assets/js/bundle.js?=" | append: site.github.build_revision | relative_url }}"></script>
+    {% if site.twitter.property_id %}
     <script src="https://platform.twitter.com/oct.js" type="text/javascript"></script>
     <script type="text/javascript">twttr.conversion.trackPid('{{ site.twitter.property_id }}', { tw_sale_amount: 0, tw_order_quantity: 0 });</script>
-
+    {% endif %}
   </body>
 </html>
 <!-- Proudly Powered by GitHub Pages | Generated {{ site.time }} | Revision {{ site.github.build_revision }} -->
