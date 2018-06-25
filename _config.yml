@@ -16,9 +16,6 @@ disqus:
 # Google Analytics tracking id
 ga_username: UA-xxxxxxxx-x
 
-# Property to let google analytics anonymize the user's id
-anonymize_ip: false
-
 # Links to include on the contact page
 contact_links:
   - name: Twitter
