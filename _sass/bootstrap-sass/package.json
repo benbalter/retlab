@@ -1,10 +1,4 @@
 {
-  "_args": [
-    [
-      "bootstrap-sass@3.3.7",
-      "/Users/benbalter/projects/retlab"
-    ]
-  ],
   "_from": "bootstrap-sass@3.3.7",
   "_id": "bootstrap-sass@3.3.7",
   "_inBundle": false,
@@ -22,14 +16,17 @@
     "fetchSpec": "3.3.7"
   },
   "_requiredBy": [
+    "#USER",
     "/"
   ],
   "_resolved": "https://registry.npmjs.org/bootstrap-sass/-/bootstrap-sass-3.3.7.tgz",
-  "_spec": "3.3.7",
+  "_shasum": "6596c7ab40f6637393323ab0bc80d064fc630498",
+  "_spec": "bootstrap-sass@3.3.7",
   "_where": "/Users/benbalter/projects/retlab",
   "bugs": {
     "url": "https://github.com/twbs/bootstrap-sass/issues"
   },
+  "bundleDependencies": false,
   "contributors": [
     {
       "name": "Thomas McDonald"
@@ -44,6 +41,7 @@
       "name": "Gleb Mazovetskiy"
     }
   ],
+  "deprecated": false,
   "description": "bootstrap-sass is a Sass-powered version of Bootstrap 3, ready to drop right into your Sass powered applications.",
   "devDependencies": {
     "ejs": "~2.4.2",

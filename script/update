@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -e
+set -ex
 
 sass_assets=( "bootstrap-sass" "font-awesome" )
 vendor_assets=( "font-awesome" )
