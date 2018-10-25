@@ -50,3 +50,4 @@ plugins:
 
 exclude:
   - vendor/bundle
+  - node_modules

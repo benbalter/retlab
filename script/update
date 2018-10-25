@@ -18,3 +18,5 @@ do
   rm -Rf "assets/vendor/$asset"
   cp -r "node_modules/$asset" "assets/vendor/$asset"
 done
+
+rougify style github | sass-convert --stdin --from css --to scss > _sass/_highlighting.scss
