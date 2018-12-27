@@ -51,3 +51,5 @@ plugins:
 exclude:
   - vendor/bundle
   - node_modules
+  - js
+  - sass

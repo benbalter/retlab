@@ -1,23 +1,33 @@
-var webpack = require('webpack');
+const path = require('path');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
-  entry: ['anchor-js', 'turbolinks', './assets/js/script.js'],
+  entry: ['./js/script.js', './sass/_retlab.scss'],
   output: {
-    path: __dirname,
-    filename: './assets/js/bundle.js'
+    path: path.resolve(__dirname, 'assets'),
+    filename: 'js/bundle.js'
   },
   mode: 'production',
+  plugins: [
+    new MiniCssExtractPlugin({filename: 'css/style.css'})
+  ],
   module: {
     rules: [
       {
         test: /\.js$/,
         exclude: /node_modules/,
         use: {
-          loader: 'babel-loader',
-          options: {
-            presets: ['env']
-          }
+          loader: 'babel-loader'
         }
+      },
+      {
+        test: /\.scss$/,
+        use: [
+          MiniCssExtractPlugin.loader,
+          'css-loader',
+          'sass-loader',
+          'postcss-loader'
+        ]
       }
     ]
   }
