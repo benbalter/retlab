@@ -53,3 +53,5 @@ exclude:
   - node_modules
   - js
   - sass
+
+theme: null
