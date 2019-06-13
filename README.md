@@ -15,7 +15,7 @@
    remote_theme: benbalter/retlab
    ```
 
-2. Save a header image to `/assets/img/header.png`. It should be 400px by 1140px.
+2. Save a header image to `/assets/img/header.jpg`. It should be 400px by 1140px.
 
 ## Configuration
 
