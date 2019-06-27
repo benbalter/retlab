@@ -1,17 +1,28 @@
-var Turbolinks = require("turbolinks");
+import {library, dom} from '@fortawesome/fontawesome-svg-core';
+import {faRss} from '@fortawesome/free-solid-svg-icons/faRss';
+import {faFacebookF} from '@fortawesome/free-brands-svg-icons/faFacebookF';
+import {faTwitter} from '@fortawesome/free-brands-svg-icons/faTwitter';
+import {faLinkedinIn} from '@fortawesome/free-brands-svg-icons/faLinkedinIn';
+import {faKeybase} from '@fortawesome/free-brands-svg-icons/faKeybase';
+import {faGithub} from '@fortawesome/free-brands-svg-icons/faGithub';
+
+var Turbolinks = require('turbolinks');
+
 Turbolinks.start();
 
 var anchorJS = require('anchor-js');
+
 var anchors = new anchorJS();
 
-document.addEventListener("turbolinks:load", function() {
+document.addEventListener('turbolinks:load', function () {
   anchors.add();
 
-  if(typeof DISQUS === "undefined"){
-    (function() {
-      var d = document, s = d.createElement('script');
+  if (typeof DISQUS === 'undefined') {
+    (function () {
+      var d = document; var
+        s = d.createElement('script');
       s.src = 'https://' + window.disqus_shortname + '.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
+      s.setAttribute('data-timestamp', Number(new Date()));
       (d.head || d.body).appendChild(s);
     })();
   } else {
@@ -21,14 +32,6 @@ document.addEventListener("turbolinks:load", function() {
     });
   }
 });
-
-import { library, dom } from "@fortawesome/fontawesome-svg-core";
-import { faRss } from "@fortawesome/free-solid-svg-icons/faRss";
-import { faFacebookF } from "@fortawesome/free-brands-svg-icons/faFacebookF";
-import { faTwitter } from "@fortawesome/free-brands-svg-icons/faTwitter";
-import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons/faLinkedinIn";
-import { faKeybase } from "@fortawesome/free-brands-svg-icons/faKeybase";
-import { faGithub } from "@fortawesome/free-brands-svg-icons/faGithub";
 
 library.add(faRss);
 library.add(faFacebookF);
