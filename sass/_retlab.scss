@@ -1,0 +1,36 @@
+$header-path: "/assets/img/header.jpg";
+$blue: #337ab7;
+$enable-shadows: true;
+$enable-gradients: true;
+
+@import "node_modules/bootstrap/scss/bootstrap";
+@import "highlighting";
+
+.footnotes { @extend .small; @extend .border-top; @extend .pt-3; }
+.footnotes::before { content: "Notes:"; @extend .mb-3; @extend .d-block; }
+.footnotes ol { @extend .pl-3 }
+.footnotes ol li p { @extend .mb-1 }
+
+.hero-unit {
+    background-image: url($header-path);
+    background-size: cover;
+    background-position: top left;
+    height: 400px;
+}
+
+.gist {
+    .gist-it-gist .gist-file .gist-data,
+    .gist-meta {
+        background: #fcfcff !important;
+    }
+
+    .pl-c {
+        color: #757775 !important;
+    }
+
+    .pl-c1 {
+        color: #007faa !important;
+    }
+}
+
+.min-y-5 { min-height: 5em; }

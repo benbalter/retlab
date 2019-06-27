@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link type="text/plain" rel="author" href="{{ "humans.txt" | absolute_url }}" />
     <link rel="shortcut icon" href="{{ "/favicon.ico?v=" | append: site.github.build_revision | relative_url }}">
     <link href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}" rel="stylesheet" media="screen">
@@ -24,13 +24,24 @@
     </script>
     {% endif %}
 
+    {% if site.disqus.shortname %}
+    <script>
+      window.disqus_shortname = {{ site.disqus.shortname | jsonify }};
+      window.disqus_config = function() {
+          this.page.url = {{ page.url | relative_url | jsonify }};
+          this.page.identifier = {{ page.id | jsonify }};
+          this.page.title = {{ page.title | jsonify }}
+      };
+    </script>
+    {% endif %}
+
     <script src="{{ "/assets/js/bundle.js?=" | append: site.github.build_revision | relative_url }}"></script>
   </head>
-  <body class="{{ page.layout }} post{{ page.id | slugify | prepend: "-"}}">
+  <body class="{{ page.layout }} post{{ page.id | slugify | prepend: "-"}} mt-2">
     <div class="container">
 
       {% if layout.hero %}
-        <div class="hero-unit">&nbsp;</div>
+        <div class="hero-unit rounded-top position-relative">&nbsp;</div>
       {% endif %}
 
       {% include nav.html %}
@@ -39,27 +50,7 @@
         {{ content }}
       </div><!-- /.content -->
 
-      <div class="row">
-      	{% if page.hero %}
-      	  <div class="col-sm-12 footer">
-      	{% else %}
-      	  <div class="col-sm-10 col-sm-offset-1 footer">
-      	{% endif %}
-      		<div class="fine-print">
-            <ul>
-              {% for path in site.footer_pages %}
-                {% assign footer_page=site.pages | where:"path",path | first %}
-                <li>
-                  <a href="{{ footer_page.url | relative_url }}">{{ footer_page.title }}</a>
-                </li>
-              {% endfor %}
-              <li>
-                <a href="{{ "/feed.xml" | relative_url }}" aria-label="Atom Feed"><i class="fa fa-rss"></i></a>
-              </li>
-            </ul>
-      		</div>
-      	</div>
-      </div>
+      {% include_cached footer.html %}
     </div><!--/.container-->
 
     {% if site.twitter.property_id %}

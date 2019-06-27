@@ -2,21 +2,11 @@
 
 set -ex
 
-sass_assets=( "bootstrap-sass" "font-awesome" )
-vendor_assets=( "font-awesome" )
-
+bundle update
 npm update
 
-for asset in ${sass_assets[@]}
-do
-  rm -Rf "_sass/$asset"
-  cp -r "node_modules/$asset" "_sass/$asset"
-done
+rm -rf "./assets/vendor"
+mkdir -p "./assets/vendor"
+#cp -r "./node_modules/@fortawesome/fontawesome-free" "./assets/vendor/font-awesome/"
 
-for asset in ${vendor_assets[@]}
-do
-  rm -Rf "assets/vendor/$asset"
-  cp -r "node_modules/$asset" "assets/vendor/$asset"
-done
-
-rougify style github | sass-convert --stdin --from css --to scss > _sass/_highlighting.scss
+rougify style github | sass-convert --stdin --from css --to scss > sass/_highlighting.scss

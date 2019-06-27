@@ -18,6 +18,8 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency 'jekyll-feed', '~> 0.9'
   spec.add_runtime_dependency 'jekyll-github-metadata', '~> 2.9'
   spec.add_runtime_dependency 'jekyll-seo-tag', '~> 2.2'
+  spec.add_runtime_dependency 'jekyll-include-cache'
+
   spec.add_development_dependency 'bundler', '~> 1.15'
   spec.add_development_dependency 'html-proofer', '~> 3.0'
   spec.add_development_dependency 'rake', '~> 11.0'
