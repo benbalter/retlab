@@ -9,6 +9,9 @@ nav_pages:
   - index.html
   - about.md
 
+footer_pages:
+  - fine-print.md
+
 # Disqus login information, for comments
 disqus:
   shortname: DISQUS_USERNAME
@@ -47,6 +50,7 @@ plugins:
   - jekyll-avatar
   - jekyll-github-metadata
   - jekyll-feed
+  - jekyll-include-cache
 
 exclude:
   - vendor/bundle

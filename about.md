@@ -1,4 +1,3 @@
 ---
-title: About
-permalink: /about/
+title: about
 ---

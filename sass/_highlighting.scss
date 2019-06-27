@@ -30,7 +30,7 @@
     font-style: italic;
   }
 
-  .c, .cd {
+  .c, .ch, .cd, .cpf {
     color: #999988;
     font-style: italic;
   }
@@ -118,7 +118,7 @@
     color: #990073;
   }
 
-  .s {
+  .s, .sa, .dl {
     color: #d14;
   }
 
@@ -152,7 +152,7 @@
     color: #800080;
   }
 
-  .ne, .nf, .nl {
+  .ne, .nf, .fm, .nl {
     color: #990000;
     font-weight: bold;
   }
@@ -165,7 +165,7 @@
     color: #000080;
   }
 
-  .vc, .vg, .vi, .nv {
+  .vc, .vg, .vi, .nv, .vm {
     color: #008080;
   }
 

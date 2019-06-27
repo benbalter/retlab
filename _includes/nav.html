@@ -1,20 +1,18 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="{{ site.url }}/"><h1>{{ site.title }}</h1></a>
+<div class="navbar navbar-expand-lg navbar-light bg-light border-left border-right border-bottom {% unless layout.hero %}border-top rounded-top{% endunless %} rounded-bottom mb-3">
+  <a class="navbar-brand font-weight-bold" href="{{ site.url }}/">{{ site.title }}</a>
 
-  <ul class="nav">
-    <li class="nav-item">
-      <h1><a class="navbar-brand nav-link" href="{{ site.url }}/">{{ site.title }}</a></h1>
-    </li>
+  <ul class="navbar-nav mr-auto" role="navigation">
     {% for path in site.nav_pages %}
       {% assign nav_page=site.pages | where:"path",path | first %}
       <li class="nav-item{% if page.permalink == nav_page.permalink %} active{% endif %}">
         <a href="{{ nav_page.url | relative_url }}" class="nav-link">
-          {{ nav_page.title | default:"Posts" }}
+          {{ nav_page.title | default: "Posts" }}
         </a>
       </li>
     {% endfor %}
   </ul>
-  <div class="float-right">
+
+  <span class="navbar-text">
     {{ site.description }}
-  </div>
-</nav><!-- navbar -->
+  </span>
+</div>

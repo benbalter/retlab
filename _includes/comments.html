@@ -1,21 +1,7 @@
-<div class="row">
-  <div class="col-12 disqus">
-    <div id="disqus_thread"></div>
+{% if site.disqus.shortname %}
+  <div class="row">
+    <div class="col-12 disqus">
+      <div id="disqus_thread"></div>
+    </div>
   </div>
-</div>
-
-{% unless jekyll.environment == "development" %}
-  <script>
-      var disqus_config = function () {
-          this.page.url = {{ page.url | relative_url | jsonify }};
-          this.page.identifier = {{ page.id | jsonify }};
-          this.page.title = {{ page.title | jsonify }}
-      };
-      (function() {
-          var d = document, s = d.createElement('script');
-          s.src = 'https://{{ site.disqus.shortname }}.disqus.com/embed.js';
-          s.setAttribute('data-timestamp', +new Date());
-          (d.head || d.body).appendChild(s);
-      })();
-  </script>
-{% endunless %}
+{% endif %}
