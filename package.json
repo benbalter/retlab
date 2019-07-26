@@ -4,18 +4,20 @@
     "url": "https://github.com/benbalter/retlab/issues"
   },
   "dependencies": {
+    "@types/node": "^12.6.8",
     "anchor-js": "^4.2.0",
     "bootstrap": "^4.2.1",
     "turbolinks": "^5.2.0"
   },
   "description": "[![Build Status](https://travis-ci.org/benbalter/retlab.svg?branch=master)](https://travis-ci.org/benbalter/retlab)",
   "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/preset-typescript": "^7.3.3",
     "@fortawesome/fontawesome-svg-core": "^1.2.19",
     "@fortawesome/free-brands-svg-icons": "^5.9.0",
     "@fortawesome/free-solid-svg-icons": "^5.9.0",
-    "autoprefixer": "^9.4.3",
-    "babel-core": "^6.26.3",
-    "babel-loader": "^7.0.0",
+    "autoprefixer": "^9.6.1",
+    "babel-loader": "^8.0.0",
     "babel-preset-env": "^1.7.0",
     "css-loader": "^2.1.0",
     "jsonlint": "^1.6.3",
@@ -23,8 +25,11 @@
     "node-sass": "^4.11.0",
     "postcss-loader": "^3.0.0",
     "sass-loader": "^7.1.0",
-    "webpack": "^4.28.2",
-    "webpack-cli": "^3.1.2",
+    "source-map-loader": "^0.2.4",
+    "tslint": "^5.18.0",
+    "typescript": "^3.5.3",
+    "webpack": "^4.38.0",
+    "webpack-cli": "^3.3.6",
     "xo": "^0.23.0"
   },
   "homepage": "https://github.com/benbalter/retlab#readme",
@@ -38,7 +43,7 @@
   "scripts": {
     "build": "npm run lint && npm run webpack",
     "lint": "npm run lint-js && npm run lint-json",
-    "lint-js": "xo webpack.config.js postcss.config.js js/script.js --fix",
+    "lint-js": "xo webpack.config.js postcss.config.js js/script.ts --fix",
     "lint-json": "jsonlint package.json --in-place --sort-keys",
     "test": "script/cibuild",
     "webpack": "webpack  --optimize-minimize"

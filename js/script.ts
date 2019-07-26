@@ -6,13 +6,24 @@ import {faLinkedinIn} from '@fortawesome/free-brands-svg-icons/faLinkedinIn';
 import {faKeybase} from '@fortawesome/free-brands-svg-icons/faKeybase';
 import {faGithub} from '@fortawesome/free-brands-svg-icons/faGithub';
 
-var anchorJS = require('anchor-js');
+const anchorJS = require('anchor-js');
 
-var anchors = new anchorJS();
+const anchors = new anchorJS();
 
-var Turbolinks = require('turbolinks');
+const Turbolinks = require('turbolinks');
 
 Turbolinks.start();
+
+declare global {
+    interface Window {
+      disqus_config: {};
+      disqus_shortname: string;
+    }
+    let DISQUS: any;
+}
+
+window.disqus_config = window.disqus_config || {};
+window.disqus_shortname = window.disqus_shortname || "";
 
 document.addEventListener('turbolinks:load', function () {
   anchors.add();
@@ -20,16 +31,16 @@ document.addEventListener('turbolinks:load', function () {
   if (document.getElementById('disqus_thread')) {
     if (typeof DISQUS === 'undefined') {
       (function () {
-        var d = document;
-        var s = d.createElement('script');
+        const d = document;
+        const s = d.createElement('script');
         s.src = 'https://' + window.disqus_shortname + '.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', Number(new Date()));
+        s.setAttribute('data-timestamp', Number(new Date()).toString());
         (d.head || d.body).appendChild(s);
       })();
     } else {
       DISQUS.reset({
         reload: true,
-        config: window.disqus_config
+        config: window.disqus_config,
       });
     }
   }
