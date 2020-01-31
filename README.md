@@ -24,6 +24,7 @@ You’ll want to customize and add the following configurations to your site’s
 ```yml
 title: Ben Balter
 description: Attorney, open source developer, product manager
+github_username: benbalter
 
 lang: en-US
 
