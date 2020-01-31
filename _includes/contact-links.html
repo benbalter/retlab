@@ -10,7 +10,9 @@
     {% endfor %}
   </div>
 
+  {% if site.pgp_key %}
   <p>
     <a href="{{ "key.asc" | absolute_url }}">PGP: <code>{{ site.pgp_key }}</code></a>
   </p>
+  {% endif %}
 </div>
