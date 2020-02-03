@@ -36,7 +36,7 @@ nav_pages:
   - contact.md
 
 # Pages to include in footer navigation
-footer_page:
+footer_pages:
   - books.md
   - fine-print.md
 
