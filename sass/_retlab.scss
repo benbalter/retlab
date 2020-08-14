@@ -6,10 +6,25 @@ $enable-gradients: true;
 @import "node_modules/bootstrap/scss/bootstrap";
 @import "highlighting";
 
-.footnotes { @extend .small; @extend .border-top; @extend .pt-3; }
-.footnotes::before { content: "Notes:"; @extend .mb-3; @extend .d-block; }
-.footnotes ol { @extend .pl-3 }
-.footnotes ol li p { @extend .mb-1 }
+.footnotes {
+    @extend .small;
+    @extend .border-top;
+    @extend .pt-3;
+}
+
+.footnotes::before {
+    content: "Notes:";
+    @extend .mb-3;
+    @extend .d-block;
+}
+
+.footnotes ol {
+    @extend .pl-3
+}
+
+.footnotes ol li p {
+    @extend .mb-1
+}
 
 .hero-unit {
     background-image: url($header-path);
@@ -19,6 +34,7 @@ $enable-gradients: true;
 }
 
 .gist {
+
     .gist-it-gist .gist-file .gist-data,
     .gist-meta {
         background: #fcfcff !important;
@@ -33,4 +49,11 @@ $enable-gradients: true;
     }
 }
 
-.min-y-5 { min-height: 5em; }
+.min-y-5 {
+    min-height: 5em;
+}
+
+blockquote {
+    border-left: 5px solid $gray-300;
+    padding-left: 1em;
+}
