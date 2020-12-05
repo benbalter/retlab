@@ -4,9 +4,10 @@
     "url": "https://github.com/benbalter/retlab/issues"
   },
   "dependencies": {
-    "@types/node": "^12.12.54",
     "anchor-js": "^4.2.2",
     "bootstrap": "^4.5.2",
+    "jquery": "^3.5.1",
+    "precss": "^4.0.0",
     "turbolinks": "^5.2.0"
   },
   "description": "[![Build Status](https://travis-ci.org/benbalter/retlab.svg?branch=master)](https://travis-ci.org/benbalter/retlab)",
@@ -16,6 +17,9 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.30",
     "@fortawesome/free-brands-svg-icons": "^5.14.0",
     "@fortawesome/free-solid-svg-icons": "^5.14.0",
+    "@types/bootstrap": "^5.0.1",
+    "@types/jquery": "^3.5.4",
+    "@types/node": "^12.12.54",
     "autoprefixer": "^9.8.6",
     "babel-loader": "^8.1.0",
     "babel-preset-env": "^1.7.0",

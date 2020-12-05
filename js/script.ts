@@ -5,6 +5,7 @@ import {faTwitter} from '@fortawesome/free-brands-svg-icons/faTwitter';
 import {faLinkedinIn} from '@fortawesome/free-brands-svg-icons/faLinkedinIn';
 import {faKeybase} from '@fortawesome/free-brands-svg-icons/faKeybase';
 import {faGithub} from '@fortawesome/free-brands-svg-icons/faGithub';
+import 'bootstrap/js/dist/collapse'
 
 const anchorJS = require('anchor-js');
 
