@@ -17,6 +17,10 @@ layout: default
         {{ content }}
       </div>
 
+      {% if site.data.related_posts[page.relative_path] %}
+        {% include related_posts.html %}
+      {% endif %}
+
       {% include mini-bio.html %}
 
       {% unless page.comments == false %}

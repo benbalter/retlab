@@ -1,4 +1,4 @@
-<div class="row border-top border-bottom pt-3">
+<div class="row border-top pt-3">
   {% assign bio = site.pages | where:"title","About" %}
   {% assign bio = bio[0].content | newline_to_br | split:"<br />" %}
   {% assign about_url = "/about/" | relative_url %}
