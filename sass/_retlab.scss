@@ -7,7 +7,7 @@ $enable-gradients: true;
 @import "highlighting";
 
 .footnotes {
-    @extend .small;
+    @extend small;
     @extend .border-top;
     @extend .pt-3;
 }
@@ -34,7 +34,6 @@ $enable-gradients: true;
 }
 
 .gist {
-
     .gist-it-gist .gist-file .gist-data,
     .gist-meta {
         background: #fcfcff !important;

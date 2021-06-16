@@ -9,7 +9,9 @@
     {{ bio[0] | append:' <a href="URL">More about the author &rarr;</a>' | replace:"URL",about_url | markdownify }}
   </div>
   <div class="col-sm-2 text-center">
-    <p class="small">This page is open source. Please {% github_edit_link "help improve it" %}.</p>
-      <a class="btn btn-outline-primary btn-lg btn-sm" href="{% github_edit_link %}" title="Help improve article {{ page.path }}">Edit</a>
-    </div>
+    <p>
+      <small>This page is open source. Please {% github_edit_link "help improve it" %}.</small>
+    </p>
+    <a class="btn btn-outline-primary btn-lg btn-sm" href="{% github_edit_link %}" title="Help improve article {{ page.path }}">Edit</a>
+  </div>
 </div>
