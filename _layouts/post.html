@@ -6,11 +6,13 @@ layout: default
   <div class="col-md-10 offset-md-1">
       <article id="post{{ page.id | replace:"/","-" }}" class="post post{{ page.id | replace:"/","-" }}">
 
-      <h1 class="display-4"><a href="{{ page.url | relative_url }}">{{ page.title | smartify }}</a></h1>
+      <h1 class="display-4 text-primary">{{ page.title | smartify }}</h1>
 
-      <div class="small mb-2">
-        <span class="font-italic">Posted {{ page.date | date: '%B %-d, %Y' }}</span> |
-        <a class="text-muted font-italic" href="{{ site.github.repository_url }}/commits/{{ site.github.source.branch }}/{{ page.path }}" target="_blank" rel="noopener">View revision history</a>
+      <div class="mb-2">
+        <small>
+          <span class="fst-italic">Posted {{ page.date | date: '%B %-d, %Y' }}</span> |
+          <a class="text-muted fst-italic" href="{{ site.github.repository_url }}/commits/{{ site.github.source.branch }}/{{ page.path }}" target="_blank" rel="noopener">View revision history</a>
+        </small>
       </div>
 
       <div class="entrybody">
@@ -22,10 +24,6 @@ layout: default
       {% endif %}
 
       {% include mini-bio.html %}
-
-      {% unless page.comments == false %}
-        {% include comments.html %}
-      {% endunless %}
     </article>
   </div>
 </div>
