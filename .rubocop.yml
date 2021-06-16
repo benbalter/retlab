@@ -1,3 +1,5 @@
 AllCops:
+  NewCops: enable
   Exclude:
     - '_site/**/*'
+    - 'node_modules/**/*'
