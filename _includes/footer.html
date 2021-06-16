@@ -1,18 +1,20 @@
 <div class="navbar navbar-expand-lg border-top navbar-light justify-content-end">
-  <ul class="navbar-nav " role="navigation">
-    {% for path in site.footer_pages %}
-      {% assign footer_page=site.pages | where:"path",path | first %}
+  <div class="container-fluid">
+    <ul class="navbar-nav " role="navigation">
+      {% for path in site.footer_pages %}
+        {% assign footer_page=site.pages | where:"path",path | first %}
+        <li class="nav-item">
+          <a href="{{ footer_page.url | relative_url }}" class="nav-link text-muted">
+            {{ footer_page.title }}
+          </a>
+        </li>
+      {% endfor %}
+
       <li class="nav-item">
-        <a href="{{ footer_page.url | relative_url }}" class="nav-link text-muted">
-          {{ footer_page.title }}
+        <a href="{{ "/feed.xml" | relative_url }}" aria-label="Atom Feed" class="nav-link">
+          <i class="fas fa-rss" title="Atom Feed"></i>
         </a>
       </li>
-    {% endfor %}
-
-    <li class="nav-item">
-      <a href="{{ "/feed.xml" | relative_url }}" aria-label="Atom Feed" class="nav-link">
-        <i class="fas fa-rss" title="Atom Feed"></i>
-      </a>
-    </li>
-  </ul>
+    </ul>
+  </div>
 </div>

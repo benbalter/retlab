@@ -3,7 +3,7 @@
   {% assign bio = bio[0].content | newline_to_br | split:"<br />" %}
   {% assign about_url = "/about/" | relative_url %}
   <div class="col-sm-2">
-    <div class="float-sm-right pt-1">{% avatar {{site.github.owner_name}} size=100 %}</div>
+    <div class="float-sm-end pt-1">{% avatar {{site.github.owner_name}} size=100 %}</div>
   </div>
   <div class="col-sm-8">
     {{ bio[0] | append:' <a href="URL">More about the author &rarr;</a>' | replace:"URL",about_url | markdownify }}

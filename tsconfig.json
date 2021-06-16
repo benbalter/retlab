@@ -1,0 +1,5 @@
+{
+  "baseUrl": "types",
+  "typeRoots": ["types"],
+  "esModuleInterop": true,
+}

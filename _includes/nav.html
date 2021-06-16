@@ -1,23 +1,25 @@
-<div class="navbar navbar-expand-sm navbar-light bg-light border-left border-right border-bottom {% unless layout.hero %}border-top rounded-top{% endunless %} rounded-bottom mb-3">
-  <a class="navbar-brand font-weight-bold" href="{{ site.url }}/">{{ site.title }}</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+<div class="navbar navbar-expand-sm navbar-light bg-light border-start border-end border-bottom {% unless layout.hero %}border-top rounded-top{% endunless %} rounded-bottom mb-3">
+  <div class="container-fluid">
+    <a class="navbar-brand fw-bold" href="{{ site.url }}/">{{ site.title }}</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-  <div class="collapse navbar-collapse" id="navbar">
-    <ul class="navbar-nav mr-auto" role="navigation">
-      {% for path in site.nav_pages %}
-        {% assign nav_page=site.pages | where:"path",path | first %}
-        <li class="nav-item{% if page.permalink == nav_page.permalink %} active{% endif %}">
-          <a href="{{ nav_page.url | relative_url }}" class="nav-link">
-            {{ nav_page.title | default: "Posts" }}
-          </a>
-        </li>
-      {% endfor %}
-    </ul>
-  </div>
+    <div class="collapse navbar-collapse" id="navbar">
+      <ul class="navbar-nav mr-auto" role="navigation">
+        {% for path in site.nav_pages %}
+          {% assign nav_page=site.pages | where:"path",path | first %}
+          <li class="nav-item{% if page.permalink == nav_page.permalink %} active{% endif %}">
+            <a href="{{ nav_page.url | relative_url }}" class="nav-link">
+              {{ nav_page.title | default: "Posts" }}
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
 
-  <span class="navbar-text">
-    {{ site.description }}
-  </span>
+    <span class="navbar-text">
+      {{ site.description }}
+    </span>
+    </div>
 </div>

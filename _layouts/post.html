@@ -9,8 +9,8 @@ layout: default
       <h1 class="display-4"><a href="{{ page.url | relative_url }}">{{ page.title | smartify }}</a></h1>
 
       <div class="small mb-2">
-        <span class="font-italic">Posted {{ page.date | date: '%B %-d, %Y' }}</span> |
-        <a class="text-muted font-italic" href="{{ site.github.repository_url }}/commits/{{ site.github.source.branch }}/{{ page.path }}" target="_blank" rel="noopener">View revision history</a>
+        <span class="fst-italic">Posted {{ page.date | date: '%B %-d, %Y' }}</span> |
+        <a class="text-muted fst-italic" href="{{ site.github.repository_url }}/commits/{{ site.github.source.branch }}/{{ page.path }}" target="_blank" rel="noopener">View revision history</a>
       </div>
 
       <div class="entrybody">
@@ -22,10 +22,6 @@ layout: default
       {% endif %}
 
       {% include mini-bio.html %}
-
-      {% unless page.comments == false %}
-        {% include comments.html %}
-      {% endunless %}
     </article>
   </div>
 </div>
