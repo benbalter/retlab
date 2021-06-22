@@ -5,8 +5,8 @@ import { faTwitter } from '@fortawesome/free-brands-svg-icons/faTwitter';
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons/faLinkedinIn';
 import { faKeybase } from '@fortawesome/free-brands-svg-icons/faKeybase';
 import { faGithub } from '@fortawesome/free-brands-svg-icons/faGithub';
+import Collapse from 'bootstrap/js/dist/collapse';
 import * as AnchorJS from 'anchor-js';
-import * as Collapse from 'bootstrap/js/dist/collapse';
 import * as Turbo from '@hotwired/turbo';
 
 window.Turbo = Turbo;
