@@ -2,13 +2,12 @@
   {% assign bio = site.pages | where:"title","About" %}
   {% assign bio = bio[0].content | newline_to_br | split:"<br />" %}
   {% assign about_url = "/about/" | relative_url %}
-  <div class="col-sm-2">
-    <div class="float-sm-end pt-1">{% avatar {{site.github.owner_name}} size=100 %}</div>
-  </div>
-  <div class="col-sm-8">
+  <div class="col">
+    <div class="float-start pt-1 pe-3">{% avatar {{site.github.owner_name}} size=100 %}</div>
+
     {{ bio[0] | append:' <a href="URL">More about the author &rarr;</a>' | replace:"URL",about_url | markdownify }}
   </div>
-  <div class="col-sm-2 text-center">
+  <div class="col-lg-2 text-center pb-3">
     <p>
       <small>This page is open source. Please {% github_edit_link "help improve it" %}.</small>
     </p>
