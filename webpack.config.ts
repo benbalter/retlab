@@ -51,6 +51,13 @@ const config: webpack.Configuration = {
 
           {
             loader: 'sass-loader',
+            options: {
+              sassOptions: {
+                includePaths: [
+                  path.resolve(__dirname, 'node_modules/bootstrap/scss'),
+                ],
+              },
+            },
           }],
       },
     ],

@@ -3,7 +3,9 @@ $blue: #337ab7;
 $enable-shadows: true;
 $enable-gradients: true;
 
-@import "~bootstrap/scss/bootstrap";
+//@import "~bootstrap/scss/bootstrap";
+@import "bootstrap-dark-5/scss/bootstrap-dark";
+
 @import "highlighting";
 
 .footnotes {

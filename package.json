@@ -11,6 +11,7 @@
     "anchor-js": "^4.3.1",
     "autoprefixer": "^10.2.6",
     "bootstrap": "^5.0.1",
+    "bootstrap-dark-5": "github:vinorodrigues/bootstrap-dark-5",
     "mini-css-extract-plugin": "^1.6.0",
     "precss": "^4.0.0",
     "webpack": "^5.39.0"
@@ -34,8 +35,8 @@
     "eslint-plugin-import": "^2.23.4",
     "file-loader": "^6.2.0",
     "jsonlint": "^1.6.3",
-    "node-sass": "^6.0.0",
     "postcss-loader": "^6.0.0",
+    "sass": "^1.36.0",
     "sass-loader": "^12.1.0",
     "source-map-loader": "^3.0.0",
     "ts-node": "^10.0.0",
