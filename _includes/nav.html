@@ -9,7 +9,7 @@
       <ul class="navbar-nav mr-auto" role="navigation">
         {% for path in site.nav_pages %}
           {% assign nav_page=site.pages | where:"path",path | first %}
-          <li class="nav-item{% if page.permalink == nav_page.permalink %} active{% endif %}">
+          <li class="nav-item{% if page.url == nav_page.url %} active{% endif %}">
             <a href="{{ nav_page.url | relative_url }}" class="nav-link">
               {{ nav_page.title | default: "Posts" }}
             </a>
