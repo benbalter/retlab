@@ -14,7 +14,7 @@ Gem::Specification.new do |spec|
   spec.files = `git ls-files -z`.split("\x0").select { |f| f.match(regex) }
 
   spec.add_runtime_dependency 'github-pages', '>= 167'
-  spec.add_runtime_dependency 'jekyll-include-cache'
+  #spec.add_runtime_dependency 'jekyll-include-cache'
 
   spec.add_development_dependency 'html-proofer', '~> 3.0'
   spec.add_development_dependency 'rake', '~> 11.0'
