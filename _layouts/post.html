@@ -23,7 +23,17 @@ layout: default
         {% include related_posts.html %}
       {% endif %}
 
-      {% include_cached mini-bio.html %}
+      <div class="row border-top pt-3">
+        <div class="col">
+          {% include_cached mini-bio.html %}
+        </div>
+        <div class="col-lg-2 text-center pb-3">
+          <p>
+            <small>This page is open source. Please {% github_edit_link "help improve it" %}.</small>
+          </p>
+          <a class="btn btn-outline-primary btn-lg btn-sm" href="{% github_edit_link %}" title="Help improve article {{ page.path }}">Edit</a>
+        </div>
+      </div>      
     </article>
   </div>
 </div>
