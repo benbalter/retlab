@@ -16,13 +16,15 @@ layout: default
       </div>
 
       {% if page.description %}
-      <p class="lead mb-2">
-        <strong>
-          <abbr title="Too long; didn't read" class="initialism">TL;DR</abbr>: 
-        </strong>
+      <div class="lead">
+        {% capture tldr %}
+<strong>
+  <abbr title="Too long; didn't read" class="initialism">TL;DR</abbr>: 
+</strong>
+        {% endcapture %}
 
-        {{ page.description | markdownify | smartify }}
-      </p>
+        {{ page.description | prepend: tldr | markdownify | smartify }}
+      </div>
       {% endif %}
 
       <div class="entrybody">
