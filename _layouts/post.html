@@ -21,7 +21,7 @@ layout: default
           <abbr title="Too long; didn't read" class="initialism">TL;DR</abbr>: 
         </strong>
 
-        {{ page.description | smartify }}
+        {{ page.description | markdownify | smartify }}
       </p>
       {% endif %}
 
