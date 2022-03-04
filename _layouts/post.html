@@ -15,6 +15,16 @@ layout: default
         </small>
       </div>
 
+      {% if page.description %}
+      <p class="lead">
+        <strong>
+          <abbr title="Too long; didn't read" class="initialism">TL;DR</abbr>: 
+        </strong>
+
+        {{ page.description | smartify }}
+      </p>
+      {% endif %}
+
       <div class="entrybody">
         {{ content }}
       </div>
