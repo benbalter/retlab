@@ -8,7 +8,7 @@ layout: default
 
       <h1 class="display-4 text-primary">{{ page.title | smartify }}</h1>
 
-      <div class="mb-3">
+      <div class="mb-2">
         <small>
           <span class="fst-italic">Posted {{ page.date | date: '%B %-d, %Y' }}</span> |
           <a class="text-muted fst-italic" href="{{ site.github.repository_url }}/commits/{{ site.github.source.branch }}/{{ page.path }}" target="_blank" rel="noopener">View revision history</a>
@@ -16,7 +16,7 @@ layout: default
       </div>
 
       {% if page.description %}
-      <p class="lead">
+      <p class="lead mb-2">
         <strong>
           <abbr title="Too long; didn't read" class="initialism">TL;DR</abbr>: 
         </strong>
