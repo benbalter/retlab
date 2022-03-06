@@ -12,8 +12,16 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
+      - name: Setup Ruby
+        uses: actions/setup-ruby@v1
+        with:
+          ruby-version: "2.6"
+
       - name: Check for updates
         run: npx npm-check-updates -u
+
+      - name: script/update
+        run: script/update
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v3
