@@ -1,4 +1,4 @@
-name: CI
+name: Update dependencies
 
 on:
   schedule: 
@@ -6,7 +6,7 @@ on:
   workflow_dispatch: {}
 
 jobs:
-  test:
+  update:
     runs-on: ubuntu-latest
 
     steps:
