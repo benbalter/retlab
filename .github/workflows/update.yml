@@ -1,0 +1,22 @@
+name: CI
+
+on:
+  schedule: 
+    - cron: "0 0 * * 0"
+  repository_dispatch: {}
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Check for updates
+        run: npx npm-check-updates -u
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v3
+        with:
+            commit-message: Update dependencies
+            title: Update dependencies
