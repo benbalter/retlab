@@ -18,3 +18,4 @@ assets/vendor/font-awesome/scss
 assets/vendor/font-awesome/*.md
 assets/vendor/font-awesome/*.txt
 assets/vendor/font-awesome/*.json
+node_modules
