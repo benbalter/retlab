@@ -6,4 +6,4 @@ npx npm-check-updates -u
 bundle update
 npm update
 
-bundle exec rougify style github | bundle exec sass-convert --stdin --from css --to scss > sass/_highlighting.scss
+bundle exec rougify style base16.dark | bundle exec sass-convert --stdin --from css --to scss > sass/_highlighting.scss
