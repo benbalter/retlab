@@ -20,6 +20,7 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency 'html-proofer', '~> 3.0'
   spec.add_development_dependency 'rubocop', '~> 1.7'
+  spec.add_development_dependency 'rubocop-github'
   spec.add_development_dependency 'rubocop-performance', '~> 1.13'
   spec.add_development_dependency 'sass', '~> 3.4'
   spec.add_development_dependency 'webrick', '~> 1.7'
