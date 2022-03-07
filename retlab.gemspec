@@ -19,8 +19,9 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency 'jekyll-include-cache'
 
   spec.add_development_dependency 'html-proofer', '~> 3.0'
-  spec.add_development_dependency 'rake', '~> 11.0'
-  spec.add_development_dependency 'rubocop', '~> 0.40'
+  spec.add_development_dependency 'rubocop', '~> 1.7'
+  spec.add_development_dependency 'rubocop-performance', '~> 1.13'
   spec.add_development_dependency 'sass', '~> 3.4'
   spec.add_development_dependency 'webrick', '~> 1.7'
+  spec.metadata['rubygems_mfa_required'] = 'true'
 end
