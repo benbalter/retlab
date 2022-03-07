@@ -6,4 +6,4 @@ ncu -u
 bundle update
 npm update
 
-rougify style github | sass-convert --stdin --from css --to scss > sass/_highlighting.scss
+bundle exec rougify style github | bundle exec sass-convert --stdin --from css --to scss > sass/_highlighting.scss
