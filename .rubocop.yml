@@ -3,3 +3,4 @@ AllCops:
   Exclude:
     - '_site/**/*'
     - 'node_modules/**/*'
+  TargetRubyVersion: 2.7
