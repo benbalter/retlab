@@ -2,11 +2,8 @@
 
 set -ex
 
+ncu -u
 bundle update
 npm update
-
-rm -rf "./assets/vendor"
-mkdir -p "./assets/vendor"
-#cp -r "./node_modules/@fortawesome/fontawesome-free" "./assets/vendor/font-awesome/"
 
 rougify style github | sass-convert --stdin --from css --to scss > sass/_highlighting.scss
