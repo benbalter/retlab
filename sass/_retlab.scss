@@ -7,7 +7,13 @@ $tooltip-max-width: 350px;
 //@import "~bootstrap/scss/bootstrap";
 @import "bootstrap-dark-5/scss/bootstrap-dark";
 
-@import "highlighting";
+@media (prefers-color-scheme: dark) {
+    @import 'base16.dark';
+}
+
+@media (prefers-color-scheme: light) {
+    @import 'base16.light';
+}
 
 .footnotes {
     @extend small;
