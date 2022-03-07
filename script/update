@@ -2,7 +2,7 @@
 
 set -ex
 
-ncu -u
+npm exec ncu -u
 bundle update
 npm update
 
