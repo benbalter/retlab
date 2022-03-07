@@ -1,0 +1,16 @@
+current directory: /home/runner/work/retlab/retlab/vendor/bundle/ruby/3.0.0/gems/unf_ext-0.0.8/ext/unf_ext
+/opt/hostedtoolcache/Ruby/3.0.2/x64/bin/ruby -I /opt/hostedtoolcache/Ruby/3.0.2/x64/lib/ruby/3.0.0 -r ./siteconf20220306-1629-vsc2qj.rb extconf.rb
+checking for -lstdc++... yes
+creating Makefile
+
+current directory: /home/runner/work/retlab/retlab/vendor/bundle/ruby/3.0.0/gems/unf_ext-0.0.8/ext/unf_ext
+make DESTDIR\= clean
+
+current directory: /home/runner/work/retlab/retlab/vendor/bundle/ruby/3.0.0/gems/unf_ext-0.0.8/ext/unf_ext
+make DESTDIR\=
+compiling unf.cc
+linking shared-object unf_ext.so
+
+current directory: /home/runner/work/retlab/retlab/vendor/bundle/ruby/3.0.0/gems/unf_ext-0.0.8/ext/unf_ext
+make DESTDIR\= install
+/usr/bin/install -c -m 0755 unf_ext.so ./.gem.20220306-1629-rd8tab
