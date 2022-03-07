@@ -2,7 +2,7 @@
 
 set -ex
 
-npm exec ncu -u
+npx npm-check-updates -u
 bundle update
 npm update
 
