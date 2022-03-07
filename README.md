@@ -1,6 +1,6 @@
 # Retlab
 
-[![Build Status](https://travis-ci.org/benbalter/retlab.svg?branch=master)](https://travis-ci.org/benbalter/retlab)
+[![CI](https://github.com/benbalter/retlab/actions/workflows/ci.yml/badge.svg)](https://github.com/benbalter/retlab/actions/workflows/ci.yml)
 
 ![Screenshot of Retlab](screenshot.png)
 
