@@ -9,6 +9,10 @@ $tooltip-max-width: 350px;
 
 @media (prefers-color-scheme: dark) {
     @import 'base16.dark';
+    
+    .highlight {
+        background-color: var(--bs-body-bg)
+    }
 }
 
 @media (prefers-color-scheme: light) {
