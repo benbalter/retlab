@@ -2,8 +2,8 @@
   <div class="row w-50 mx-auto">
     {% for link in site.contact_links %}
       <div class="col small">
-        <a href="{{ link.url }}" rel="me" target="_blank" data-proofer-ignore="true" class="text-muted">
-          <i class="fab fa-{{ link.icon }} fa-2x">&nbsp;</i>
+        <a href="{{ link.url }}" rel="me" target="_blank" data-proofer-ignore="true" class="text-secondary">
+          <i class="{{ link.icon }} fa-2x" aria-hidden="true"></i>
           <p>{{ link.name }}</p>
         </a>
       </div>

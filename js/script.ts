@@ -1,10 +1,11 @@
 import { library, dom } from '@fortawesome/fontawesome-svg-core';
 import { faRss } from '@fortawesome/free-solid-svg-icons/faRss';
-import { faFacebookF } from '@fortawesome/free-brands-svg-icons/faFacebookF';
 import { faTwitter } from '@fortawesome/free-brands-svg-icons/faTwitter';
-import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons/faLinkedinIn';
-import { faKeybase } from '@fortawesome/free-brands-svg-icons/faKeybase';
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons/faLinkedin';
 import { faGithub } from '@fortawesome/free-brands-svg-icons/faGithub';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons/faEnvelope';
+import { faAddressCard } from '@fortawesome/free-solid-svg-icons/faAddressCard';
+
 import { Collapse, Tooltip } from 'bootstrap';
 
 import * as AnchorJS from 'anchor-js';
@@ -25,10 +26,10 @@ document.addEventListener('turbo:load', () => {
 });
 
 library.add(faRss);
-library.add(faFacebookF);
 library.add(faTwitter);
-library.add(faLinkedinIn);
-library.add(faKeybase);
+library.add(faLinkedin);
 library.add(faGithub);
+library.add(faEnvelope);
+library.add(faAddressCard);
 
 dom.watch();
