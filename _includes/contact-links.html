@@ -1,7 +1,9 @@
 <div class="text-center">
-  <div class="row w-50 mx-auto">
+  <div class="row justify-content-center">
+    {% assign num_links = site.contact_links | size %}
+    {% assign col_size = 12 | | divided_by: num_links %}
     {% for link in site.contact_links %}
-      <div class="col small">
+      <div class="col-sm-{{ col_size }} small">
         <a href="{{ link.url }}" rel="me" target="_blank" data-proofer-ignore="true" class="text-secondary">
           <i class="{{ link.icon }} fa-2x" aria-hidden="true"></i>
           <p>{{ link.name }}</p>
@@ -11,7 +13,7 @@
   </div>
 
   {% if site.pgp_key %}
-  <p>
+  <p class="small">
     <a href="{{ "key.asc" | absolute_url }}">PGP: <code>{{ site.pgp_key }}</code></a>
   </p>
   {% endif %}
