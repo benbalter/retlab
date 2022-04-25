@@ -1,4 +1,4 @@
-import { library, dom } from '@fortawesome/fontawesome-svg-core';
+import { config, library, dom } from '@fortawesome/fontawesome-svg-core';
 import { faRss } from '@fortawesome/free-solid-svg-icons/faRss';
 import { faTwitter } from '@fortawesome/free-brands-svg-icons/faTwitter';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons/faLinkedin';
@@ -25,11 +25,13 @@ document.addEventListener('turbo:load', () => {
   });
 });
 
-library.add(faRss);
-library.add(faTwitter);
-library.add(faLinkedin);
-library.add(faGithub);
-library.add(faEnvelope);
-library.add(faAddressCard);
-
+config.mutateApproach = 'sync';
+library.add(
+  faRss,
+  faTwitter,
+  faLinkedin,
+  faGithub,
+  faEnvelope,
+  faAddressCard,
+);
 dom.watch();
