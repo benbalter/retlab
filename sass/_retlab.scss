@@ -4,7 +4,7 @@ $enable-shadows: true;
 $enable-gradients: true;
 $tooltip-max-width: 350px;
 
-//@import "~bootstrap/scss/bootstrap";
+/*@import "~bootstrap/scss/bootstrap";*/ 
 @import "bootstrap-dark-5/scss/bootstrap-dark";
 
 @media (prefers-color-scheme: dark) {

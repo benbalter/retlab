@@ -22,33 +22,10 @@ const config: webpack.Configuration = {
         loader: 'babel-loader',
       },
       {
-        test: /\.js$/,
-        use: ['source-map-loader'],
-        enforce: 'pre',
-      },
-      {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        use: {
-          loader: 'babel-loader',
-        },
-      },
-      {
-        test: /\.(scss)$/,
+        test: /\.s[ac]ss$/i,
         use: [
-          {
-            loader: MiniCssExtractPlugin.loader,
-          },
-          {
-            loader: 'css-loader',
-            options: {
-              url: false,
-            },
-          },
-          {
-            loader: 'postcss-loader',
-          },
-
+          MiniCssExtractPlugin.loader,
+          'css-loader',
           {
             loader: 'sass-loader',
             options: {
@@ -58,7 +35,20 @@ const config: webpack.Configuration = {
                 ],
               },
             },
-          }],
+          },
+          {
+            loader: 'postcss-loader',
+            options: {
+              postcssOptions: {
+                plugins: [
+                  [
+                    'autoprefixer',
+                  ],
+                ],
+              },
+            },
+          },
+        ],
       },
     ],
   },
