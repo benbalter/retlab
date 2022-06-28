@@ -5,6 +5,7 @@ import { faLinkedin } from '@fortawesome/free-brands-svg-icons/faLinkedin';
 import { faGithub } from '@fortawesome/free-brands-svg-icons/faGithub';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons/faEnvelope';
 import { faAddressCard } from '@fortawesome/free-solid-svg-icons/faAddressCard';
+import { closest } from 'fastest-levenshtein';
 
 import { Collapse, Tooltip } from 'bootstrap';
 
@@ -23,6 +24,13 @@ document.addEventListener('turbo:load', () => {
   Array.from(els).forEach((el) => {
     new Tooltip(el); // eslint-disable-line no-new
   });
+
+  const div = document.getElementById('four-oh-four-suggestion');
+
+  if (div && window.paths) {
+    const rec = closest(window.location.pathname, window.paths);
+    div.innerHTML = `<a href="${rec}">${rec}</a>`;
+  }
 });
 
 config.mutateApproach = 'sync';

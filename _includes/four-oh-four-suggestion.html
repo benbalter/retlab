@@ -1,0 +1,10 @@
+{% assign pages = site.pages | where_exp: "page", "page.sitemap != false" %}
+{% assign page_paths = pages | map: "url" %}
+{% assign post_paths = site.posts | map: "url" %}
+{% assign paths = page_paths | concat: post_paths %}
+
+<script>
+window.paths = {{ paths | jsonify }};
+</script>
+
+Perhaps you're looking for <span id="four-oh-four-suggestion"></span>?
