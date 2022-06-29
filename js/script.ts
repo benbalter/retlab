@@ -6,6 +6,7 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons/faGithub';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons/faEnvelope';
 import { faAddressCard } from '@fortawesome/free-solid-svg-icons/faAddressCard';
 import { closest } from 'fastest-levenshtein';
+import { XMLParser } from 'fast-xml-parser';
 
 import { Collapse, Tooltip } from 'bootstrap';
 
@@ -27,9 +28,19 @@ document.addEventListener('turbo:load', () => {
 
   const div = document.getElementById('four-oh-four-suggestion');
 
-  if (div && window.paths) {
-    const rec = closest(window.location.pathname, window.paths);
-    div.innerHTML = `<a href="${rec}">${rec}</a>`;
+  if (div) {
+    fetch(`${window.location.protocol}//${window.location.host}/sitemap.xml`).then((response) => {
+      if (response.ok) {
+        response.text().then((text) => {
+          const parser = new XMLParser();
+          const urls = parser.parse(text).urlset.url.map((url) => url.loc);
+          const url = new URL(closest(window.location.href, urls));
+          div.innerHTML = `<a href="${url.href}">${url.pathname}</a>`;
+        });
+      } else {
+        div.innerHTML = '<a href="/">/</a>';
+      }
+    });
   }
 });
 

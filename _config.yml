@@ -51,6 +51,7 @@ plugins:
   - jekyll-github-metadata
   - jekyll-feed
   - jekyll-include-cache
+  - jekyll-sitemap
 
 exclude:
   - vendor/bundle
