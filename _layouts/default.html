@@ -4,6 +4,9 @@
     {% include_cached meta.html %}
     {% feed_meta %}
     {% seo %}
+    {% if page.reload %}
+    <meta name="turbo-visit-control" content="reload">
+    {% endif %}
   </head>
   <body class="{{ page.layout }} post{{ page.id | slugify | prepend: "-"}} mt-2">
     <div class="container">
