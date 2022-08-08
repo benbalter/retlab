@@ -2,4 +2,4 @@
 
 set -e
 
-bundle exec jekyll serve --config _config.yml,_config_local.yml --verbose --watch
+bundle exec jekyll serve --verbose --watch
