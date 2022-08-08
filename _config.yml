@@ -54,9 +54,16 @@ plugins:
   - jekyll-sitemap
 
 exclude:
-  - vendor/bundle
-  - node_modules
-  - js
-  - sass
+  - vendor/bundle/
+  - node_modules/
+  - js/
+  - sass/
+  - script/
+  - prettier.config.js
+  - "*.gem"
+  - "*.gemspec"
+  - "*.json"
+  - "*.ts"
 
 theme: null
+repository: benbalter/retladb

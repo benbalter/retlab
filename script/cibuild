@@ -4,10 +4,9 @@ set -e
 
 script/build
 bundle exec htmlproofer _site \
-  --disable-external \
-  --check-html \
-  --report-missing-names \
-  --report-script-embeds \
-  --checks-to-ignore LinkCheck,ImageCheck
+  --disable-external=true \
+  --enforce-https=false \
+  --checks=Images,Links,Scripts,OpenGraph \
+  --ignore_urls "/apple-touch-icon/,/favicon/,/site.webmanifest/"
 bundle exec rubocop -S -D -E
 gem build retlab.gemspec
