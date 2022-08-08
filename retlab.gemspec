@@ -23,7 +23,7 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency 'jekyll-seo-tag'
   spec.add_runtime_dependency 'jekyll-sitemap'
 
-  spec.add_development_dependency 'html-proofer', '~> 3.0'
+  spec.add_development_dependency 'html-proofer', '~> 4.3'
   spec.add_development_dependency 'rubocop', '~> 1.7'
   spec.add_development_dependency 'rubocop-github'
   spec.add_development_dependency 'rubocop-performance', '~> 1.13'
