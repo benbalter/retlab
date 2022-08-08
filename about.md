@@ -1,5 +1,6 @@
 ---
 title: About
+permalink: /about/
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rhoncus quam et interdum dignissim. Nulla elementum pulvinar facilisis. Phasellus eget ultricies orci. Aenean ultrices mollis lorem, imperdiet imperdiet nisi. In at nibh elit. Nullam pulvinar tincidunt nisl, et tempus justo maximus sit amet. Integer ac molestie ante. Vestibulum nec lorem efficitur, laoreet tortor id, vestibulum neque. Sed in semper turpis. Maecenas mattis tempor massa. In volutpat ligula ligula, vitae semper nisi maximus a. Cras sit amet efficitur justo. Vestibulum pulvinar feugiat enim sed efficitur.
