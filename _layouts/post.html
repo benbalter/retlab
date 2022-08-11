@@ -8,13 +8,6 @@ layout: default
 
       <h1 class="display-4 text-primary">{{ page.title | smartify }}</h1>
 
-      <div class="mb-2">
-        <small>
-          <span class="fst-italic">Posted {{ page.date | date: '%B %-d, %Y' }}</span> |
-          <a class="text-muted fst-italic" href="{{ site.github.repository_url }}/commits/{{ site.github.source.branch }}/{{ page.path }}" target="_blank" rel="noopener">View revision history</a>
-        </small>
-      </div>
-
       {% if page.description %}
       <div class="lead">
         {% capture tldr %}
@@ -29,6 +22,10 @@ layout: default
 
       <div class="entrybody">
         {{ content }}
+      </div>
+
+      <div class="mb-2 text-muted">
+        Posted {{ page.date | date: '%B %-d, %Y' }} | <a class="text-muted" href="{{ site.github.repository_url }}/commits/{{ site.github.source.branch }}/{{ page.path }}" target="_blank" rel="noopener">View revision history</a>
       </div>
 
       {% if site.data.related_posts[page.relative_path] %}
