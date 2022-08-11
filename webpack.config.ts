@@ -32,16 +32,6 @@ const config: webpack.Configuration = {
             },
           },
           {
-            loader: 'sass-loader',
-            options: {
-              sassOptions: {
-                includePaths: [
-                  path.resolve(__dirname, 'node_modules/bootstrap/scss'),
-                ],
-              },
-            },
-          },
-          {
             loader: 'postcss-loader',
             options: {
               postcssOptions: {
@@ -49,6 +39,16 @@ const config: webpack.Configuration = {
                   [
                     'autoprefixer',
                   ],
+                ],
+              },
+            },
+          },
+          {
+            loader: 'sass-loader',
+            options: {
+              sassOptions: {
+                includePaths: [
+                  path.resolve(__dirname, 'node_modules/bootstrap/scss'),
                 ],
               },
             },
