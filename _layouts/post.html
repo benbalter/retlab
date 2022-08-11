@@ -16,7 +16,7 @@ layout: default
 </strong>
         {% endcapture %}
 
-        {{ page.description | prepend: tldr | markdownify | smartify }}
+        {{ page.description | prepend: tldr | markdownify | smartify | replace:"a href=",'a class="link-secondary" href=' }}
       </div>
       {% endif %}
 
