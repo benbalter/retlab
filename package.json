@@ -15,12 +15,12 @@
     "fastest-levenshtein": "^1.0.16",
     "mini-css-extract-plugin": "^2.6.1",
     "precss": "^4.0.0",
-    "webpack": "^5.73.0"
+    "webpack": "^5.74.0"
   },
   "description": "[![Build Status](https://travis-ci.org/benbalter/retlab.svg?branch=master)](https://travis-ci.org/benbalter/retlab)",
   "devDependencies": {
     "@babel/core": "^7.18.5",
-    "@babel/preset-typescript": "^7.17.12",
+    "@babel/preset-typescript": "^7.18.6",
     "@fortawesome/fontawesome-common-types": "^6.1.1",
     "@types/anchor-js": "^4.2.1",
     "@types/bootstrap": "^5.1.12",
@@ -36,7 +36,7 @@
     "eslint-plugin-import": "^2.26.0",
     "file-loader": "^6.2.0",
     "jsonlint": "^1.6.3",
-    "npm-check-updates": "^13.1.5",
+    "npm-check-updates": "^16.0.5",
     "postcss-loader": "^7.0.0",
     "sass": "^1.52.3",
     "sass-loader": "^13.0.0",
