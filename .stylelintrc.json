@@ -3,7 +3,7 @@
   "extends": ["stylelint-config-recommended-scss"],
   "customSyntax": "postcss-scss",
   "rules": {
-    "scss/at-extend-no-missing-placeholder": false,
-    "no-invalid-position-at-import-rule": false
+    "scss/at-extend-no-missing-placeholder": null,
+    "no-invalid-position-at-import-rule": null
   }
 }
