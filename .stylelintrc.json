@@ -1,3 +1,5 @@
 {
-  "ignoreFiles": ["assets/css/*.css"]
+  "ignoreFiles": ["assets/css/*.css"],
+  "extends": ["stylelint-config-recommended-scss"],
+  "customSyntax": "postcss-scss"
 }
