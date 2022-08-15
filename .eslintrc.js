@@ -1,6 +1,6 @@
 module.exports = {
   env: {
-    browser: true,
+    browser: true
   },
   parser: '@typescript-eslint/parser',
   parserOptions: {
@@ -10,5 +10,5 @@ module.exports = {
     '@typescript-eslint'
   ],
   rules: {
-  },
+  }
 }
