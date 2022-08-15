@@ -22,7 +22,7 @@ document.addEventListener('turbo:load', () => {
 
   const els = document.querySelectorAll('[data-bs-toggle="tooltip"]')
   Array.from(els).forEach((el) => {
-    new Tooltip(el); // eslint-disable-line no-new
+    new Tooltip(el) // eslint-disable-line no-new
   })
 
   const div = document.getElementById('four-oh-four-suggestion')
@@ -52,6 +52,6 @@ library.add(
   faLinkedin,
   faGithub,
   faEnvelope,
-  faAddressCard,
+  faAddressCard
 )
 dom.watch()
