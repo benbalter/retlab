@@ -1,5 +1,7 @@
 {
-  "baseUrl": "types",
+  "compilerOptions": {
+    "baseUrl": "types"
+  },
   "typeRoots": ["types"],
-  "esModuleInterop": true,
+  "esModuleInterop": true
 }
