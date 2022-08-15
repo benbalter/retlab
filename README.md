@@ -4,8 +4,7 @@
 
 ![Screenshot of Retlab](screenshot.png)
 
-*A minimalist Jekyll theme for your personal site*
-
+A minimalist Jekyll theme for your personal site
 
 ## Installation
 
