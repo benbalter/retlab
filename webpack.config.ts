@@ -1,6 +1,6 @@
-import * as MiniCssExtractPlugin from 'mini-css-extract-plugin';
-import * as path from 'path';
-import * as webpack from 'webpack';
+import * as MiniCssExtractPlugin from 'mini-css-extract-plugin'
+import * as path from 'path'
+import * as webpack from 'webpack'
 
 const config: webpack.Configuration = {
   entry: ['./js/script.ts', './sass/_retlab.scss'],
@@ -57,5 +57,5 @@ const config: webpack.Configuration = {
       },
     ],
   },
-};
-export default config;
+}
+export default config

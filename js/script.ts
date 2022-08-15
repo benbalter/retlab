@@ -1,51 +1,51 @@
-import { config, library, dom } from '@fortawesome/fontawesome-svg-core';
-import { faRss } from '@fortawesome/free-solid-svg-icons/faRss';
-import { faTwitter } from '@fortawesome/free-brands-svg-icons/faTwitter';
-import { faLinkedin } from '@fortawesome/free-brands-svg-icons/faLinkedin';
-import { faGithub } from '@fortawesome/free-brands-svg-icons/faGithub';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons/faEnvelope';
-import { faAddressCard } from '@fortawesome/free-solid-svg-icons/faAddressCard';
-import { closest } from 'fastest-levenshtein';
+import { config, library, dom } from '@fortawesome/fontawesome-svg-core'
+import { faRss } from '@fortawesome/free-solid-svg-icons/faRss'
+import { faTwitter } from '@fortawesome/free-brands-svg-icons/faTwitter'
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons/faLinkedin'
+import { faGithub } from '@fortawesome/free-brands-svg-icons/faGithub'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons/faEnvelope'
+import { faAddressCard } from '@fortawesome/free-solid-svg-icons/faAddressCard'
+import { closest } from 'fastest-levenshtein'
 
-import { Collapse, Tooltip } from 'bootstrap';
+import { Collapse, Tooltip } from 'bootstrap'
 
-import * as AnchorJS from 'anchor-js';
-import * as Turbo from '@hotwired/turbo';
+import * as AnchorJS from 'anchor-js'
+import * as Turbo from '@hotwired/turbo'
 
-window.Turbo = Turbo;
-window.Collapse = Collapse;
-window.Tooltip = Tooltip;
-const anchors = new AnchorJS();
+window.Turbo = Turbo
+window.Collapse = Collapse
+window.Tooltip = Tooltip
+const anchors = new AnchorJS()
 
 document.addEventListener('turbo:load', () => {
-  anchors.add();
+  anchors.add()
 
-  const els = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+  const els = document.querySelectorAll('[data-bs-toggle="tooltip"]')
   Array.from(els).forEach((el) => {
     new Tooltip(el); // eslint-disable-line no-new
-  });
+  })
 
-  const div = document.getElementById('four-oh-four-suggestion');
+  const div = document.getElementById('four-oh-four-suggestion')
   if (div) {
-    const xhr = new XMLHttpRequest();
+    const xhr = new XMLHttpRequest()
 
     xhr.onload = () => {
       if (xhr.status === 200) {
-        const xml = xhr.responseXML;
-        const urls = Array.from(xml.querySelectorAll('urlset > url > loc')).map((el) => el.textContent);
-        const url = new URL(closest(window.location.href, urls));
-        div.innerHTML = `<a href="${url.href}">${url.pathname}</a>`;
+        const xml = xhr.responseXML
+        const urls = Array.from(xml.querySelectorAll('urlset > url > loc')).map((el) => el.textContent)
+        const url = new URL(closest(window.location.href, urls))
+        div.innerHTML = `<a href="${url.href}">${url.pathname}</a>`
       } else {
-        div.innerHTML = '<a href="/">/</a>';
+        div.innerHTML = '<a href="/">/</a>'
       }
-    };
+    }
 
-    xhr.open('GET', `${window.location.protocol}//${window.location.host}/sitemap.xml`);
-    xhr.send();
+    xhr.open('GET', `${window.location.protocol}//${window.location.host}/sitemap.xml`)
+    xhr.send()
   }
-});
+})
 
-config.mutateApproach = 'sync';
+config.mutateApproach = 'sync'
 library.add(
   faRss,
   faTwitter,
@@ -53,5 +53,5 @@ library.add(
   faGithub,
   faEnvelope,
   faAddressCard,
-);
-dom.watch();
+)
+dom.watch()
