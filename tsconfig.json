@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
-    "baseUrl": "types"
+    "baseUrl": "types",
+    "strictNullChecks": true
   },
   "typeRoots": ["types"],
   "esModuleInterop": true

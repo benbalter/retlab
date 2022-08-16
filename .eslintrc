@@ -10,6 +10,5 @@
     "ecmaVersion": 2018,
   },
   "rules": {
-    "comma-dangle": [2, "always-multiline"],
   }
 }

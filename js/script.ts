@@ -26,7 +26,7 @@ document.addEventListener('turbo:load', () => {
   })
 
   const div = document.getElementById('four-oh-four-suggestion')
-  if (div) {
+  if (div != null) {
     const xhr = new XMLHttpRequest()
 
     xhr.onload = () => {
