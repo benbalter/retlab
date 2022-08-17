@@ -21,6 +21,9 @@ jobs:
           node-version: 16
           cache: 'npm'
 
+      - name: script/bootstrap
+        run: script/bootstrap
+
       - name: script/build
         run: script/build
 
