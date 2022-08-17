@@ -1,8 +1,8 @@
-name: Update dependencies
+name: Build assets
 
 on:
-  schedule: 
-    - cron: "0 0 * * 0"
+  push:
+    branches: [ main ]
   workflow_dispatch: {}
 
 jobs:
@@ -20,9 +20,6 @@ jobs:
         with:
           node-version: '14'
           cache: 'npm'
-
-      - name: script/update
-        run: script/update
 
       - name: script/build
         run: script/build
