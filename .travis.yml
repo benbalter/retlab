@@ -1,8 +1,0 @@
-script: "./script/cibuild"
-language: ruby
-rvm: 2.2
-cache: bundler
-sudo: false
-env:
-  global:
-    NOKOGIRI_USE_SYSTEM_LIBRARIES=true
