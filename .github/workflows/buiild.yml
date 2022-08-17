@@ -3,6 +3,14 @@ name: Build assets
 on:
   push:
     branches: [ main ]
+    paths:
+      - sass/**
+      - js/**
+      - Gemfile
+      - package.json
+      - package-lock.json
+      - webpack.config.ts
+
   workflow_dispatch: {}
 
 jobs:
