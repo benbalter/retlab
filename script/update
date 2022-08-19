@@ -2,7 +2,6 @@
 
 set -ex
 
-npx npm-check-updates -u
 bundle update
 npm update
 
