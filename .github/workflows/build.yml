@@ -4,6 +4,7 @@ on:
   push:
     branches: [ main ]
     paths:
+      - .github/**
       - sass/**
       - js/**
       - Gemfile
@@ -31,6 +32,9 @@ jobs:
 
       - name: script/bootstrap
         run: script/bootstrap
+
+      - name: script/update
+        run: script/update
 
       - name: script/build
         run: script/build
