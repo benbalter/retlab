@@ -4,7 +4,7 @@
     "url": "https://github.com/benbalter/retlab/issues"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^6.1.2",
+    "@fortawesome/fontawesome-svg-core": "^6.2.0",
     "@fortawesome/free-brands-svg-icons": "^6.1.2",
     "@fortawesome/free-solid-svg-icons": "^6.1.2",
     "@hotwired/turbo": "^7.1.0",
@@ -27,7 +27,7 @@
     "@types/node": "^18.7.14",
     "@types/webpack": "^5.28.0",
     "@typescript-eslint/eslint-plugin": "^5.35.1",
-    "@typescript-eslint/experimental-utils": "^5.36.0",
+    "@typescript-eslint/experimental-utils": "^5.36.1",
     "@typescript-eslint/parser": "^5.36.0",
     "babel-loader": "^8.2.5",
     "babel-preset-env": "^1.7.0",
@@ -38,7 +38,7 @@
     "jsonlint": "^1.6.3",
     "npm-check-updates": "^16.0.6",
     "postcss-loader": "^7.0.1",
-    "sass": "^1.54.6",
+    "sass": "^1.54.7",
     "sass-loader": "^13.0.2",
     "source-map-loader": "^4.0.0",
     "standard": "^17.0.0",
