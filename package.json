@@ -38,7 +38,7 @@
     "jsonlint": "^1.6.3",
     "npm-check-updates": "^16.0.6",
     "postcss-loader": "^7.0.1",
-    "sass": "^1.54.7",
+    "sass": "^1.54.8",
     "sass-loader": "^13.0.2",
     "source-map-loader": "^4.0.0",
     "standard": "^17.0.0",
