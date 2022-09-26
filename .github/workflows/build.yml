@@ -13,6 +13,8 @@ on:
       - webpack.config.ts
 
   workflow_dispatch: {}
+  schedule:
+    - cron: '0 0 * * *'
 
 jobs:
   build:
