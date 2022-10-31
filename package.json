@@ -24,7 +24,7 @@
     "@fortawesome/fontawesome-common-types": "^6.1.2",
     "@types/anchor-js": "^4.2.1",
     "@types/bootstrap": "^5.2.2",
-    "@types/node": "^18.11.7",
+    "@types/node": "^18.11.8",
     "@types/webpack": "^5.28.0",
     "@typescript-eslint/eslint-plugin": "^5.41.0",
     "@typescript-eslint/experimental-utils": "^5.41.0",
