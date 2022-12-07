@@ -13,7 +13,7 @@
     "bootstrap": "<5.2.0",
     "bootstrap-dark-5": "github:vinorodrigues/bootstrap-dark-5",
     "fastest-levenshtein": "^1.0.16",
-    "mini-css-extract-plugin": "^2.7.1",
+    "mini-css-extract-plugin": "^2.7.2",
     "precss": "^4.0.0",
     "webpack": "^5.75.0"
   },
