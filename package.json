@@ -31,7 +31,7 @@
     "@typescript-eslint/parser": "^5.46.1",
     "babel-loader": "^9.1.0",
     "babel-preset-env": "^1.7.0",
-    "css-loader": "^6.7.2",
+    "css-loader": "^6.7.3",
     "eslint": "^8.29.0",
     "eslint-plugin-import": "^2.26.0",
     "file-loader": "^6.2.0",
