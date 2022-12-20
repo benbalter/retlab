@@ -27,7 +27,7 @@
     "@types/node": "^18.11.17",
     "@types/webpack": "^5.28.0",
     "@typescript-eslint/eslint-plugin": "^5.46.1",
-    "@typescript-eslint/experimental-utils": "^5.46.1",
+    "@typescript-eslint/experimental-utils": "^5.47.0",
     "@typescript-eslint/parser": "^5.46.1",
     "babel-loader": "^9.1.0",
     "babel-preset-env": "^1.7.0",
