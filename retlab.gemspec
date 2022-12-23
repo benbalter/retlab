@@ -20,6 +20,7 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency 'jekyll-feed'
   spec.add_runtime_dependency 'jekyll-github-metadata'
   spec.add_runtime_dependency 'jekyll-include-cache'
+  spec.add_runtime_dependency 'jekyll-sass-converter', '~> 3.0'
   spec.add_runtime_dependency 'jekyll-seo-tag'
   spec.add_runtime_dependency 'jekyll-sitemap'
 
