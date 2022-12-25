@@ -1,6 +1,7 @@
-import * as MiniCssExtractPlugin from 'mini-css-extract-plugin'
+import MiniCssExtractPlugin from 'mini-css-extract-plugin'
 import * as path from 'path'
 import * as webpack from 'webpack'
+import autoprefixer from 'autoprefixer';
 
 const config: webpack.Configuration = {
   entry: ['./js/script.ts', './sass/_retlab.scss'],
@@ -10,7 +11,8 @@ const config: webpack.Configuration = {
   },
   mode: 'production',
   plugins: [
-    new MiniCssExtractPlugin({ filename: 'css/style.css' })
+    new MiniCssExtractPlugin({ filename: 'css/style.css' }),
+    autoprefixer
   ],
   optimization: {
     minimize: true
@@ -36,22 +38,13 @@ const config: webpack.Configuration = {
             options: {
               postcssOptions: {
                 plugins: [
-                  [
-                    'autoprefixer'
-                  ]
+                  autoprefixer
                 ]
               }
             }
           },
           {
             loader: 'sass-loader',
-            options: {
-              sassOptions: {
-                includePaths: [
-                  path.resolve(__dirname, 'node_modules/bootstrap/scss')
-                ]
-              }
-            }
           }
         ]
       }

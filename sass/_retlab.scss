@@ -7,6 +7,10 @@ $color-mode-type: media-query;
 
 @import "~bootstrap/scss/bootstrap";
 
+abbr[data-bs-original-title] {
+    @extend abbr, [title]
+}
+
 @media (prefers-color-scheme: dark) {
     @import 'base16.dark';
     
