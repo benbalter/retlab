@@ -24,11 +24,5 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency 'jekyll-seo-tag'
   spec.add_runtime_dependency 'jekyll-sitemap'
 
-  spec.add_development_dependency 'html-proofer', '~> 4.0'
-  spec.add_development_dependency 'rubocop', '~> 1.7'
-  spec.add_development_dependency 'rubocop-github'
-  spec.add_development_dependency 'rubocop-performance', '~> 1.13'
-  spec.add_development_dependency 'sass', '~> 3.4'
-  spec.add_development_dependency 'webrick', '~> 1.7'
   spec.metadata['rubygems_mfa_required'] = 'true'
 end
