@@ -1,7 +1,7 @@
 import MiniCssExtractPlugin from 'mini-css-extract-plugin'
 import * as path from 'path'
 import * as webpack from 'webpack'
-import autoprefixer from 'autoprefixer';
+import autoprefixer from 'autoprefixer'
 
 const config: webpack.Configuration = {
   entry: ['./js/script.ts', './sass/_retlab.scss'],
@@ -44,7 +44,7 @@ const config: webpack.Configuration = {
             }
           },
           {
-            loader: 'sass-loader',
+            loader: 'sass-loader'
           }
         ]
       }
