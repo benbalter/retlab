@@ -1,7 +1,15 @@
 {
   "ci": {
     "collect": {
-      "staticDistDir": "./_site"
+      "staticDistDir": "./_site",
+      "url": [
+        "http://localhost/index.html",
+        "http://localhost/about/index.html",
+        "http://localhost/2016/01/01/test-post/index.html"
+      ]
+    }, 
+    "assert": {
+      "presets": ["lighthouse:no-pwa"],
     }
   }
 }
