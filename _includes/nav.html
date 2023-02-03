@@ -5,8 +5,8 @@
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="navbar">
-      <ul class="navbar-nav mr-auto" role="navigation">
+    <div class="collapse navbar-collapse" id="navbar" role="navigation">
+      <ul class="navbar-nav mr-auto">
         {% for path in site.nav_pages %}
           {% assign nav_page=site.pages | where:"path",path | first %}
           <li class="nav-item">
