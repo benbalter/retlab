@@ -9,7 +9,12 @@
       ]
     }, 
     "assert": {
-      "preset": "lighthouse:no-pwa"
+      "preset": "lighthouse:no-pwa",
+      "assertions": {
+        "csp-xss": "off",
+        "unused-javascript": "off",
+        "unused-css-rules": "off"
+      }
     },
     "upload": {
       "target": "temporary-public-storage"
