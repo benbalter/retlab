@@ -9,7 +9,7 @@
       ]
     }, 
     "assert": {
-      "presets": ["lighthouse:no-pwa"],
+      "presets": ["lighthouse:no-pwa"]
     },
     "upload": {
       "target": "temporary-public-storage"
