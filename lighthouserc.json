@@ -14,8 +14,10 @@
         "csp-xss": "off",
         "unused-javascript": "off",
         "unused-css-rules": "off", 
-        "robots-txt": "off"
-      }
+        "robots-txt": "off",
+        "color-contrast": "warn",
+        "offscreen-images": "warn",
+        "uses-responsive-images": "warn"
     },
     "upload": {
       "target": "temporary-public-storage"
