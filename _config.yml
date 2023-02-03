@@ -67,3 +67,4 @@ exclude:
 
 theme: null
 repository: benbalter/retladb
+permalink: pretty
