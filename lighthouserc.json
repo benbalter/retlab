@@ -18,6 +18,7 @@
         "color-contrast": "warn",
         "offscreen-images": "warn",
         "uses-responsive-images": "warn"
+      }
     },
     "upload": {
       "target": "temporary-public-storage"
