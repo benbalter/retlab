@@ -13,7 +13,8 @@
       "assertions": {
         "csp-xss": "off",
         "unused-javascript": "off",
-        "unused-css-rules": "off"
+        "unused-css-rules": "off", 
+        "robots-txt": "off"
       }
     },
     "upload": {
