@@ -37,7 +37,7 @@
     "postcss-loader": "^7.3.2",
     "precss": "^4.0.0",
     "sass": "^1.62.1",
-    "sass-loader": "^13.3.0",
+    "sass-loader": "^13.3.1",
     "source-map-loader": "^4.0.1",
     "standard": "^17.0.0",
     "ts-node": "^10.9.1",
