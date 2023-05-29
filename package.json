@@ -34,7 +34,7 @@
     "jsonlint": "^1.6.3",
     "mini-css-extract-plugin": "^2.7.6",
     "npm-check-updates": "^16.10.12",
-    "postcss-loader": "^7.3.1",
+    "postcss-loader": "^7.3.2",
     "precss": "^4.0.0",
     "sass": "^1.62.1",
     "sass-loader": "^13.3.0",
