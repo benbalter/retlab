@@ -14,7 +14,7 @@
   },
   "description": "[![Build Status](https://travis-ci.org/benbalter/retlab.svg?branch=master)](https://travis-ci.org/benbalter/retlab)",
   "devDependencies": {
-    "@babel/core": "^7.21.8",
+    "@babel/core": "^7.22.1",
     "@babel/preset-typescript": "^7.21.5",
     "@fortawesome/fontawesome-common-types": "^6.3.0",
     "@types/anchor-js": "^5.0.0",
