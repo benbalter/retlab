@@ -20,7 +20,7 @@
     "@types/anchor-js": "^5.0.0",
     "@types/bootstrap": "^5.2.6",
     "@types/node": "^20.4.5",
-    "@types/webpack": "^5.28.1",
+    "@types/webpack": "^5.28.2",
     "@typescript-eslint/eslint-plugin": "^5.61.0",
     "@typescript-eslint/experimental-utils": "^5.62.0",
     "@typescript-eslint/parser": "^5.62.0",
