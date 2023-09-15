@@ -16,9 +16,6 @@ footer_pages:
 disqus:
   shortname: DISQUS_USERNAME
 
-# Google Analytics tracking id
-ga_username: UA-xxxxxxxx-x
-
 # Links to include on the contact page
 contact_links:
   - name: Twitter
