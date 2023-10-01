@@ -17,7 +17,7 @@
     "@babel/core": "^7.22.11",
     "@babel/preset-typescript": "^7.23.0",
     "@fortawesome/fontawesome-common-types": "^6.3.0",
-    "@types/anchor-js": "^5.0.0",
+    "@types/anchor-js": "^5.0.1",
     "@types/bootstrap": "^5.2.6",
     "@types/node": "^20.5.7",
     "@types/webpack": "^5.28.2",
