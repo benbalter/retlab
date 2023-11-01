@@ -20,7 +20,7 @@
     "@types/anchor-js": "^5.0.1",
     "@types/bootstrap": "^5.2.8",
     "@types/node": "^20.5.7",
-    "@types/webpack": "^5.28.2",
+    "@types/webpack": "^5.28.4",
     "@typescript-eslint/eslint-plugin": "^5.61.0",
     "@typescript-eslint/experimental-utils": "^5.62.0",
     "@typescript-eslint/parser": "^5.62.0",
@@ -43,7 +43,7 @@
     "ts-node": "^10.9.1",
     "ts-standard": "^12.0.2",
     "typescript": "^5.2.2",
-    "webpack": "^5.88.2",
+    "webpack": "^5.89.0",
     "webpack-cli": "^5.1.4"
   },
   "homepage": "https://github.com/benbalter/retlab#readme",
