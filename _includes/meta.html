@@ -15,3 +15,7 @@
 <meta name="theme-color" content="#337ab7">
 <link href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}" rel="stylesheet" media="screen">
 <script defer src="{{ "/assets/js/bundle.js?=" | append: site.github.build_revision | relative_url }}"></script>
+
+{% if page.robots %}
+<meta name="robots" content="{{ page.robots }}">
+{% endif %}
