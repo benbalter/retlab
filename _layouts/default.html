@@ -2,6 +2,9 @@
 <html lang="{{ site.lang }}" xml:lang="{{ site.lang }}">
   <head>
     {% include_cached meta.html %}
+    {% if page.robots %}
+    <meta name="robots" content="{{ page.robots }}">
+    {% endif %}
     {% feed_meta %}
     {% seo %}
     {% if page.reload %}
