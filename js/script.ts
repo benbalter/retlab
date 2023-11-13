@@ -1,10 +1,12 @@
 import { config, library, dom } from '@fortawesome/fontawesome-svg-core'
 import { faRss } from '@fortawesome/free-solid-svg-icons/faRss'
+import { faRetweet } from '@fortawesome/free-solid-svg-icons/faRetweet'
 import { faTwitter } from '@fortawesome/free-brands-svg-icons/faTwitter'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons/faLinkedin'
 import { faGithub } from '@fortawesome/free-brands-svg-icons/faGithub'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons/faEnvelope'
 import { faAddressCard } from '@fortawesome/free-solid-svg-icons/faAddressCard'
+import { faHeart } from '@fortawesome/free-regular-svg-icons/faHeart'
 import { closest } from 'fastest-levenshtein'
 
 import { Collapse, Tooltip } from 'bootstrap'
@@ -52,6 +54,8 @@ library.add(
   faLinkedin,
   faGithub,
   faEnvelope,
-  faAddressCard
+  faAddressCard,
+  faRetweet,
+  faHeart,
 )
 dom.watch()
