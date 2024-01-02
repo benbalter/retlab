@@ -56,6 +56,6 @@ library.add(
   faEnvelope,
   faAddressCard,
   faRetweet,
-  faHeart,
+  faHeart
 )
 dom.watch()
