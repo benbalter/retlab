@@ -4,8 +4,8 @@ set -e
 
 script/build
 bundle exec htmlproofer _site \
-  --disable-external=true \
-  --enforce-https=false \
+  --disable-external \
+  --no-enforce-https \
   --checks=Images,Links,Scripts,OpenGraph \
   --ignore_urls "/apple-touch-icon/,/favicon/,/site.webmanifest/"
 bundle exec rubocop -S -D -E
