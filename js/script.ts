@@ -6,6 +6,7 @@ import { faLinkedin } from '@fortawesome/free-brands-svg-icons/faLinkedin'
 import { faGithub } from '@fortawesome/free-brands-svg-icons/faGithub'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons/faEnvelope'
 import { faAddressCard } from '@fortawesome/free-solid-svg-icons/faAddressCard'
+import { faClock } from '@fortawesome/free-regular-svg-icons/faClock'
 import { faHeart } from '@fortawesome/free-regular-svg-icons/faHeart'
 import { closest } from 'fastest-levenshtein'
 
@@ -56,6 +57,7 @@ library.add(
   faEnvelope,
   faAddressCard,
   faRetweet,
-  faHeart
+  faHeart,
+  faClock
 )
 dom.watch()
