@@ -9,78 +9,91 @@
     }
   }
 
-  color: #d0d0d0;
-  background-color: #151515;
+  color: #d8d8d8;
+  background-color: #181818;
 
   .w {
-    color: #d0d0d0;
-    background-color: #151515;
+    color: #d8d8d8;
+    background-color: #181818;
   }
 
   .err {
-    color: #151515;
-    background-color: #ac4142;
+    color: #181818;
+    background-color: #ab4642;
   }
 
   .c, .ch, .cd, .cm, .cpf, .c1, .cs {
-    color: #505050;
+    color: #585858;
   }
 
   .cp, .nt {
-    color: #f4bf75;
+    color: #f7ca88;
   }
 
   .o, .ow, .p, .pi {
-    color: #d0d0d0;
+    color: #d8d8d8;
   }
 
   .gi {
-    color: #90a959;
+    color: #a1b56c;
   }
 
   .gd {
-    color: #ac4142;
+    color: #ab4642;
   }
 
   .gh {
-    color: #6a9fb5;
-    background-color: #151515;
+    color: #7cafc2;
+    background-color: #181818;
+    font-weight: bold;
+  }
+
+  .ge {
+    font-style: italic;
+  }
+
+  .ges {
+    font-weight: bold;
+    font-style: italic;
+  }
+
+  .gs {
     font-weight: bold;
   }
 
   .k, .kn, .kp, .kr, .kv {
-    color: #aa759f;
+    color: #ba8baf;
   }
 
   .kc, .kt, .kd {
-    color: #d28445;
+    color: #dc9656;
   }
 
   .s, .sb, .sc, .dl, .sd, .s2, .sh, .sx, .s1 {
-    color: #90a959;
+    color: #a1b56c;
   }
 
   .sa {
-    color: #aa759f;
+    color: #ba8baf;
   }
 
   .sr {
-    color: #75b5aa;
+    color: #86c1b9;
   }
 
   .si, .se {
-    color: #8f5536;
+    color: #a16946;
   }
 
   .nn, .nc, .no {
-    color: #f4bf75;
+    color: #f7ca88;
   }
 
   .na {
-    color: #6a9fb5;
+    color: #7cafc2;
   }
 
   .m, .mb, .mf, .mh, .mi, .il, .mo, .mx, .ss {
-    color: #90a959;
+    color: #a1b56c;
   }
 }
