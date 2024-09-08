@@ -5,5 +5,5 @@ set -ex
 bundle update
 npm update
 
-bundle exec rougify style base16.light | bundle exec sass-convert --stdin --from css --to scss > sass/_base16.light.scss
-bundle exec rougify style base16.dark | bundle exec sass-convert --stdin --from css --to scss > sass/_base16.dark.scss
+bundle exec rougify style base16.light | bundle exec sass-convert --stdin --from css --to scss >sass/_base16.light.scss
+bundle exec rougify style base16.dark | bundle exec sass-convert --stdin --from css --to scss >sass/_base16.dark.scss
