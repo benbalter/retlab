@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { createRoot } from 'react-dom/client'
-import { config, library } from '@fortawesome/fontawesome-svg-core'
+import { config, library, dom } from '@fortawesome/fontawesome-svg-core'
 import { faRss } from '@fortawesome/free-solid-svg-icons/faRss'
 import { faRetweet } from '@fortawesome/free-solid-svg-icons/faRetweet'
 import { faTwitter } from '@fortawesome/free-brands-svg-icons/faTwitter'
@@ -37,6 +37,7 @@ library.add(
   faClock,
   faBluesky
 )
+dom.watch()
 
 // Component for 404 suggestions
 const FourOhFourSuggestion: React.FC = () => {
@@ -50,7 +51,9 @@ const FourOhFourSuggestion: React.FC = () => {
       if (xhr.status === 200) {
         const xml = xhr.responseXML
         if (xml != null) {
-          const urls = Array.from(xml.querySelectorAll('urlset > url > loc')).map((el) => el.textContent as string)
+          const urls = Array.from(xml.querySelectorAll('urlset > url > loc'))
+            .map((el) => el.textContent)
+            .filter((url): url is string => url !== null)
           const url = new URL(closest(window.location.href, urls))
           setSuggestionUrl(url.href)
         } else {
