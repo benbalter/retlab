@@ -64,7 +64,6 @@
     "build": "npm run lint && npm run webpack && npm run copy-assets && next build",
     "copy-assets": "mkdir -p public/assets && cp -r assets/* public/assets/",
     "dev": "npm run copy-assets && next dev",
-    "export": "next build && next export",
     "lint": "npm run lint-js && npm run lint-json",
     "lint-js": "eslint ./ --ext .js,.jsx,.ts,.tsx --fix",
     "lint-json": "jsonlint package.json --in-place --sort-keys",
