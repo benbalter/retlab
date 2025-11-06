@@ -1,4 +1,5 @@
 import React from 'react'
+import { Alert, Button, Row, Col } from 'react-bootstrap'
 import Layout from './Layout'
 import MiniBio from './MiniBio'
 import ReadingTime from './ReadingTime'
@@ -32,22 +33,22 @@ const PostLayout: React.FC<PostLayoutProps> = ({
 
   return (
     <Layout>
-      <div className="row">
-        <div className="col-md-10 offset-md-1">
+      <Row>
+        <Col md={{ span: 10, offset: 1 }}>
           <article className="post">
             <h1 className="display-4 text-primary">{title}</h1>
 
             {tldr && (
-              <div className="alert alert-info" role="alert">
+              <Alert variant="info">
                 <strong>TL;DR:</strong> {tldr}
-              </div>
+              </Alert>
             )}
 
             {archived && (
-              <div className="alert alert-warning" role="alert">
+              <Alert variant="warning">
                 <strong>❗ Heads up!</strong> This post is archived and here for historical purposes. 
                 It may no longer be accurate or reflect my views. Proceed at your own risk.
-              </div>
+              </Alert>
             )}
 
             <ReadingTime content={content} />
@@ -66,26 +67,27 @@ const PostLayout: React.FC<PostLayoutProps> = ({
               </a>
             </div>
 
-            <div className="row border-top pt-3">
-              <div className="col">
+            <Row className="border-top pt-3">
+              <Col>
                 <MiniBio />
-              </div>
-              <div className="col-lg-2 text-center pb-3">
+              </Col>
+              <Col lg={2} className="text-center pb-3">
                 <p>
                   <small>This page is open source. Please help improve it.</small>
                 </p>
-                <a
-                  className="btn btn-outline-primary btn-lg btn-sm"
+                <Button
+                  variant="outline-primary"
+                  size="sm"
                   href={`${repositoryUrl}/edit/${branch}/${path}`}
                   title={`Help improve article ${path}`}
                 >
                   Edit
-                </a>
-              </div>
-            </div>
+                </Button>
+              </Col>
+            </Row>
           </article>
-        </div>
-      </div>
+        </Col>
+      </Row>
     </Layout>
   )
 }

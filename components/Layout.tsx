@@ -1,4 +1,5 @@
 import React from 'react'
+import { Container } from 'react-bootstrap'
 import Nav from './Nav'
 import Footer from './Footer'
 
@@ -12,7 +13,7 @@ const Layout: React.FC<LayoutProps> = ({
   hero = false
 }) => {
   return (
-    <div className="container">
+    <Container>
       {hero && <div className="hero-unit rounded-top position-relative">&nbsp;</div>}
       
       <Nav hero={hero} />
@@ -22,7 +23,7 @@ const Layout: React.FC<LayoutProps> = ({
       </div>
       
       <Footer />
-    </div>
+    </Container>
   )
 }
 

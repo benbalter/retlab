@@ -1,6 +1,7 @@
 'use client'
 
-import React, { useState } from 'react'
+import React from 'react'
+import { Navbar, Nav as BootstrapNav, Container } from 'react-bootstrap'
 import Link from 'next/link'
 
 interface NavProps {
@@ -8,49 +9,38 @@ interface NavProps {
 }
 
 const Nav: React.FC<NavProps> = ({ hero = false }) => {
-  const [isOpen, setIsOpen] = useState(false)
-  
   const navPages = [
     { path: '/', title: 'Posts' },
     { path: '/about/', title: 'About' }
   ]
 
-  const navClass = `navbar navbar-expand-md bg-secondary-subtle text-secondary border-start border-end border-bottom ${!hero ? 'border-top rounded-top' : ''} rounded-bottom mb-3`
+  const navClass = `bg-secondary-subtle text-secondary border-start border-end border-bottom ${!hero ? 'border-top rounded-top' : ''} rounded-bottom mb-3`
 
   return (
-    <div className={navClass}>
-      <div className="container-fluid px-3">
-        <Link href="/" className="navbar-brand fw-bold">
-          Ben Balter
+    <Navbar expand="md" className={navClass}>
+      <Container fluid className="px-3">
+        <Link href="/" passHref legacyBehavior>
+          <Navbar.Brand className="fw-bold">
+            Ben Balter
+          </Navbar.Brand>
         </Link>
-        <button
-          className="navbar-toggler"
-          type="button"
-          onClick={() => setIsOpen(!isOpen)}
-          aria-controls="navbar"
-          aria-expanded={isOpen}
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
-
-        <div className={`collapse navbar-collapse ${isOpen ? 'show' : ''}`} id="navbar" role="navigation">
-          <ul className="navbar-nav mr-auto">
+        <Navbar.Toggle aria-controls="navbar" />
+        <Navbar.Collapse id="navbar">
+          <BootstrapNav className="mr-auto">
             {navPages.map((page) => (
-              <li key={page.path} className="nav-item">
-                <Link href={page.path} className="nav-link">
+              <Link key={page.path} href={page.path} passHref legacyBehavior>
+                <BootstrapNav.Link>
                   {page.title}
-                </Link>
-              </li>
+                </BootstrapNav.Link>
+              </Link>
             ))}
-          </ul>
-        </div>
-
-        <span className="navbar-text text-end">
+          </BootstrapNav>
+        </Navbar.Collapse>
+        <Navbar.Text className="text-end">
           Attorney, open source developer, product manager
-        </span>
-      </div>
-    </div>
+        </Navbar.Text>
+      </Container>
+    </Navbar>
   )
 }
 

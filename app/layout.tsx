@@ -1,4 +1,4 @@
-import './globals.css'
+import './styles/globals.scss'
 import type { Metadata } from 'next'
 import ClientScripts from '../components/ClientScripts'
 
@@ -14,9 +14,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head>
-        <link href="/assets/css/style.css" rel="stylesheet" />
-      </head>
       <body>
         {children}
         <ClientScripts />
