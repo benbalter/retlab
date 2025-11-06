@@ -2,7 +2,9 @@
   "compilerOptions": {
     "baseUrl": "types",
     "strictNullChecks": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "jsx": "react",
+    "lib": ["dom", "es2015"]
   },
   "typeRoots": ["types"],
   "allowSyntheticDefaultImports": true

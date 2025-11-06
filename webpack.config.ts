@@ -4,7 +4,7 @@ import * as webpack from 'webpack'
 import autoprefixer from 'autoprefixer'
 
 const config: webpack.Configuration = {
-  entry: ['./js/script.ts', './sass/_retlab.scss'],
+  entry: ['./js/script.tsx', './sass/_retlab.scss'],
   output: {
     path: path.resolve(__dirname, 'assets'),
     filename: 'js/bundle.js'
@@ -16,6 +16,9 @@ const config: webpack.Configuration = {
   ],
   optimization: {
     minimize: true
+  },
+  resolve: {
+    extensions: ['.tsx', '.ts', '.js', '.jsx']
   },
   module: {
     rules: [
