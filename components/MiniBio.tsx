@@ -3,8 +3,8 @@ import Link from 'next/link'
 
 const MiniBio: React.FC = () => {
   return (
-    <div>
-      <div className="float-start pt-1 pe-3">
+    <div className="flex gap-3">
+      <div className="flex-shrink-0 pt-1">
         <img
           src={`https://avatars.githubusercontent.com/benbalter?s=100`}
           width="100"
@@ -13,9 +13,11 @@ const MiniBio: React.FC = () => {
           className="rounded"
         />
       </div>
-      <p>
+      <p className="flex-1">
         Ben Balter is an attorney, open source developer, and product manager.{' '}
-        <Link href="/about/">More about the author &rarr;</Link>
+        <Link href="/about/" className="text-primary hover:underline">
+          More about the author &rarr;
+        </Link>
       </p>
     </div>
   )

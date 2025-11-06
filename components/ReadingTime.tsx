@@ -11,7 +11,7 @@ const ReadingTime: React.FC<ReadingTimeProps> = ({ content }) => {
   const minutes = Math.ceil(words / wordsPerMinute)
 
   return (
-    <div className="text-muted mb-3">
+    <div className="text-gray-600 dark:text-gray-400 mb-3">
       <i className="far fa-clock"></i> {minutes} min read
     </div>
   )

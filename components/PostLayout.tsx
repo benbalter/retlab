@@ -29,19 +29,19 @@ const PostLayout: React.FC<PostLayoutProps> = ({
 
   return (
     <Layout>
-      <div className="row">
-        <div className="col-md-10 offset-md-1">
-          <article className="post">
-            <h1 className="display-4 text-primary">{title}</h1>
+      <div className="grid grid-cols-1 gap-4">
+        <div className="md:col-span-10 md:col-start-2 lg:col-span-8 lg:col-start-3">
+          <article className="post prose dark:prose-invert max-w-none">
+            <h1 className="text-4xl font-bold text-primary mb-4">{title}</h1>
 
             {tldr && (
-              <div className="alert alert-info" role="alert">
+              <div className="bg-blue-50 dark:bg-blue-900/30 border-l-4 border-blue-500 p-4 mb-4" role="alert">
                 <strong>TL;DR:</strong> {tldr}
               </div>
             )}
 
             {archived && (
-              <div className="alert alert-warning" role="alert">
+              <div className="bg-yellow-50 dark:bg-yellow-900/30 border-l-4 border-yellow-500 p-4 mb-4" role="alert">
                 <strong>❗ Heads up!</strong> This post is archived and here for historical purposes. 
                 It may no longer be accurate or reflect my views. Proceed at your own risk.
               </div>
@@ -51,10 +51,10 @@ const PostLayout: React.FC<PostLayoutProps> = ({
 
             <div className="entrybody" dangerouslySetInnerHTML={{ __html: content }} />
 
-            <div className="mb-2 text-muted small">
+            <div className="mb-2 text-gray-600 dark:text-gray-400 text-sm">
               Originally published {formattedDate} |{' '}
               <a
-                className="link-secondary"
+                className="text-gray-600 dark:text-gray-400 hover:text-primary"
                 href={`${siteConfig.repository.url}/commits/${siteConfig.repository.branch}/${path}`}
                 target="_blank"
                 rel="noopener"
@@ -63,16 +63,16 @@ const PostLayout: React.FC<PostLayoutProps> = ({
               </a>
             </div>
 
-            <div className="row border-top pt-3">
-              <div className="col">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 border-t border-gray-300 dark:border-gray-700 pt-3">
+              <div className="lg:col-span-10">
                 <MiniBio />
               </div>
-              <div className="col-lg-2 text-center pb-3">
-                <p>
-                  <small>This page is open source. Please help improve it.</small>
+              <div className="lg:col-span-2 text-center pb-3">
+                <p className="text-sm mb-2">
+                  This page is open source. Please help improve it.
                 </p>
                 <a
-                  className="btn btn-outline-primary btn-sm"
+                  className="inline-block px-4 py-2 border border-primary text-primary hover:bg-primary hover:text-white rounded transition-colors text-sm"
                   href={`${siteConfig.repository.url}/edit/${siteConfig.repository.branch}/${path}`}
                   title={`Help improve article ${path}`}
                 >

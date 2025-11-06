@@ -16,10 +16,10 @@ export default async function FinePrintPage() {
 
   return (
     <Layout>
-      <div className="row">
-        <div className="col-md-10 offset-md-1">
-          <article>
-            <h1 className="display-4 text-primary">{page.title}</h1>
+      <div className="grid grid-cols-1">
+        <div className="md:col-span-10 md:col-start-2 lg:col-span-8 lg:col-start-3">
+          <article className="prose dark:prose-invert max-w-none">
+            <h1 className="text-4xl font-bold text-primary">{page.title}</h1>
             <div className="content" dangerouslySetInnerHTML={{ __html: page.htmlContent }} />
           </article>
         </div>

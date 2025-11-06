@@ -4,20 +4,17 @@ import { useEffect } from 'react'
 
 export default function NavbarToggle() {
   useEffect(() => {
-    // Initialize Bootstrap collapse for navbar
-    const initializeNavbar = async () => {
+    // Simple toggle without Bootstrap
+    const initializeNavbar = () => {
       if (typeof window !== 'undefined') {
-        const { Collapse } = await import('bootstrap')
-        
         const toggleButton = document.querySelector('[data-bs-toggle="collapse"]')
         const collapseElement = document.querySelector('.navbar-collapse')
         
         if (toggleButton && collapseElement) {
-          // Initialize collapse
-          const collapse = new Collapse(collapseElement, { toggle: false })
-          
           toggleButton.addEventListener('click', () => {
-            collapse.toggle()
+            collapseElement.classList.toggle('hidden')
+            const isExpanded = !collapseElement.classList.contains('hidden')
+            toggleButton.setAttribute('aria-expanded', isExpanded.toString())
           })
         }
       }

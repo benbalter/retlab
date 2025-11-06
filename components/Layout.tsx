@@ -12,8 +12,8 @@ const Layout: React.FC<LayoutProps> = ({
   hero = false
 }) => {
   return (
-    <div className="container">
-      {hero && <div className="hero-unit rounded-top position-relative">&nbsp;</div>}
+    <div className="container mx-auto max-w-7xl px-4">
+      {hero && <div className="hero-unit rounded-t-lg relative">&nbsp;</div>}
       
       <Nav hero={hero} />
       

@@ -17,7 +17,6 @@ export default function ClientScripts() {
       const { faBluesky } = await import('@fortawesome/free-brands-svg-icons/faBluesky')
       const { faClock } = await import('@fortawesome/free-regular-svg-icons/faClock')
       const { faHeart } = await import('@fortawesome/free-regular-svg-icons/faHeart')
-      const { Tooltip } = await import('bootstrap')
       const AnchorJS = (await import('anchor-js')).default
 
       // Configure FontAwesome
@@ -39,12 +38,6 @@ export default function ClientScripts() {
       // Initialize AnchorJS
       const anchors = new AnchorJS()
       anchors.add()
-
-      // Initialize Bootstrap tooltips
-      const els = document.querySelectorAll('[data-bs-toggle="tooltip"]')
-      Array.from(els).forEach((el) => {
-        new Tooltip(el)
-      })
 
       // Handle 404 suggestions
       const div = document.getElementById('four-oh-four-suggestion')
