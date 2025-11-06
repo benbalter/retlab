@@ -4,17 +4,67 @@
 
 ![Screenshot of Retlab](screenshot.png)
 
-A minimalist Jekyll theme for your personal site
+A minimalist React-based theme for your personal site, originally built with Jekyll and now converted to React with Next.js.
+
+## Technology Stack
+
+- **React** - Component-based UI library
+- **Next.js** - React framework with static site generation
+- **TypeScript** - Type-safe JavaScript
+- **Bootstrap 5** - CSS framework for responsive design
+- **FontAwesome** - Icon library
+- **Webpack** - Asset bundling for SCSS/CSS
 
 ## Installation
 
-1. Add this line to your site's configuration:
+### For Development
 
-   ```yaml
-   remote_theme: benbalter/retlab
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/benbalter/retlab.git
+   cd retlab
    ```
 
-2. Save a header image to `/assets/img/header.jpg`. It should be 400px by 1140px.
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
+
+### For Production
+
+Build the static site:
+```bash
+npm run build
+```
+
+The static files will be generated in the `out/` directory.
+
+## Development Commands
+
+- `npm run dev` - Start Next.js development server
+- `npm run build` - Build assets and static site
+- `npm run lint` - Run ESLint and JSONLint
+- `npm run webpack` - Build SCSS/CSS assets only
+
+## Project Structure
+
+```
+.
+├── app/              # Next.js app directory (routes)
+├── components/       # React components
+├── lib/              # Utility functions
+├── sass/             # SCSS stylesheets
+├── assets/           # Built CSS/JS assets
+├── public/           # Static files
+└── _posts/           # Blog posts (markdown)
+```
 
 ## Configuration
 

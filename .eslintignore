@@ -1,3 +1,6 @@
 assets/*
 _site/*
 vendor/*
+.next/*
+out/*
+js/script.ts
