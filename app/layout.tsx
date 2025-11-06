@@ -1,10 +1,11 @@
 import './styles/globals.scss'
 import type { Metadata } from 'next'
 import ClientScripts from '../components/ClientScripts'
+import { siteConfig } from '../config/site'
 
 export const metadata: Metadata = {
-  title: 'Ben Balter',
-  description: 'Attorney, open source developer, product manager',
+  title: siteConfig.name,
+  description: siteConfig.description,
 }
 
 export default function RootLayout({

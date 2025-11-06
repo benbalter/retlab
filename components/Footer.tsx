@@ -1,34 +1,24 @@
-'use client'
-
 import React from 'react'
-import { Nav } from 'react-bootstrap'
 import Link from 'next/link'
+import { siteConfig } from '../config/site'
 
 const Footer: React.FC = () => {
-  const footerPages = [
-    { path: '/fine-print/', title: 'Fine Print' }
-  ]
-
   return (
     <nav>
-      <Nav className="justify-content-end border-top px-2 py-3">
-        {footerPages.map((page) => (
-          <Nav.Item key={page.path}>
-            <Link href={page.path} passHref legacyBehavior>
-              <Nav.Link className="link-secondary">
-                {page.title}
-              </Nav.Link>
+      <ul className="nav justify-content-end border-top px-2 py-3">
+        {siteConfig.footerPages.map((page) => (
+          <li key={page.path} className="nav-item">
+            <Link href={page.path} className="nav-link link-secondary">
+              {page.title}
             </Link>
-          </Nav.Item>
+          </li>
         ))}
-        <Nav.Item>
-          <Link href="/feed.xml" passHref legacyBehavior>
-            <Nav.Link aria-label="Atom Feed">
-              <i className="fas fa-rss" title="Atom Feed"></i>
-            </Nav.Link>
+        <li className="nav-item">
+          <Link href="/feed.xml" aria-label="Atom Feed" className="nav-link">
+            <i className="fas fa-rss" title="Atom Feed"></i>
           </Link>
-        </Nav.Item>
-      </Nav>
+        </li>
+      </ul>
     </nav>
   )
 }

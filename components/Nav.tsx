@@ -1,46 +1,51 @@
-'use client'
-
 import React from 'react'
-import { Navbar, Nav as BootstrapNav, Container } from 'react-bootstrap'
 import Link from 'next/link'
+import { siteConfig } from '../config/site'
+import NavbarToggle from './NavbarToggle'
 
 interface NavProps {
   hero?: boolean
 }
 
 const Nav: React.FC<NavProps> = ({ hero = false }) => {
-  const navPages = [
-    { path: '/', title: 'Posts' },
-    { path: '/about/', title: 'About' }
-  ]
-
-  const navClass = `bg-secondary-subtle text-secondary border-start border-end border-bottom ${!hero ? 'border-top rounded-top' : ''} rounded-bottom mb-3`
+  const navClass = `navbar navbar-expand-md bg-secondary-subtle text-secondary border-start border-end border-bottom ${!hero ? 'border-top rounded-top' : ''} rounded-bottom mb-3`
 
   return (
-    <Navbar expand="md" className={navClass}>
-      <Container fluid className="px-3">
-        <Link href="/" passHref legacyBehavior>
-          <Navbar.Brand className="fw-bold">
-            Ben Balter
-          </Navbar.Brand>
-        </Link>
-        <Navbar.Toggle aria-controls="navbar" />
-        <Navbar.Collapse id="navbar">
-          <BootstrapNav className="mr-auto">
-            {navPages.map((page) => (
-              <Link key={page.path} href={page.path} passHref legacyBehavior>
-                <BootstrapNav.Link>
-                  {page.title}
-                </BootstrapNav.Link>
-              </Link>
-            ))}
-          </BootstrapNav>
-        </Navbar.Collapse>
-        <Navbar.Text className="text-end">
-          Attorney, open source developer, product manager
-        </Navbar.Text>
-      </Container>
-    </Navbar>
+    <>
+      <nav className={navClass}>
+        <div className="container-fluid px-3">
+          <Link href="/" className="navbar-brand fw-bold">
+            {siteConfig.name}
+          </Link>
+          <button 
+            className="navbar-toggler" 
+            type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#navbar" 
+            aria-controls="navbar" 
+            aria-expanded="false" 
+            aria-label="Toggle navigation"
+          >
+            <span className="navbar-toggler-icon"></span>
+          </button>
+          <div className="collapse navbar-collapse" id="navbar">
+            <ul className="navbar-nav mr-auto">
+              {siteConfig.navPages.map((page) => (
+                <li key={page.path} className="nav-item">
+                  <Link href={page.path} className="nav-link">
+                    {page.title}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <span className="navbar-text text-end">
+            {siteConfig.description}
+          </span>
+        </div>
+      </nav>
+      <NavbarToggle />
+    </>
   )
 }
 
