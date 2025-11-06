@@ -24,3 +24,4 @@ package-lock.json
 .jekyll-cache
 .next
 out
+public/assets
