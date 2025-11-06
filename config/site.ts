@@ -3,10 +3,10 @@ export const siteConfig = {
   description: 'Attorney, open source developer, product manager',
   navPages: [
     { path: '/', title: 'Posts' },
-    { path: '/about/', title: 'About' }
+    { path: '/about', title: 'About' }
   ],
   footerPages: [
-    { path: '/fine-print/', title: 'Fine Print' }
+    { path: '/fine-print', title: 'Fine Print' }
   ],
   repository: {
     url: 'https://github.com/benbalter/retlab',

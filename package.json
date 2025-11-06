@@ -14,10 +14,13 @@
     "anchor-js": "^5.0.0",
     "bootstrap": "^5.3.3",
     "fastest-levenshtein": "^1.0.16",
+    "gray-matter": "^4.0.3",
     "next": "^16.0.1",
     "react": "^19.2.0",
     "react-bootstrap": "^2.10.10",
-    "react-dom": "^19.2.0"
+    "react-dom": "^19.2.0",
+    "remark": "^15.0.1",
+    "remark-html": "^16.0.1"
   },
   "description": "[![Build Status](https://travis-ci.org/benbalter/retlab.svg?branch=master)](https://travis-ci.org/benbalter/retlab)",
   "devDependencies": {
