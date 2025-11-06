@@ -1,3 +1,8 @@
 assets/*
 _site/*
 vendor/*
+.next/*
+out/*
+js/script.ts
+postcss.config.js
+tailwind.config.ts

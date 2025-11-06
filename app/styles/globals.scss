@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* Hero unit */
+  .hero-unit {
+    background-image: url('/assets/img/header.jpg');
+    background-size: cover;
+    background-position: top left;
+    height: 400px;
+  }
+
+  /* Syntax highlighting for dark mode */
+  @media (prefers-color-scheme: dark) {
+    .highlight {
+      background-color: rgb(31 41 55);
+    }
+  }
+}
+
+@layer components {
+  /* Footnotes */
+  .footnotes {
+    @apply text-sm border-t pt-3;
+  }
+
+  .footnotes::before {
+    content: "Notes:";
+    @apply mb-3 block;
+  }
+
+  .footnotes ol {
+    @apply ps-3;
+  }
+
+  .footnotes ol li p {
+    @apply mb-1;
+  }
+
+  /* Gist embeds */
+  .gist .gist-it-gist .gist-file .gist-data,
+  .gist .gist-meta {
+    background: #fcfcff !important;
+  }
+
+  .gist .pl-c {
+    color: #757775 !important;
+  }
+
+  .gist .pl-c1 {
+    color: #007faa !important;
+  }
+
+  /* Blockquotes */
+  blockquote {
+    @apply border-l-4 border-gray-300 pl-4;
+  }
+
+  /* Avatar */
+  .avatar {
+    @apply rounded max-w-full h-auto;
+  }
+
+  /* Min height utility */
+  .min-y-5 {
+    min-height: 5em;
+  }
+}
